@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#03050a">
-<title>Feraf Trades · Lab Exchanges — Experiencia Premium</title>
+<title>Lab de Finanzas Digitales 1.0 Premium</title>
 <style>
 :root{
   --bg:#03050a;--bg2:#08101b;--panel:rgba(13,20,33,.72);--panel-solid:#0d1421;
@@ -73,59 +73,14 @@ p{font-size:clamp(17px,1.55vw,23px);line-height:1.55;color:#d7dce6}.lead{font-si
 @media(max-width:900px){.grid2,.compare{grid-template-columns:1fr}.compare{gap:15px}.versus{height:38px}.grid3{grid-template-columns:1fr 1fr}.planet-wrap{min-height:410px}.planet{width:min(78vw,440px)}.timeline{grid-template-columns:1fr 1fr}.timeline::before{display:none}.time-card{padding-top:25px}.time-dot{top:0}.chain-stage{gap:8px}.block{width:132px;height:168px;padding:14px}.chain-link{width:26px}.transfer-card{position:relative;right:auto;top:auto;width:100%;margin-top:14px}.network{height:500px}.sat{width:125px}.s1,.s3{left:0}.s2,.s4{right:0}}
 @media(max-width:620px){.slide{padding:84px 20px 76px}.dots{display:none}.topbar{padding-left:16px;padding-right:16px}.status span:last-child{display:none}.controls{right:12px}.counter{left:16px}.grid3,.quiz-options,.timeline{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.quote{font-size:clamp(31px,10vw,52px)}.inflation-stage{height:520px}.wallet{left:50%;transform:translateX(-50%);top:18px;width:210px}.basket{right:auto;left:50%;transform:translateX(-50%);top:235px;grid-template-columns:repeat(2,100px)}.arrow-loss{display:none}.power-meter{left:5%;right:5%}.chart-shell{height:330px;padding-left:40px}.chart-grid{left:40px}.chain-stage{justify-content:flex-start;overflow-x:auto;padding:15px 2px 24px}.block{min-width:135px}.network{height:570px}.hub{width:125px;height:125px}.sat{font-size:12px;width:112px}.s5{top:8px}.s1,.s2{top:105px}.s3,.s4{bottom:22px}.compare-side{padding:20px}.keys{grid-template-columns:1fr}.intro-ring{width:110vw}.planet-wrap{min-height:360px}}
 @media(prefers-reduced-motion:reduce){*{animation-duration:.001ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none;filter:none}}
-
-/* Premium 2.0 additions */
-:root{--feraf:#69ffac;--feraf-deep:#07140d}
-body.presentation-mode{cursor:none}
-body.presentation-mode .topbar,body.presentation-mode .controls,body.presentation-mode .counter,body.presentation-mode .dots{opacity:.16;transition:opacity .35s}
-body.presentation-mode .topbar:hover,body.presentation-mode .controls:hover,body.presentation-mode .counter:hover,body.presentation-mode .dots:hover{opacity:1}
-.webgl-shell{position:relative;width:100%;min-height:560px;display:grid;place-items:center}
-.webgl-canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
-.webgl-fallback{width:min(58vw,560px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 35% 30%,#183964,#071526 60%,#02070d);box-shadow:inset -40px -30px 80px rgba(0,0,0,.7),0 0 100px rgba(86,221,255,.2)}
-.webgl-label{position:absolute;left:50%;bottom:3%;transform:translateX(-50%);font-size:12px;color:var(--muted);letter-spacing:.12em;text-transform:uppercase}
-.coin-stage{height:430px;position:relative;perspective:1100px;display:flex;justify-content:center;align-items:center;gap:clamp(18px,4vw,60px)}
-.coin3d{width:170px;aspect-ratio:1;border-radius:50%;position:relative;transform-style:preserve-3d;animation:coinSpin 8s linear infinite;filter:drop-shadow(0 24px 35px rgba(0,0,0,.4))}
-.coin3d:nth-child(2){animation-duration:10s;animation-direction:reverse}.coin3d:nth-child(3){animation-duration:7s}
-.coin-face,.coin-back{position:absolute;inset:0;border-radius:50%;display:grid;place-items:center;backface-visibility:hidden;border:2px solid rgba(255,255,255,.24);font-size:62px;font-weight:900;box-shadow:inset 0 0 32px rgba(255,255,255,.16)}
-.coin-back{transform:rotateY(180deg)}
-.coin-edge{position:absolute;inset:7px;border-radius:50%;border:12px dashed rgba(255,255,255,.24);transform:translateZ(-8px)}
-.coin-btc .coin-face,.coin-btc .coin-back{background:radial-gradient(circle at 35% 30%,#ffe8a3,#f5a623 46%,#8d4d00);color:#fff4d3}
-.coin-eth .coin-face,.coin-eth .coin-back{background:radial-gradient(circle at 35% 30%,#b9c8ff,#6f83ff 48%,#27316d);color:white}
-.coin-usdt .coin-face,.coin-usdt .coin-back{background:radial-gradient(circle at 35% 30%,#a7ffe0,#21b88f 50%,#075944);color:white}
-.coin-caption{position:absolute;top:calc(50% + 115px);width:170px;text-align:center;font-size:13px;color:var(--muted)}
-.block3d-stage{display:flex;align-items:center;justify-content:center;gap:42px;min-height:390px;perspective:1400px}
-.cube{width:150px;height:150px;position:relative;transform-style:preserve-3d;transform:rotateX(-18deg) rotateY(32deg);animation:cubeFloat 5s ease-in-out infinite}
-.cube:nth-child(3){animation-delay:-1.2s}.cube:nth-child(5){animation-delay:-2.4s}
-.cube-face{position:absolute;width:150px;height:150px;border:1px solid rgba(105,255,172,.42);background:linear-gradient(145deg,rgba(105,255,172,.15),rgba(86,221,255,.04));display:grid;place-items:center;font-weight:850;backdrop-filter:blur(8px);box-shadow:inset 0 0 30px rgba(86,221,255,.07)}
-.cube-front{transform:translateZ(75px)}.cube-back{transform:rotateY(180deg) translateZ(75px)}.cube-right{transform:rotateY(90deg) translateZ(75px)}.cube-left{transform:rotateY(-90deg) translateZ(75px)}.cube-top{transform:rotateX(90deg) translateZ(75px)}.cube-bottom{transform:rotateX(-90deg) translateZ(75px)}
-.chain-beam{width:90px;height:5px;background:linear-gradient(90deg,var(--cyan),var(--green));box-shadow:0 0 18px rgba(86,221,255,.65);position:relative}
-.chain-beam::before,.chain-beam::after{content:"";position:absolute;width:16px;height:16px;border:3px solid var(--cyan);border-radius:50%;top:-8px}.chain-beam::before{left:-3px}.chain-beam::after{right:-3px}
-.bill-stage{position:relative;height:480px;overflow:hidden;border-radius:32px;border:1px solid var(--line);background:radial-gradient(circle at center,rgba(105,255,172,.08),transparent 60%)}
-.bill{position:absolute;width:180px;height:88px;border-radius:14px;border:1px solid rgba(105,255,172,.34);background:linear-gradient(135deg,rgba(105,255,172,.21),rgba(7,20,13,.95));display:grid;place-items:center;font-weight:850;color:#dfffea;box-shadow:0 20px 45px rgba(0,0,0,.35);animation:billFall 7s linear infinite}
-.bill::before{content:"S/";position:absolute;left:14px;top:10px;font-size:12px;color:var(--green)}
-.bill:nth-child(1){left:8%;animation-delay:-1s}.bill:nth-child(2){left:30%;animation-delay:-3.4s;transform:scale(.88)}.bill:nth-child(3){left:55%;animation-delay:-5s;transform:scale(.7)}.bill:nth-child(4){left:77%;animation-delay:-6.2s;transform:scale(.55)}
-.bill-loss{position:absolute;inset:auto 6% 30px;display:flex;justify-content:space-between;align-items:end}.bill-loss strong{font-size:clamp(34px,5vw,70px);letter-spacing:-.05em}.bill-loss span{color:var(--muted)}
-.live-map-panel{position:absolute;left:3%;bottom:5%;padding:14px 16px;border-radius:18px;background:rgba(5,10,18,.82);border:1px solid var(--line);backdrop-filter:blur(16px);font-size:12px}.live-map-panel strong{color:var(--green);font-size:20px;display:block}
-.site-cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:28px}.site-cta a{text-decoration:none;padding:13px 18px;border-radius:15px;border:1px solid rgba(105,255,172,.35);background:rgba(105,255,172,.08);color:var(--text)}.site-cta a.primary{background:var(--green);color:#041008;font-weight:800}
-.mode-indicator{position:fixed;left:50%;top:18px;transform:translateX(-50%);z-index:1300;padding:8px 12px;border-radius:999px;background:rgba(5,10,18,.86);border:1px solid var(--line);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);opacity:0;pointer-events:none;transition:.3s}.mode-indicator.show{opacity:1}
-@keyframes coinSpin{to{transform:rotateY(360deg) rotateX(8deg)}}
-@keyframes cubeFloat{50%{transform:translateY(-18px) rotateX(-22deg) rotateY(208deg)}}
-@keyframes billFall{0%{top:-100px;opacity:0;filter:blur(0)}15%{opacity:1}70%{opacity:.72}100%{top:420px;opacity:0;filter:blur(5px);transform:scale(.35) rotate(18deg)}}
-@media(max-width:820px){.coin-stage{height:auto;min-height:620px;flex-wrap:wrap;padding:40px 0}.coin-caption{position:static;margin-top:185px}.block3d-stage{gap:14px;transform:scale(.76)}.chain-beam{width:42px}.webgl-shell{min-height:430px}}
-@media(max-width:560px){.coin3d{width:125px}.coin-caption{width:125px;margin-top:140px}.coin-face,.coin-back{font-size:46px}.block3d-stage{transform:scale(.58);margin-inline:-90px}.bill{width:140px;height:70px}}
-
 </style>
-
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
-<script src="https://cdn.jsdelivr.net/npm/three@0.164.1/build/three.min.js" defer></script>
 </head>
 <body>
-<div class="mode-indicator" id="modeIndicator">Modo presentación activado</div>
 <canvas id="stars"></canvas><div class="progress" id="progress"></div>
 <header class="topbar"><div class="brand"><strong>FERAF TRADES</strong> · LAB DE FINANZAS DIGITALES</div><div class="status"><i class="live-dot"></i><span>EXPERIENCIA INTERACTIVA</span></div></header>
 <nav class="dots" id="dots" aria-label="Navegación de la presentación"></nav>
 <div class="counter" id="counter">01 / 24</div>
-<div class="controls"><button class="control" id="helpBtn" title="Ayuda">?</button><button class="control" id="prev" title="Anterior">↑</button><button class="control" id="next" title="Siguiente">↓</button><button class="control" id="present" title="Modo presentación">◉</button><button class="control" id="full" title="Pantalla completa">⛶</button></div>
+<div class="controls"><button class="control" id="helpBtn" title="Ayuda">?</button><button class="control" id="prev" title="Anterior">↑</button><button class="control" id="next" title="Siguiente">↓</button><button class="control" id="full" title="Pantalla completa">⛶</button></div>
 
 <section class="slide intro" id="intro" style="--x:72%;--y:27%"><div class="intro-ring"></div><div class="orb a"></div><div class="orb b"></div><div class="inner center">
   <div class="eyebrow reveal">Lab de Finanzas Digitales 1.0</div>
@@ -150,11 +105,6 @@ body.presentation-mode .topbar:hover,body.presentation-mode .controls:hover,body
   <div class="inflation-stage reveal"><div class="wallet"><div class="wallet-money">S/ 100</div></div><div class="arrow-loss"></div><div class="basket"><div class="good">🥛<span>Leche</span></div><div class="good">🍞<span>Pan</span></div><div class="good">⛽<span>Combustible</span></div><div class="good">🏠<span>Vivienda</span></div></div><div class="power-meter"><div class="meter-track"><div class="meter-fill"></div></div><div class="meter-labels"><span>Poder adquisitivo inicial</span><span>Poder adquisitivo futuro</span></div></div></div>
 </div></section>
 
-<section class="slide" id="inflation-cinema"><div class="inner grid2">
-  <div><div class="kicker reveal">Poder adquisitivo</div><h2 class="reveal">El mismo billete. Cada vez menos alcance.</h2><p class="reveal">La inflación no elimina el número impreso; reduce lo que ese número puede comprar. La escena visualiza la erosión progresiva del valor real.</p><div class="note reveal">La animación es conceptual. Usa la calculadora del laboratorio para estimar un caso concreto.</div></div>
-  <div class="bill-stage reveal"><div class="bill">100</div><div class="bill">82</div><div class="bill">67</div><div class="bill">55</div><div class="bill-loss"><div><span>Valor nominal</span><strong>S/ 100</strong></div><div class="right"><span>Poder real</span><strong class="red">↓</strong></div></div></div>
-</div></section>
-
 <section class="slide" id="m2"><div class="inner">
   <div class="kicker reveal">Oferta monetaria</div><h2 class="reveal">Más dinero en circulación cambia el tablero.</h2><p class="lead reveal">Durante la pandemia, la expansión monetaria aumentó con fuerza. No explica por sí sola toda la inflación, pero ayuda a entender la presión sobre los precios cuando se combina con otros factores.</p>
   <div class="chart-shell reveal"><div class="chart-grid"></div><svg class="line-chart" viewBox="0 0 1000 360" preserveAspectRatio="none"><defs><linearGradient id="chartGrad" x1="0" x2="1"><stop stop-color="#56ddff"/><stop offset="1" stop-color="#69ffac"/></linearGradient><linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#56ddff" stop-opacity=".45"/><stop offset="1" stop-color="#56ddff" stop-opacity="0"/></linearGradient></defs><path class="area-path" d="M0,310 C110,290 160,275 235,264 S370,245 455,235 S590,225 650,196 C705,168 725,82 780,58 C835,34 900,50 1000,20 L1000,360 L0,360Z"/><path class="line-path" d="M0,310 C110,290 160,275 235,264 S370,245 455,235 S590,225 650,196 C705,168 725,82 780,58 C835,34 900,50 1000,20"/></svg><div class="chart-label y1">Alto</div><div class="chart-label y2">Medio</div><div class="chart-label y3">Base</div><div class="chart-label x1">2010</div><div class="chart-label x2">2018</div><div class="chart-label x3">2026</div><div class="pandemic-tag">Expansión acelerada</div></div>
@@ -177,24 +127,12 @@ body.presentation-mode .topbar:hover,body.presentation-mode .controls:hover,body
 
 <section class="slide" id="planet"><div class="inner grid2">
   <div><div class="kicker reveal">La alternativa</div><h2 class="reveal">Una infraestructura financiera global.</h2><p class="reveal">Con un teléfono e internet puedes acceder a plataformas, redes y activos que operan las 24 horas, más allá del horario de un banco local.</p><div class="final-words reveal" style="justify-content:flex-start"><span class="badge">24/7</span><span class="badge">Global</span><span class="badge">Programable</span><span class="badge">Comparables</span></div></div>
-  <div class="webgl-shell reveal" id="globeShell"><div class="webgl-fallback" aria-hidden="true"></div><canvas class="webgl-canvas" id="globe3d" aria-label="Planeta 3D con flujos financieros globales"></canvas><div class="webgl-label">Arrastra para rotar · flujos globales 24/7</div></div>
+  <div class="planet-wrap reveal"><div class="orbit"></div><div class="orbit o2"></div><div class="planet"></div><div class="money-dot"></div><div class="money-dot d2"></div><div class="money-dot d3"></div></div>
 </div></section>
 
 <section class="slide" id="stablecoins"><div class="inner grid2">
   <div><div class="kicker reveal">Stablecoins</div><h2 class="reveal">Dólares digitales que viajan por blockchain.</h2><p class="reveal">USDT y USDC buscan mantener un valor cercano al dólar. Permiten mover valor entre plataformas y redes en cualquier momento.</p><div class="note reveal">No todas funcionan igual. Hay que evaluar emisor, reservas, regulación, red y riesgo de pérdida de paridad.</div></div>
-  <div class="map-stage reveal"><svg class="world-map" viewBox="0 0 1000 520" role="img" aria-label="Mapa mundial estilizado con transferencias de stablecoins"><defs><linearGradient id="routeGrad"><stop stop-color="#56ddff"/><stop offset="1" stop-color="#69ffac"/></linearGradient></defs><path class="land" d="M66 150l53-45 82-8 54 26 8 37-35 33-15 46-52 8-42-30-35-12-28-55zm225-48 64-28 97 13 35 37-22 40-70 15-38 46-43-24-21-52zm199 6 111-30 125 12 81 40 49 58-21 52-70 2-56-28-41 20-58-20-38-41-68-18-14-47zm96 184 71-21 72 18 24 51-31 56-70 22-52-34-15-48zm-258-24 54-23 56 14 17 58-28 74-49 21-51-44-22-64zm-190 62 48-18 55 15 19 45-29 40-58 8-44-33z"/><path id="r1" class="route" d="M173 207 Q405 35 650 216"/><path id="r2" class="route route2" d="M650 216 Q735 330 693 355"/><path id="r3" class="route route3" d="M173 207 Q325 390 381 337"/><circle class="city" cx="173" cy="207" r="7"/><circle class="city" cx="650" cy="216" r="7"/><circle class="city" cx="693" cy="355" r="7"/><circle class="city" cx="381" cy="337" r="7"/><circle class="transfer-token" r="9"><animateMotion dur="4s" repeatCount="indefinite"><mpath href="#r1"/></animateMotion></circle><circle class="transfer-token" r="8"><animateMotion dur="4.6s" repeatCount="indefinite"><mpath href="#r2"/></animateMotion></circle><circle class="transfer-token" r="8"><animateMotion dur="5.2s" repeatCount="indefinite"><mpath href="#r3"/></animateMotion></circle></svg><div class="live-map-panel"><span>Flujos simulados</span><strong id="transferCount">0 transferencias</strong><span>Red global activa</span></div><div class="transfer-card"><div class="micro">Transferencia conceptual</div><h3>USDC · Lima → Singapur</h3><div class="feature"><span>Disponibilidad</span><span>24/7</span></div><div class="feature"><span>Liquidación</span><span>Según red</span></div><div class="feature"><span>Riesgo</span><span>Emisor + red + custodia</span></div></div></div>
-</div></section>
-
-<section class="slide" id="blockchain-3d"><div class="inner">
-  <div class="kicker reveal">Blockchain 3D</div><h2 class="reveal">Cada bloque existe porque el anterior sigue siendo válido.</h2>
-  <div class="block3d-stage reveal">
-    <div class="cube"><div class="cube-face cube-front">BLOQUE 01</div><div class="cube-face cube-back">HASH A7F</div><div class="cube-face cube-right">1,294 TX</div><div class="cube-face cube-left">GENESIS</div><div class="cube-face cube-top">VALIDADO</div><div class="cube-face cube-bottom">BTC</div></div>
-    <div class="chain-beam"></div>
-    <div class="cube"><div class="cube-face cube-front">BLOQUE 02</div><div class="cube-face cube-back">HASH F94</div><div class="cube-face cube-right">1,087 TX</div><div class="cube-face cube-left">PREV A7F</div><div class="cube-face cube-top">VALIDADO</div><div class="cube-face cube-bottom">BTC</div></div>
-    <div class="chain-beam"></div>
-    <div class="cube"><div class="cube-face cube-front">BLOQUE 03</div><div class="cube-face cube-back">HASH C2A</div><div class="cube-face cube-right">1,416 TX</div><div class="cube-face cube-left">PREV F94</div><div class="cube-face cube-top">VALIDADO</div><div class="cube-face cube-bottom">BTC</div></div>
-  </div>
-  <p class="lead center reveal">Alterar un bloque cambia su hash y rompe la conexión con todos los siguientes.</p>
+  <div class="map-stage reveal"><svg class="world-map" viewBox="0 0 1000 520" role="img" aria-label="Mapa mundial estilizado con transferencias de stablecoins"><defs><linearGradient id="routeGrad"><stop stop-color="#56ddff"/><stop offset="1" stop-color="#69ffac"/></linearGradient></defs><path class="land" d="M66 150l53-45 82-8 54 26 8 37-35 33-15 46-52 8-42-30-35-12-28-55zm225-48 64-28 97 13 35 37-22 40-70 15-38 46-43-24-21-52zm199 6 111-30 125 12 81 40 49 58-21 52-70 2-56-28-41 20-58-20-38-41-68-18-14-47zm96 184 71-21 72 18 24 51-31 56-70 22-52-34-15-48zm-258-24 54-23 56 14 17 58-28 74-49 21-51-44-22-64zm-190 62 48-18 55 15 19 45-29 40-58 8-44-33z"/><path id="r1" class="route" d="M173 207 Q405 35 650 216"/><path id="r2" class="route route2" d="M650 216 Q735 330 693 355"/><path id="r3" class="route route3" d="M173 207 Q325 390 381 337"/><circle class="city" cx="173" cy="207" r="7"/><circle class="city" cx="650" cy="216" r="7"/><circle class="city" cx="693" cy="355" r="7"/><circle class="city" cx="381" cy="337" r="7"/><circle class="transfer-token" r="9"><animateMotion dur="4s" repeatCount="indefinite"><mpath href="#r1"/></animateMotion></circle><circle class="transfer-token" r="8"><animateMotion dur="4.6s" repeatCount="indefinite"><mpath href="#r2"/></animateMotion></circle><circle class="transfer-token" r="8"><animateMotion dur="5.2s" repeatCount="indefinite"><mpath href="#r3"/></animateMotion></circle></svg><div class="transfer-card"><div class="micro">Transferencia conceptual</div><h3>USDC · Lima → Singapur</h3><div class="feature"><span>Disponibilidad</span><span>24/7</span></div><div class="feature"><span>Liquidación</span><span>Según red</span></div><div class="feature"><span>Riesgo</span><span>Emisor + red + custodia</span></div></div></div>
 </div></section>
 
 <section class="slide" id="blockchain"><div class="inner">
@@ -209,13 +147,8 @@ body.presentation-mode .topbar:hover,body.presentation-mode .controls:hover,body
 </div></section>
 
 <section class="slide" id="assets"><div class="inner">
-  <div class="kicker reveal">Activos digitales</div><h2 class="reveal">Bitcoin, Ethereum y USDT en una misma infraestructura.</h2>
-  <div class="coin-stage reveal">
-    <div><div class="coin3d coin-btc"><div class="coin-edge"></div><div class="coin-face">₿</div><div class="coin-back">21M</div></div><div class="coin-caption"><strong>Bitcoin</strong><br>Escasez programada</div></div>
-    <div><div class="coin3d coin-eth"><div class="coin-edge"></div><div class="coin-face">◆</div><div class="coin-back">ETH</div></div><div class="coin-caption"><strong>Ethereum</strong><br>Infraestructura programable</div></div>
-    <div><div class="coin3d coin-usdt"><div class="coin-edge"></div><div class="coin-face">₮</div><div class="coin-back">1 USD</div></div><div class="coin-caption"><strong>USDT</strong><br>Referencia estable</div></div>
-  </div>
-  <p class="micro center reveal">Representaciones visuales educativas; no constituyen recomendación de inversión.</p>
+  <div class="kicker reveal">Activos digitales</div><h2 class="reveal">Una tecnología. Diferentes funciones.</h2>
+  <div class="cards reveal"><div class="card"><div class="icon">₿</div><h3>Bitcoin</h3><p>Oferta máxima de 21 millones. Transferencia de valor y tesis de reserva digital.</p></div><div class="card"><div class="icon">◈</div><h3>Ethereum</h3><p>Blockchain programable para contratos inteligentes y aplicaciones.</p></div><div class="card"><div class="icon">◎</div><h3>Stablecoins</h3><p>Activos que buscan mantener una referencia estable, normalmente el dólar.</p></div><div class="card"><div class="icon">◫</div><h3>Tokens</h3><p>Activos creados sobre una blockchain existente.</p></div></div>
 </div></section>
 
 <section class="slide" id="web"><div class="inner">
@@ -262,10 +195,9 @@ body.presentation-mode .topbar:hover,body.presentation-mode .controls:hover,body
 
 <section class="slide final" id="final"><div class="orb a"></div><div class="orb b"></div><div class="inner center">
   <div class="kicker reveal">Conclusión</div><div class="quote reveal">Las finanzas digitales no prometen dinero fácil. Ofrecen algo más poderoso: <strong>la capacidad de elegir</strong>.</div><div class="cta-line"></div><div class="final-words reveal"><span class="badge">Elegir plataforma</span><span class="badge">Comparar comisiones</span><span class="badge">Evaluar riesgo</span><span class="badge">Aprovechar oportunidades</span></div><p class="lead reveal" style="max-width:940px;margin:34px auto 0">“La riqueza no comienza cuando ganas más dinero. Comienza cuando entiendes cómo funciona el dinero y eres tú quien toma las decisiones.”</p>
-<div class="site-cta reveal"><a class="primary" href="https://feraftrades.com" target="_self">Explorar Feraf Trades</a><a href="#intro">Volver al inicio</a></div>
 </div></section>
 
-<div class="help" id="help"><div class="help-card"><div style="display:flex;justify-content:space-between;gap:20px;align-items:center"><div><div class="kicker">Controles</div><h3>Navega como una presentación profesional</h3></div><button class="control" id="closeHelp">×</button></div><div class="keys"><div class="key"><kbd>↓</kbd> Siguiente sección</div><div class="key"><kbd>↑</kbd> Sección anterior</div><div class="key"><kbd>Space</kbd> Avanzar</div><div class="key"><kbd>F</kbd> Pantalla completa</div><div class="key"><kbd>P</kbd> Modo presentación</div><div class="key"><kbd>H</kbd> Abrir ayuda</div><div class="key"><kbd>Esc</kbd> Cerrar ayuda</div></div></div></div>
+<div class="help" id="help"><div class="help-card"><div style="display:flex;justify-content:space-between;gap:20px;align-items:center"><div><div class="kicker">Controles</div><h3>Navega como una presentación profesional</h3></div><button class="control" id="closeHelp">×</button></div><div class="keys"><div class="key"><kbd>↓</kbd> Siguiente sección</div><div class="key"><kbd>↑</kbd> Sección anterior</div><div class="key"><kbd>Space</kbd> Avanzar</div><div class="key"><kbd>F</kbd> Pantalla completa</div><div class="key"><kbd>H</kbd> Abrir ayuda</div><div class="key"><kbd>Esc</kbd> Cerrar ayuda</div></div></div></div>
 
 <script>
 const slides=[...document.querySelectorAll('.slide')],dots=document.getElementById('dots'),counter=document.getElementById('counter');
@@ -289,19 +221,6 @@ const money=document.getElementById('money'),inflRate=document.getElementById('i
 const feeCapital=document.getElementById('feeCapital'),tradeFee=document.getElementById('tradeFee'),networkFee=document.getElementById('networkFee');function calcFees(){const c=+feeCapital.value,t=+tradeFee.value,n=+networkFee.value,total=c*t/100+n;document.getElementById('feeCapitalLabel').textContent=`${c.toLocaleString()} USDT`;document.getElementById('tradeFeeLabel').textContent=t.toFixed(2)+'%';document.getElementById('networkFeeLabel').textContent=n.toFixed(1)+' USDT';document.getElementById('feeResult').textContent=total.toFixed(2)+' USDT';document.getElementById('feePercent').textContent=(total/c*100).toFixed(2)+'% del capital'}[feeCapital,tradeFee,networkFee].forEach(x=>x.addEventListener('input',calcFees));calcFees();
 // quiz
 document.querySelectorAll('.quiz-option').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.quiz-option').forEach(x=>x.classList.remove('correct','wrong'));if(btn.dataset.answer==='correct'){btn.classList.add('correct');document.getElementById('quizFeedback').textContent='Correcto. El APR es anualizado y el beneficio real se prorratea según capital, días y límites.'}else{btn.classList.add('wrong');document.getElementById('quizFeedback').textContent='No exactamente. Revisa la tasa anualizada, el plazo, el monto máximo y los términos.'}}));
-
-// Premium 2.0 interactions
-const modeIndicator=document.getElementById('modeIndicator');
-function togglePresentation(){document.body.classList.toggle('presentation-mode');modeIndicator.textContent=document.body.classList.contains('presentation-mode')?'Modo presentación activado':'Modo presentación desactivado';modeIndicator.classList.add('show');setTimeout(()=>modeIndicator.classList.remove('show'),1500)}
-document.getElementById('present')?.addEventListener('click',togglePresentation);
-addEventListener('keydown',e=>{if(e.key.toLowerCase()==='p'&&!['INPUT','BUTTON'].includes(document.activeElement.tagName))togglePresentation()});
-// Simulated live transfer counter
-let transferCount=0;setInterval(()=>{transferCount+=Math.floor(Math.random()*4)+1;const el=document.getElementById('transferCount');if(el)el.textContent=transferCount.toLocaleString('es-PE')+' transferencias'},1400);
-// GSAP progressive enhancement
-addEventListener('load',()=>{if(window.gsap){gsap.utils.toArray('.slide').forEach(slide=>{const items=slide.querySelectorAll('h1,h2,.lead,.card,.metric,.note');if(items.length)gsap.fromTo(items,{y:28,opacity:0},{y:0,opacity:1,duration:.9,stagger:.06,ease:'power3.out',scrollTrigger:undefined});});gsap.to('.intro-ring',{scale:1.06,duration:4,yoyo:true,repeat:-1,ease:'sine.inOut'});gsap.to('.orb.a',{x:-35,y:25,duration:7,yoyo:true,repeat:-1,ease:'sine.inOut'});}});
-// Three.js globe with graceful fallback
-addEventListener('load',()=>{const canvas=document.getElementById('globe3d'),shell=document.getElementById('globeShell');if(!canvas||!shell||!window.THREE)return;try{const scene=new THREE.Scene(),camera=new THREE.PerspectiveCamera(40,shell.clientWidth/shell.clientHeight,.1,100);camera.position.z=4.1;const renderer=new THREE.WebGLRenderer({canvas,alpha:true,antialias:true});renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.setSize(shell.clientWidth,shell.clientHeight,false);const group=new THREE.Group();scene.add(group);const globe=new THREE.Mesh(new THREE.SphereGeometry(1.18,64,64),new THREE.MeshStandardMaterial({color:0x0b2746,roughness:.78,metalness:.15,emissive:0x03111f,emissiveIntensity:.7}));group.add(globe);const wire=new THREE.Mesh(new THREE.SphereGeometry(1.19,32,20),new THREE.MeshBasicMaterial({color:0x56ddff,wireframe:true,transparent:true,opacity:.12}));group.add(wire);const atmosphere=new THREE.Mesh(new THREE.SphereGeometry(1.29,48,48),new THREE.MeshBasicMaterial({color:0x56ddff,transparent:true,opacity:.055,side:THREE.BackSide}));group.add(atmosphere);const light=new THREE.DirectionalLight(0xffffff,2.2);light.position.set(3,2,4);scene.add(light);scene.add(new THREE.AmbientLight(0x69ffac,.5));const routes=[];function route(a,b,h=.45){const mid=a.clone().add(b).multiplyScalar(.5).normalize().multiplyScalar(1.18+h);const curve=new THREE.QuadraticBezierCurve3(a,mid,b);const tube=new THREE.Mesh(new THREE.TubeGeometry(curve,72,.012,8,false),new THREE.MeshBasicMaterial({color:0x69ffac,transparent:true,opacity:.72}));group.add(tube);const dot=new THREE.Mesh(new THREE.SphereGeometry(.035,12,12),new THREE.MeshBasicMaterial({color:0xffd56a}));group.add(dot);routes.push({curve,dot,t:Math.random()})}const pts=[new THREE.Vector3(-.95,.18,.68),new THREE.Vector3(.72,.45,.82),new THREE.Vector3(.72,-.48,.72),new THREE.Vector3(-.4,-.62,.9),new THREE.Vector3(.15,.75,.86)];route(pts[0],pts[1]);route(pts[1],pts[2]);route(pts[0],pts[3]);route(pts[4],pts[2]);let drag=false,lastX=0;canvas.addEventListener('pointerdown',e=>{drag=true;lastX=e.clientX;canvas.setPointerCapture(e.pointerId)});canvas.addEventListener('pointermove',e=>{if(drag){group.rotation.y+=(e.clientX-lastX)*.006;lastX=e.clientX}});canvas.addEventListener('pointerup',()=>drag=false);function resize(){const w=shell.clientWidth,h=shell.clientHeight;camera.aspect=w/h;camera.updateProjectionMatrix();renderer.setSize(w,h,false)}addEventListener('resize',resize);function tick(){if(!drag)group.rotation.y+=.0018;routes.forEach(r=>{r.t=(r.t+.003)%1;r.dot.position.copy(r.curve.getPoint(r.t))});renderer.render(scene,camera);requestAnimationFrame(tick)}shell.querySelector('.webgl-fallback')?.remove();tick()}catch(err){console.warn('WebGL fallback active',err)}});
-
 </script>
 </body>
 </html>
