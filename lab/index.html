@@ -73,13 +73,44 @@ p{font-size:clamp(17px,1.55vw,23px);line-height:1.55;color:#d7dce6}.lead{font-si
 @media(max-width:900px){.grid2,.compare{grid-template-columns:1fr}.compare{gap:15px}.versus{height:38px}.grid3{grid-template-columns:1fr 1fr}.planet-wrap{min-height:410px}.planet{width:min(78vw,440px)}.timeline{grid-template-columns:1fr 1fr}.timeline::before{display:none}.time-card{padding-top:25px}.time-dot{top:0}.chain-stage{gap:8px}.block{width:132px;height:168px;padding:14px}.chain-link{width:26px}.transfer-card{position:relative;right:auto;top:auto;width:100%;margin-top:14px}.network{height:500px}.sat{width:125px}.s1,.s3{left:0}.s2,.s4{right:0}}
 @media(max-width:620px){.slide{padding:84px 20px 76px}.dots{display:none}.topbar{padding-left:16px;padding-right:16px}.status span:last-child{display:none}.controls{right:12px}.counter{left:16px}.grid3,.quiz-options,.timeline{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.quote{font-size:clamp(31px,10vw,52px)}.inflation-stage{height:520px}.wallet{left:50%;transform:translateX(-50%);top:18px;width:210px}.basket{right:auto;left:50%;transform:translateX(-50%);top:235px;grid-template-columns:repeat(2,100px)}.arrow-loss{display:none}.power-meter{left:5%;right:5%}.chart-shell{height:330px;padding-left:40px}.chart-grid{left:40px}.chain-stage{justify-content:flex-start;overflow-x:auto;padding:15px 2px 24px}.block{min-width:135px}.network{height:570px}.hub{width:125px;height:125px}.sat{font-size:12px;width:112px}.s5{top:8px}.s1,.s2{top:105px}.s3,.s4{bottom:22px}.compare-side{padding:20px}.keys{grid-template-columns:1fr}.intro-ring{width:110vw}.planet-wrap{min-height:360px}}
 @media(prefers-reduced-motion:reduce){*{animation-duration:.001ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none;filter:none}}
+
+/* official exchange partners */
+.partners{background:radial-gradient(circle at 50% 18%,rgba(86,221,255,.12),transparent 30%),radial-gradient(circle at 20% 80%,rgba(105,255,172,.09),transparent 28%),#03050a}
+.partners .inner{width:min(1180px,100%)}
+.partner-intro{max-width:860px;margin:0 auto 32px}
+.partner-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:28px;text-align:left}
+.partner-card{position:relative;display:flex;flex-direction:column;min-height:350px;padding:28px;border:1px solid var(--line);border-radius:28px;background:linear-gradient(145deg,rgba(255,255,255,.075),rgba(255,255,255,.025));backdrop-filter:blur(18px);box-shadow:var(--shadow);overflow:hidden;transition:transform .35s ease,border-color .35s ease,box-shadow .35s ease}
+.partner-card::before{content:"";position:absolute;inset:0 0 auto;height:4px;background:var(--partner-accent,var(--green))}
+.partner-card::after{content:"";position:absolute;width:190px;height:190px;right:-90px;top:-90px;border-radius:50%;background:radial-gradient(circle,var(--partner-glow,rgba(105,255,172,.2)),transparent 68%);pointer-events:none}
+.partner-card:hover{transform:translateY(-7px);border-color:var(--partner-accent,var(--green));box-shadow:0 30px 85px rgba(0,0,0,.5),0 0 34px var(--partner-glow,rgba(105,255,172,.14))}
+.partner-card.bitget{--partner-accent:#00f0b5;--partner-glow:rgba(0,240,181,.22)}
+.partner-card.mexc{--partner-accent:#2f73ff;--partner-glow:rgba(47,115,255,.24)}
+.partner-card.bitunix{--partner-accent:#8b5cff;--partner-glow:rgba(139,92,255,.24)}
+.partner-wordmark{position:relative;z-index:1;font-size:clamp(30px,3vw,46px);font-weight:900;letter-spacing:-.05em;margin-bottom:6px}
+.partner-type{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:24px}
+.partner-card p{font-size:16px;color:#cfd7e5;min-height:76px}
+.partner-benefits{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 25px;padding:0;list-style:none}
+.partner-benefits li{padding:7px 10px;border-radius:999px;border:1px solid rgba(255,255,255,.11);background:rgba(255,255,255,.035);font-size:12px;color:#dfe6f1}
+.partner-button{position:relative;z-index:1;display:flex;align-items:center;justify-content:center;gap:10px;margin-top:auto;min-height:50px;padding:13px 17px;border-radius:15px;background:var(--partner-accent,var(--green));color:#03100c;text-decoration:none;font-weight:850;letter-spacing:.01em;transition:filter .25s ease,transform .25s ease}
+.partner-card.mexc .partner-button,.partner-card.bitunix .partner-button{color:#fff}
+.partner-button:hover{filter:brightness(1.08);transform:translateY(-2px)}
+.partner-button:focus-visible{outline:3px solid rgba(255,255,255,.82);outline-offset:3px}
+.partner-strip{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:13px 26px;margin-top:30px;padding:18px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.partner-strip-label{width:100%;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.partner-mini{font-size:18px;font-weight:850;letter-spacing:-.025em;color:#f8fbff}
+.affiliate-note{max-width:900px;margin:22px auto 0;font-size:12px;color:var(--muted);line-height:1.6}
+.partner-branding{margin-top:24px;font-size:13px;letter-spacing:.08em;color:#cdd6e3}
+.partner-branding strong{color:var(--green)}
+@media(max-width:900px){.partner-grid{grid-template-columns:1fr}.partner-card{min-height:0}.partner-card p{min-height:0}}
+@media(max-width:620px){.partners{padding-top:88px;padding-bottom:88px}.partner-grid{gap:14px}.partner-card{padding:22px;border-radius:23px}.partner-strip{gap:10px 18px}.partner-mini{font-size:16px}}
+
 </style>
 </head>
 <body>
 <canvas id="stars"></canvas><div class="progress" id="progress"></div>
 <header class="topbar"><div class="brand"><strong>FERAF TRADES</strong> · LAB DE FINANZAS DIGITALES</div><div class="status"><i class="live-dot"></i><span>EXPERIENCIA INTERACTIVA</span></div></header>
 <nav class="dots" id="dots" aria-label="Navegación de la presentación"></nav>
-<div class="counter" id="counter">01 / 24</div>
+<div class="counter" id="counter">01 / 23</div>
 <div class="controls"><button class="control" id="helpBtn" title="Ayuda">?</button><button class="control" id="prev" title="Anterior">↑</button><button class="control" id="next" title="Siguiente">↓</button><button class="control" id="full" title="Pantalla completa">⛶</button></div>
 
 <section class="slide intro" id="intro" style="--x:72%;--y:27%"><div class="intro-ring"></div><div class="orb a"></div><div class="orb b"></div><div class="inner center">
@@ -195,6 +226,49 @@ p{font-size:clamp(17px,1.55vw,23px);line-height:1.55;color:#d7dce6}.lead{font-si
 
 <section class="slide final" id="final"><div class="orb a"></div><div class="orb b"></div><div class="inner center">
   <div class="kicker reveal">Conclusión</div><div class="quote reveal">Las finanzas digitales no prometen dinero fácil. Ofrecen algo más poderoso: <strong>la capacidad de elegir</strong>.</div><div class="cta-line"></div><div class="final-words reveal"><span class="badge">Elegir plataforma</span><span class="badge">Comparar comisiones</span><span class="badge">Evaluar riesgo</span><span class="badge">Aprovechar oportunidades</span></div><p class="lead reveal" style="max-width:940px;margin:34px auto 0">“La riqueza no comienza cuando ganas más dinero. Comienza cuando entiendes cómo funciona el dinero y eres tú quien toma las decisiones.”</p>
+</div></section>
+
+
+<section class="slide partners" id="partners" style="--x:50%;--y:18%"><div class="orb a"></div><div class="orb b"></div><div class="inner center">
+  <div class="partner-intro">
+    <div class="kicker reveal">Official Exchange Partners</div>
+    <h2 class="reveal">Continúa tu camino.</h2>
+    <p class="lead reveal">Explora el ecosistema de finanzas digitales a través de nuestros exchanges partners.</p>
+  </div>
+
+  <div class="partner-grid reveal">
+    <article class="partner-card bitget">
+      <div class="partner-wordmark">Bitget</div>
+      <div class="partner-type">Exchange Partner</div>
+      <p>Accede a herramientas de trading, copy trading y productos digitales desde una plataforma global.</p>
+      <ul class="partner-benefits"><li>Copy Trading</li><li>Spot</li><li>Futures</li></ul>
+      <a class="partner-button" href="https://partner.bitget.com/bg/FERAF" target="_blank" rel="noopener noreferrer sponsored" aria-label="Crear cuenta en Bitget con el enlace de Feraf Trades">Crear cuenta <span aria-hidden="true">↗</span></a>
+    </article>
+
+    <article class="partner-card mexc">
+      <div class="partner-wordmark">MEXC</div>
+      <div class="partner-type">Exchange Partner</div>
+      <p>Descubre mercados spot, campañas promocionales y oportunidades dentro de su ecosistema global.</p>
+      <ul class="partner-benefits"><li>Spot</li><li>Launchpad</li><li>Earn</li></ul>
+      <a class="partner-button" href="https://promote.mexc.com/b/FERAF" target="_blank" rel="noopener noreferrer sponsored" aria-label="Crear cuenta en MEXC con el enlace de Feraf Trades">Crear cuenta <span aria-hidden="true">↗</span></a>
+    </article>
+
+    <article class="partner-card bitunix">
+      <div class="partner-wordmark">Bitunix</div>
+      <div class="partner-type">Exchange Partner</div>
+      <p>Explora una experiencia enfocada en trading de activos digitales y mercados de derivados.</p>
+      <ul class="partner-benefits"><li>Futures</li><li>Trading</li><li>Derivados</li></ul>
+      <a class="partner-button" href="https://www.bitunix.com/register?vipCode=FERAF" target="_blank" rel="noopener noreferrer sponsored" aria-label="Crear cuenta en Bitunix con el enlace de Feraf Trades">Crear cuenta <span aria-hidden="true">↗</span></a>
+    </article>
+  </div>
+
+  <div class="partner-strip reveal" aria-label="Exchange partners">
+    <div class="partner-strip-label">Exchange Partners</div>
+    <span class="partner-mini">BITGET</span><span class="partner-mini">MEXC</span><span class="partner-mini">BITUNIX</span>
+  </div>
+
+  <p class="affiliate-note reveal"><strong>Divulgación de afiliados:</strong> algunos enlaces de esta sección son enlaces de afiliado. Si te registras mediante ellos, Feraf Trades podría recibir una comisión sin costo adicional para ti. Las condiciones y la disponibilidad de los servicios dependen de cada plataforma y región.</p>
+  <div class="partner-branding reveal"><strong>FERAF TRADES</strong> · Discipline | Execution | Risk Management · Let's Grow Together 🚀</div>
 </div></section>
 
 <div class="help" id="help"><div class="help-card"><div style="display:flex;justify-content:space-between;gap:20px;align-items:center"><div><div class="kicker">Controles</div><h3>Navega como una presentación profesional</h3></div><button class="control" id="closeHelp">×</button></div><div class="keys"><div class="key"><kbd>↓</kbd> Siguiente sección</div><div class="key"><kbd>↑</kbd> Sección anterior</div><div class="key"><kbd>Space</kbd> Avanzar</div><div class="key"><kbd>F</kbd> Pantalla completa</div><div class="key"><kbd>H</kbd> Abrir ayuda</div><div class="key"><kbd>Esc</kbd> Cerrar ayuda</div></div></div></div>
