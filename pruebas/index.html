@@ -1,317 +1,760 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Bybit Peru Community Growth Proposal 2026 by Fernando G. / Feraf Trades" />
-  <title>Bybit Peru Community Growth Proposal 2026</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Bybit Peru Growth Strategy 2026 — a 90-day adoption, education and community growth proposal by Fernando G., Founder of Feraf Trades.">
+  <meta name="theme-color" content="#0b0e11">
+  <title>Bybit Peru Growth Strategy 2026</title>
   <style>
     :root{
-      --bg:#0b0e11;
-      --bg2:#11151b;
-      --panel:#171b22;
-      --panel2:#1d222b;
+      --bg:#07090c;
+      --bg-2:#0b0e11;
+      --panel:#11151b;
+      --panel-2:#171c24;
+      --panel-3:#1e2530;
+      --text:#f7f8fa;
+      --muted:#9ca5b2;
       --line:rgba(255,255,255,.09);
       --orange:#f7a600;
-      --orange2:#ffb31a;
-      --text:#f7f7f7;
-      --muted:#a7afb9;
-      --soft:#d7dce2;
-      --success:#36d399;
-      --shadow:0 24px 70px rgba(0,0,0,.35);
+      --orange-2:#ffb82e;
+      --green:#33d69f;
+      --blue:#5aa7ff;
+      --radius:22px;
+      --shadow:0 28px 90px rgba(0,0,0,.42);
+      --max:1200px;
     }
+
     *{box-sizing:border-box}
     html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
     body{
       margin:0;
+      min-width:320px;
       color:var(--text);
-      font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
       background:
-        radial-gradient(circle at 85% 7%, rgba(247,166,0,.14), transparent 27%),
-        linear-gradient(180deg,var(--bg) 0%,var(--bg2) 48%,var(--bg) 100%);
+        radial-gradient(circle at 82% 4%,rgba(247,166,0,.14),transparent 28rem),
+        radial-gradient(circle at 12% 28%,rgba(90,167,255,.06),transparent 30rem),
+        linear-gradient(180deg,var(--bg) 0%,var(--bg-2) 45%,var(--bg) 100%);
       line-height:1.5;
       overflow-x:hidden;
     }
-    a{color:inherit}
-    .deck{max-width:1180px;margin:0 auto;padding:24px}
-    section{min-height:100vh;padding:64px 0;border-bottom:1px solid rgba(247,166,0,.14);display:flex;flex-direction:column;justify-content:center;position:relative}
-    .hero{overflow:hidden}
-    .hero:before{content:"";position:absolute;right:-130px;top:5%;width:470px;height:470px;border-radius:50%;background:radial-gradient(circle,rgba(247,166,0,.15),transparent 68%)}
-    .hero:after{content:"";position:absolute;right:2%;bottom:8%;width:270px;height:270px;background:linear-gradient(135deg,rgba(247,166,0,.12),transparent);clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);opacity:.6}
-    .hero>*{position:relative;z-index:1}
-    .brand{display:inline-flex;flex-direction:column;align-items:flex-start;gap:4px;margin-bottom:28px;padding:13px 17px;border:1px solid rgba(247,166,0,.28);border-radius:15px;background:rgba(23,27,34,.78);box-shadow:var(--shadow);backdrop-filter:blur(10px)}
-    .brand svg{width:150px;height:auto;display:block}
-    .brand small{font-size:10px;letter-spacing:.25em;color:var(--muted);font-weight:800}
-    .eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--orange);font-weight:900;letter-spacing:.16em;text-transform:uppercase;font-size:13px;margin-bottom:18px}
-    .eyebrow:before{content:"◆";font-size:10px}
-    h1{font-size:64px;line-height:1.02;letter-spacing:-.045em;margin:0 0 22px;font-weight:950;max-width:1050px}
-    h2{font-size:42px;line-height:1.08;letter-spacing:-.035em;margin:0 0 24px;font-weight:950;max-width:1040px}
-    h3{font-size:22px;line-height:1.2;margin:0 0 11px;color:var(--orange)}
-    p{font-size:19px;color:var(--muted);max-width:940px;margin:0 0 18px}
-    .lead{font-size:27px;color:var(--text);font-weight:720;max-width:1000px}
-    .quote{border-left:5px solid var(--orange);padding:20px 28px;background:linear-gradient(90deg,rgba(247,166,0,.13),rgba(247,166,0,.035));border-radius:14px;margin-top:24px;font-size:25px;color:var(--text);font-weight:820;max-width:1020px}
-    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:26px}
-    .grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:26px}
-    .card{background:linear-gradient(180deg,rgba(29,34,43,.98),rgba(17,21,27,.98));border:1px solid rgba(247,166,0,.18);border-radius:18px;padding:24px;box-shadow:var(--shadow);position:relative;overflow:hidden;min-width:0}
-    .card:after{content:"";position:absolute;inset:0 auto auto 0;width:100%;height:2px;background:linear-gradient(90deg,var(--orange),transparent 70%)}
-    .card strong{display:block;color:var(--text);font-size:22px;margin-bottom:8px}
-    .card span,.card li{color:var(--muted);font-size:16px}
-    ul{padding-left:20px;margin:10px 0 0}
-    li{margin:8px 0;color:var(--muted);font-size:17px}
-    .path{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px;align-items:center}
-    .step{background:var(--panel);border:1px solid rgba(247,166,0,.24);border-radius:12px;padding:13px 16px;font-weight:800;color:var(--text)}
-    .arrow{color:var(--orange);font-weight:950;padding:13px 0}
-    .kpi{font-size:44px;font-weight:950;color:var(--orange);display:block;line-height:1;margin-bottom:8px}
-    .badge{display:inline-block;border:1px solid rgba(247,166,0,.5);color:var(--orange);border-radius:999px;padding:7px 11px;font-size:12px;font-weight:850;margin:4px 6px 4px 0;text-transform:uppercase;letter-spacing:.04em}
-    .footer{margin-top:34px;color:var(--muted);font-size:14px}
-    .note{font-size:18px;color:var(--text);font-weight:750;margin-top:20px}
-    .timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px}
-    .phase{border:1px solid rgba(247,166,0,.24);border-radius:18px;padding:20px;background:linear-gradient(180deg,rgba(247,166,0,.08),rgba(23,27,34,.88))}
-    .phase b{display:block;color:var(--orange);font-size:12px;text-transform:uppercase;letter-spacing:.09em;margin-bottom:8px}
-    .phase strong{display:block;font-size:20px;margin-bottom:8px}
-    .phase p{font-size:15px;margin:0}
-    .table-wrap{overflow:auto;border:1px solid rgba(247,166,0,.28);border-radius:18px;margin-top:22px;box-shadow:var(--shadow)}
-    table{width:100%;border-collapse:collapse;min-width:880px;background:rgba(16,20,26,.9)}
-    th,td{padding:13px 12px;border:1px solid rgba(255,255,255,.08);text-align:left;vertical-align:top;font-size:14px}
-    th{background:rgba(247,166,0,.14);color:var(--text);font-weight:900;text-transform:uppercase;letter-spacing:.04em}
-    td{color:var(--muted)}
-    td strong{color:var(--text)}
-    .pillars{counter-reset:pillar}
-    .pillars .card:before{counter-increment:pillar;content:"0" counter(pillar);position:absolute;right:18px;top:12px;color:rgba(247,166,0,.2);font-size:52px;font-weight:950}
-    .cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px}
-    .button{display:inline-flex;align-items:center;justify-content:center;padding:13px 18px;border-radius:12px;text-decoration:none;font-weight:850}
-    .button.primary{background:var(--orange);color:#111}
-    .button.secondary{border:1px solid rgba(247,166,0,.42);color:var(--text);background:rgba(247,166,0,.06)}
-    .contact{font-size:20px;color:var(--soft)}
-    @media(max-width:900px){
-      .grid,.grid2,.timeline{grid-template-columns:1fr}
-      h1{font-size:46px}h2{font-size:34px}.lead{font-size:22px}
-      section{min-height:auto;padding:52px 0}.deck{padding:18px}
+    body::before{
+      content:"";
+      position:fixed;inset:0;pointer-events:none;z-index:-1;
+      background-image:
+        linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),
+        linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);
+      background-size:52px 52px;
+      mask-image:linear-gradient(to bottom,black,transparent 82%);
     }
-    @media(max-width:620px){
-      .deck{padding-left:max(15px,env(safe-area-inset-left));padding-right:max(15px,env(safe-area-inset-right))}
-      section{padding:42px 0}
-      h1{font-size:35px}h2{font-size:28px}.lead{font-size:19px}p{font-size:16px}
-      .quote{font-size:19px;padding:17px 18px}.card{padding:19px}.brand svg{width:126px}
-      .path{flex-wrap:nowrap;overflow-x:auto;padding-bottom:8px}.step{white-space:nowrap;font-size:13px;padding:10px 12px}.arrow{font-size:13px;padding:10px 0}
+    a{color:inherit;text-decoration:none}
+    button{font:inherit}
+    img,svg{max-width:100%;display:block}
+    strong{color:var(--text)}
+    .wrap{width:min(var(--max),calc(100% - 40px));margin-inline:auto}
+    .section{padding:110px 0;position:relative;border-bottom:1px solid rgba(247,166,0,.10)}
+    .section.compact{padding:78px 0}
+    .eyebrow{
+      display:inline-flex;align-items:center;gap:10px;
+      color:var(--orange);font-size:12px;font-weight:900;letter-spacing:.17em;text-transform:uppercase;
+      margin-bottom:16px
+    }
+    .eyebrow::before{content:"";width:8px;height:8px;background:var(--orange);transform:rotate(45deg);box-shadow:0 0 24px rgba(247,166,0,.65)}
+    h1,h2,h3,p{margin-top:0}
+    h1{font-size:clamp(46px,7vw,86px);line-height:.98;letter-spacing:-.055em;margin-bottom:22px;max-width:1050px}
+    h2{font-size:clamp(34px,5vw,58px);line-height:1.02;letter-spacing:-.045em;margin-bottom:22px;max-width:990px}
+    h3{font-size:22px;line-height:1.12;margin-bottom:11px}
+    .lead{font-size:clamp(20px,2.4vw,29px);line-height:1.36;color:#e8ebef;max-width:980px}
+    .copy{font-size:18px;color:var(--muted);max-width:900px}
+    .muted{color:var(--muted)}
+    .orange{color:var(--orange)}
+    .small{font-size:13px;color:var(--muted)}
+    .section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:34px}
+    .section-head p{max-width:430px;margin-bottom:4px}
+
+    /* top bar */
+    .progress{position:fixed;left:0;top:0;width:0;height:3px;background:linear-gradient(90deg,var(--orange),var(--orange-2));z-index:1000;box-shadow:0 0 18px rgba(247,166,0,.7)}
+    .nav{
+      position:fixed;top:14px;left:50%;transform:translateX(-50%);
+      width:min(1160px,calc(100% - 28px));z-index:900;
+      display:flex;align-items:center;justify-content:space-between;gap:18px;
+      padding:11px 14px;border:1px solid rgba(255,255,255,.10);border-radius:18px;
+      background:rgba(8,10,13,.72);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
+      box-shadow:0 14px 50px rgba(0,0,0,.28)
+    }
+    .brand{display:flex;align-items:center;gap:10px;font-weight:950;letter-spacing:-.03em}
+    .brand-mark{width:32px;height:32px;border-radius:9px;background:linear-gradient(135deg,var(--orange),#ffcf67);display:grid;place-items:center;color:#0a0a0a;font-weight:1000}
+    .nav-links{display:flex;gap:6px;flex-wrap:wrap;justify-content:center}
+    .nav-links a{padding:8px 10px;border-radius:10px;color:#bac1ca;font-size:13px;font-weight:750}
+    .nav-links a:hover{background:rgba(255,255,255,.06);color:#fff}
+    .nav-cta{padding:9px 13px;border-radius:11px;background:var(--orange);color:#090909;font-weight:900;font-size:13px}
+
+    /* hero */
+    .hero{min-height:100svh;display:flex;align-items:center;padding:150px 0 90px;overflow:hidden}
+    .hero-orb{position:absolute;border-radius:50%;filter:blur(1px);pointer-events:none}
+    .orb-a{right:-160px;top:80px;width:620px;height:620px;background:radial-gradient(circle,rgba(247,166,0,.18),rgba(247,166,0,0) 68%);animation:float 8s ease-in-out infinite}
+    .orb-b{left:-120px;bottom:0;width:390px;height:390px;background:radial-gradient(circle,rgba(90,167,255,.09),transparent 68%);animation:float 10s ease-in-out infinite reverse}
+    .hero-grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(300px,.65fr);gap:56px;align-items:center}
+    .hero-kicker{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:24px}
+    .pill{display:inline-flex;align-items:center;gap:7px;padding:7px 11px;border-radius:999px;border:1px solid rgba(247,166,0,.28);background:rgba(247,166,0,.07);color:#ffd68a;font-size:12px;font-weight:850;letter-spacing:.04em}
+    .hero-path{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin:28px 0 30px}
+    .step{padding:10px 13px;border:1px solid rgba(255,255,255,.10);border-radius:12px;background:rgba(255,255,255,.035);font-weight:850;font-size:13px}
+    .arrow{color:var(--orange);font-weight:950}
+    .hero-card{
+      position:relative;padding:28px;border-radius:28px;
+      background:linear-gradient(180deg,rgba(27,31,39,.96),rgba(12,15,19,.96));
+      border:1px solid rgba(247,166,0,.26);box-shadow:var(--shadow);overflow:hidden
+    }
+    .hero-card::before{content:"";position:absolute;inset:0 0 auto 0;height:2px;background:linear-gradient(90deg,var(--orange),transparent)}
+    .hero-card h3{font-size:26px}
+    .hero-card .metric{display:flex;justify-content:space-between;align-items:baseline;padding:16px 0;border-bottom:1px solid var(--line)}
+    .hero-card .metric:last-child{border:0}
+    .hero-card b{font-size:31px;color:var(--orange);letter-spacing:-.04em}
+    .hero-card span{color:var(--muted);font-size:13px;max-width:150px;text-align:right}
+
+    /* reusable */
+    .grid{display:grid;gap:18px}
+    .grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .grid-4{grid-template-columns:repeat(4,minmax(0,1fr))}
+    .card{
+      position:relative;padding:24px;border:1px solid var(--line);border-radius:var(--radius);
+      background:linear-gradient(180deg,rgba(24,29,37,.92),rgba(13,16,21,.96));
+      box-shadow:0 18px 58px rgba(0,0,0,.20);overflow:hidden;
+      transition:transform .28s ease,border-color .28s ease,box-shadow .28s ease
+    }
+    .card::after{content:"";position:absolute;left:0;top:0;width:100%;height:2px;background:linear-gradient(90deg,var(--orange),transparent 72%);opacity:.75}
+    .card:hover{transform:translateY(-5px);border-color:rgba(247,166,0,.32);box-shadow:0 24px 70px rgba(0,0,0,.32)}
+    .card p,.card li{color:var(--muted)}
+    .icon{
+      width:42px;height:42px;display:grid;place-items:center;border-radius:13px;margin-bottom:18px;
+      background:rgba(247,166,0,.11);border:1px solid rgba(247,166,0,.23);font-size:20px
+    }
+    .quote{
+      margin-top:30px;padding:26px 28px;border-left:4px solid var(--orange);border-radius:0 18px 18px 0;
+      background:linear-gradient(90deg,rgba(247,166,0,.12),rgba(247,166,0,.025));
+      font-size:clamp(22px,3vw,32px);font-weight:850;line-height:1.28;max-width:1020px
+    }
+    .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:15px}
+    .tag{padding:6px 9px;border-radius:999px;background:rgba(255,255,255,.045);border:1px solid var(--line);color:#cbd1d8;font-size:12px;font-weight:750}
+    .kpi-card{text-align:left}
+    .kpi{display:block;font-size:clamp(38px,5vw,58px);line-height:1;color:var(--orange);font-weight:950;letter-spacing:-.055em;margin-bottom:10px}
+    .kpi-label{font-size:17px;font-weight:850}
+    .kpi-note{font-size:13px;color:var(--muted);margin-top:7px}
+    ul.clean{list-style:none;padding:0;margin:15px 0 0}
+    ul.clean li{position:relative;padding-left:20px;margin:9px 0}
+    ul.clean li::before{content:"";position:absolute;left:1px;top:.65em;width:7px;height:7px;border-radius:50%;background:var(--orange)}
+
+    /* timeline */
+    .timeline{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:32px}
+    .timeline-item{position:relative;padding:19px 18px;border-radius:17px;border:1px solid var(--line);background:rgba(255,255,255,.028)}
+    .timeline-item b{display:block;color:var(--orange);font-size:12px;letter-spacing:.10em;text-transform:uppercase;margin-bottom:8px}
+    .timeline-item strong{font-size:16px}
+    .timeline-item::after{content:"→";position:absolute;right:-12px;top:50%;transform:translateY(-50%);color:var(--orange);font-weight:950;z-index:2}
+    .timeline-item:last-child::after{display:none}
+
+    /* calendar */
+    .calendar-shell{
+      border:1px solid rgba(247,166,0,.28);border-radius:26px;overflow:hidden;
+      background:linear-gradient(180deg,rgba(247,166,0,.065),rgba(12,15,19,.96));
+      box-shadow:var(--shadow)
+    }
+    .calendar-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+    table.calendar{border-collapse:separate;border-spacing:0;width:100%;min-width:1120px;table-layout:fixed}
+    .calendar th,.calendar td{padding:9px 7px;border-right:1px solid rgba(255,255,255,.07);border-bottom:1px solid rgba(255,255,255,.07);text-align:center;vertical-align:middle;font-size:11px}
+    .calendar th{background:rgba(247,166,0,.13);font-weight:900;text-transform:uppercase;letter-spacing:.045em}
+    .calendar .month{font-size:13px;color:#fff}
+    .calendar .week{color:var(--muted);background:rgba(255,255,255,.03)}
+    .calendar .segment{background:rgba(247,166,0,.09);color:var(--orange);font-weight:900;text-transform:uppercase;letter-spacing:.04em}
+    .calendar .place{text-align:left;font-weight:800;background:rgba(255,255,255,.025)}
+    .calendar .phase{font-size:12px;font-weight:900;background:linear-gradient(90deg,rgba(247,166,0,.16),rgba(247,166,0,.045));line-height:1.15}
+    .calendar .subhead{background:rgba(0,0,0,.38);color:var(--orange);font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.08em}
+    .calendar .content{text-align:left;color:#c7cdd5;background:rgba(255,255,255,.02);line-height:1.35}
+    .calendar .objective{font-weight:850;background:rgba(255,255,255,.04)}
+    .xmark{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:50%;border:1px solid var(--orange);background:rgba(247,166,0,.13);color:var(--orange);font-weight:950;box-shadow:0 0 18px rgba(247,166,0,.16)}
+    .calendar-note{padding:14px 17px;color:var(--muted);font-size:12px;border-top:1px solid var(--line)}
+    .mobile-calendar{display:none}
+    .phase-card{padding:20px;border:1px solid rgba(247,166,0,.24);border-radius:20px;background:linear-gradient(180deg,rgba(247,166,0,.07),rgba(16,19,24,.96));margin-bottom:12px}
+    .phase-card .phase-label{color:var(--orange);font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.10em}
+    .phase-card h3{margin:7px 0 9px}
+    .schedule{display:grid;gap:8px;margin-top:14px}
+    .slot{display:flex;justify-content:space-between;gap:18px;padding:10px 12px;border-radius:12px;background:rgba(255,255,255,.035);border:1px solid var(--line)}
+    .slot b{color:var(--orange);font-size:12px}
+    .slot span{font-size:13px;text-align:right}
+
+    /* journey */
+    .journey{display:flex;align-items:center;gap:9px;overflow-x:auto;padding:18px 2px 10px;scroll-snap-type:x proximity}
+    .journey .step{white-space:nowrap;scroll-snap-align:start}
+    .journey .step.primary{background:rgba(247,166,0,.12);border-color:rgba(247,166,0,.32)}
+
+    /* activation */
+    .activation-card{min-height:280px;display:flex;flex-direction:column}
+    .activation-card .number{font-size:12px;color:var(--orange);font-weight:900;letter-spacing:.12em;margin-bottom:auto}
+    .activation-card h3{font-size:25px;margin-top:55px}
+    .activation-card p{margin-bottom:0}
+    .concept{
+      margin-top:28px;padding:32px;border-radius:26px;border:1px solid rgba(247,166,0,.26);
+      background:
+        radial-gradient(circle at 88% 12%,rgba(247,166,0,.15),transparent 14rem),
+        linear-gradient(135deg,#171b22,#0d1014);
+      display:grid;grid-template-columns:1fr .85fr;gap:34px;align-items:center
+    }
+    .concept-list{display:grid;gap:10px}
+    .concept-list div{padding:13px 15px;border:1px solid var(--line);border-radius:13px;background:rgba(255,255,255,.03);font-weight:750}
+    .concept-list div::before{content:"✓";color:var(--orange);font-weight:950;margin-right:10px}
+
+    /* budget */
+    .budget{display:grid;grid-template-columns:1.1fr .9fr;gap:20px}
+    .budget-table{width:100%;border-collapse:collapse}
+    .budget-table th,.budget-table td{padding:14px 12px;border-bottom:1px solid var(--line);text-align:left}
+    .budget-table th{color:var(--orange);font-size:12px;text-transform:uppercase;letter-spacing:.08em}
+    .budget-table td:last-child,.budget-table th:last-child{text-align:right}
+    .budget-total{font-size:40px;font-weight:950;color:var(--orange);letter-spacing:-.045em}
+
+    /* profile */
+    .profile{display:grid;grid-template-columns:.7fr 1.3fr;gap:28px;align-items:stretch}
+    .profile-mark{
+      min-height:420px;border-radius:28px;border:1px solid rgba(247,166,0,.25);
+      background:
+        radial-gradient(circle at 50% 30%,rgba(247,166,0,.23),transparent 19rem),
+        linear-gradient(145deg,#1b2029,#0b0e12);
+      display:grid;place-items:center;position:relative;overflow:hidden
+    }
+    .profile-mark::before{content:"FG";font-size:150px;font-weight:1000;letter-spacing:-.09em;color:rgba(255,255,255,.88)}
+    .profile-mark::after{content:"FERAF TRADES";position:absolute;bottom:28px;color:var(--orange);font-size:12px;font-weight:900;letter-spacing:.20em}
+    .profile-copy{padding:32px}
+
+    /* footer */
+    .closing{text-align:center;padding:130px 0 110px}
+    .closing h2{margin-inline:auto}
+    .closing .lead{margin-inline:auto}
+    .closing-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:30px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 17px;border-radius:13px;border:1px solid var(--line);font-weight:900}
+    .btn-primary{background:var(--orange);color:#080808;border-color:var(--orange)}
+    .btn-secondary{background:rgba(255,255,255,.04)}
+    footer{padding:24px 0 40px;color:var(--muted);font-size:13px}
+    .footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+
+    /* reveal animation */
+    .reveal{opacity:0;transform:translateY(26px);transition:opacity .75s cubic-bezier(.2,.7,.2,1),transform .75s cubic-bezier(.2,.7,.2,1)}
+    .reveal.visible{opacity:1;transform:none}
+    .delay-1{transition-delay:.08s}.delay-2{transition-delay:.16s}.delay-3{transition-delay:.24s}.delay-4{transition-delay:.32s}
+    @keyframes float{0%,100%{transform:translate3d(0,0,0)}50%{transform:translate3d(0,-18px,0)}}
+    @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(247,166,0,.15)}50%{box-shadow:0 0 0 12px rgba(247,166,0,0)}}
+    .pulse{animation:pulse 2.5s ease-in-out infinite}
+
+    @media(max-width:980px){
+      .nav-links{display:none}
+      .hero-grid,.concept,.budget,.profile{grid-template-columns:1fr}
+      .hero-card{max-width:620px}
+      .grid-4{grid-template-columns:repeat(2,1fr)}
+      .grid-3{grid-template-columns:repeat(2,1fr)}
+      .timeline{grid-template-columns:1fr}
+      .timeline-item::after{content:"↓";right:auto;left:50%;top:auto;bottom:-17px;transform:translateX(-50%)}
+      .profile-mark{min-height:320px}
+    }
+    @media(max-width:720px){
+      .wrap{width:min(100% - 28px,var(--max))}
+      .section{padding:78px 0}
+      .hero{padding-top:118px}
+      .nav{top:9px}
+      .nav-cta{display:none}
+      .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+      .section-head{display:block}
+      .section-head p{max-width:none}
+      .calendar-shell{display:none}
+      .mobile-calendar{display:block}
+      .concept{padding:22px}
+      .budget-total{font-size:34px}
+      .hero-path{gap:7px}
+      .hero-path .step{font-size:11px;padding:8px 9px}
+      .hero-path .arrow{font-size:11px}
+      .profile-copy{padding:24px}
+      .closing{text-align:left;padding:90px 0}
+      .closing h2,.closing .lead{margin-inline:0}
+      .closing-actions{justify-content:flex-start}
+    }
+    @media(max-width:390px){
+      .wrap{width:min(100% - 22px,var(--max))}
+      h1{font-size:42px}
+      .brand span{font-size:13px}
+      .nav{padding:9px 10px}
+    }
+    @media(prefers-reduced-motion:reduce){
+      html{scroll-behavior:auto}
+      *,*::before,*::after{animation:none!important;transition:none!important}
+      .reveal{opacity:1;transform:none}
     }
     @media print{
-      body{background:#fff;color:#000}
-      .deck{max-width:none;padding:0}
-      section{min-height:auto;page-break-after:always;padding:28px}
-      .card,.phase,.table-wrap{box-shadow:none}
-      p,.card span,.card li,td,.footer{color:#333}
-      h1,h2,.lead,.card strong,.quote{color:#000}
+      :root{--text:#111;--muted:#444;--line:#ddd}
+      body{background:#fff;color:#111}
+      body::before,.nav,.progress,.hero-orb,.closing-actions{display:none!important}
+      .wrap{width:100%;max-width:none}
+      .section{padding:34px 24px;min-height:auto;page-break-after:always;border-bottom:0}
+      .card,.hero-card,.calendar-shell,.concept,.profile-mark{box-shadow:none;background:#fff;color:#111;border-color:#bbb}
+      .card p,.card li,.copy,.muted,.small,.kpi-note,.calendar-note{color:#444!important}
+      .calendar{min-width:0;font-size:8px}
+      .calendar th,.calendar td{padding:5px 3px;color:#111;border-color:#ccc}
+      .calendar .segment,.calendar .phase,.calendar .subhead{color:#111;background:#eee}
+      .reveal{opacity:1;transform:none}
+      a{text-decoration:none}
     }
   </style>
 </head>
 <body>
-  <main class="deck">
-    <section class="hero">
-      <div class="brand" aria-label="Bybit Peru">
-        <svg viewBox="0 0 220 72" role="img" aria-label="Bybit logo">
-          <text x="0" y="51" fill="#FFFFFF" font-family="Arial,Helvetica,sans-serif" font-size="52" font-weight="900" letter-spacing="-2">BYB</text>
-          <path d="M116 14h12v40h-12z" fill="#F7A600"/>
-          <text x="133" y="51" fill="#FFFFFF" font-family="Arial,Helvetica,sans-serif" font-size="52" font-weight="900" letter-spacing="-2">IT</text>
-        </svg>
-        <small>PERU</small>
-      </div>
-      <div class="eyebrow">Community Growth Proposal 2026</div>
-      <h1>Bybit Peru Community Growth Strategy</h1>
-      <p class="lead">A 90-day pilot designed to turn awareness into education, registration, KYC, funding, product adoption, and long-term community retention.</p>
-      <div class="path">
-        <div class="step">Education</div><div class="arrow">→</div>
-        <div class="step">Registration</div><div class="arrow">→</div>
-        <div class="step">KYC</div><div class="arrow">→</div>
-        <div class="step">Funding</div><div class="arrow">→</div>
-        <div class="step">Active User</div><div class="arrow">→</div>
-        <div class="step">Community</div>
-      </div>
-      <p class="footer">Prepared by Fernando G. — Founder, Feraf Trades</p>
-    </section>
+  <div class="progress" id="progress"></div>
 
-    <section>
-      <div class="eyebrow">Executive Summary</div>
-      <h2>Not another one-off event. A measurable path to adoption.</h2>
-      <p class="lead">Most crypto activations stop at awareness or account registration. This proposal is designed to guide participants from first contact with Digital Finance to meaningful use of the Bybit ecosystem.</p>
-      <p>The pilot combines university initiatives, coworking activations, educational workshops, practical product demonstrations, recurring touchpoints, and a final community event. The objective is to create a repeatable community growth model that can later expand beyond Lima.</p>
-      <div class="quote">Bybit can differentiate itself in Peru not only through marketing, but through applied financial education, real product usage, and a sustainable local community.</div>
-    </section>
+  <nav class="nav" aria-label="Proposal navigation">
+    <a class="brand" href="#top"><span class="brand-mark">B</span><span>BYBIT PERU 2026</span></a>
+    <div class="nav-links">
+      <a href="#strategy">Strategy</a>
+      <a href="#calendar">90-Day Plan</a>
+      <a href="#activations">Activations</a>
+      <a href="#kpis">KPIs</a>
+      <a href="#budget">Budget</a>
+    </div>
+    <a class="nav-cta" href="#next">Next Steps</a>
+  </nav>
 
-    <section>
-      <div class="eyebrow">Strategic Opportunity</div>
-      <h2>Peru offers room for both community growth and category expansion.</h2>
-      <div class="grid2">
-        <div class="card"><strong>University Market</strong><span>Students and young professionals already recognize leading exchanges. The opportunity is to convert visibility into continuity, financial education, community leadership, and real product adoption.</span></div>
-        <div class="card"><strong>Professional & Entrepreneur Market</strong><span>Coworking spaces concentrate founders, freelancers, executives, and globally minded professionals who need access to digital payments, stablecoins, global liquidity, and investment tools.</span></div>
-        <div class="card"><strong>Business Use Cases</strong><span>There is an emerging opportunity around treasury management, stablecoins, international transfers, liquidity, Earn products, and collateralized financing.</span></div>
-        <div class="card"><strong>Lifestyle Communities</strong><span>High-value interest groups such as motorsports, motorcycle clubs, premium sports, and entrepreneur communities offer access to audiences with purchasing power, performance awareness, and investment capacity.</span></div>
-      </div>
-    </section>
-
-    <section>
-      <div class="eyebrow">Growth Pillars</div>
-      <h2>Four pillars for a sustainable Bybit ecosystem in Peru</h2>
-      <div class="grid2 pillars">
-        <div class="card"><strong>University Program</strong><span>Workshops, student communities, ambassadors, practical demos, and recurring educational sessions.</span></div>
-        <div class="card"><strong>Coworking & Professional Activations</strong><span>Sessions for founders, executives, freelancers, and professionals focused on useful Digital Finance applications.</span></div>
-        <div class="card"><strong>Recurring Community Events</strong><span>Market education, product onboarding, networking, Q&A, and ongoing engagement rather than isolated acquisition campaigns.</span></div>
-        <div class="card"><strong>New-Market Activations</strong><span>Bringing Bybit into existing lifestyle communities through relevant partnerships, benefits, and experiential campaigns.</span></div>
+  <main id="top">
+    <section class="hero section">
+      <div class="hero-orb orb-a"></div>
+      <div class="hero-orb orb-b"></div>
+      <div class="wrap hero-grid">
+        <div>
+          <div class="hero-kicker reveal">
+            <span class="pill">PERU · 2026</span>
+            <span class="pill">90-DAY PILOT</span>
+            <span class="pill">COMMUNITY + ADOPTION</span>
+          </div>
+          <div class="eyebrow reveal delay-1">Growth Strategy Proposal</div>
+          <h1 class="reveal delay-2">Bybit Peru Community Growth Strategy</h1>
+          <p class="lead reveal delay-3">A measurable route from education to registration, KYC, funding, product adoption and long-term community participation.</p>
+          <div class="hero-path reveal delay-4" aria-label="User adoption path">
+            <span class="step">Education</span><span class="arrow">→</span>
+            <span class="step">Registration</span><span class="arrow">→</span>
+            <span class="step">KYC</span><span class="arrow">→</span>
+            <span class="step">Funding</span><span class="arrow">→</span>
+            <span class="step">Active User</span>
+          </div>
+          <p class="small reveal delay-4">Prepared by Fernando G. — Founder, Feraf Trades</p>
+        </div>
+        <aside class="hero-card reveal delay-3">
+          <div class="eyebrow">Pilot at a glance</div>
+          <h3>Not another one-off event.</h3>
+          <p class="muted">A structured adoption program designed to create measurable commercial, educational and community outcomes.</p>
+          <div class="metric"><b class="counter" data-target="90">0</b><span>days of guided activation</span></div>
+          <div class="metric"><b class="counter" data-target="21">0</b><span>planned touchpoints</span></div>
+          <div class="metric"><b class="counter" data-target="7">0</b><span>target institutions</span></div>
+          <div class="metric"><b class="counter" data-target="1">0</b><span>community night finale</span></div>
+        </aside>
       </div>
     </section>
 
-    <section>
-      <div class="eyebrow">Target Audiences</div>
-      <h2>Initial segments for the 90-day pilot</h2>
-      <div class="grid">
-        <div class="card"><strong>Universities</strong><span>Universidad del Pacífico, Universidad de Lima, ESAN.</span><ul><li>Future finance and business professionals</li><li>Potential student ambassadors</li><li>High digital adoption</li></ul></div>
-        <div class="card"><strong>Coworking Spaces</strong><span>WeWork, Comunal, Worx.</span><ul><li>Entrepreneurs and freelancers</li><li>Professionals with global payment needs</li><li>Potential long-term users</li></ul></div>
-        <div class="card"><strong>Business Pilot</strong><span>Digital Treasury & Corporate Use Cases.</span><ul><li>Stablecoins</li><li>International payments</li><li>Liquidity and yield</li></ul></div>
+    <section class="section compact" id="strategy">
+      <div class="wrap">
+        <div class="eyebrow reveal">Executive Summary</div>
+        <h2 class="reveal delay-1">We are not proposing more events. We are proposing an adoption path.</h2>
+        <p class="lead reveal delay-2">Most growth initiatives stop at awareness or registration. This proposal is designed to move people from first contact with Digital Finance to real, responsible use of the Bybit ecosystem.</p>
+        <div class="quote reveal delay-3">Bybit can differentiate in Peru not only through marketing, but through applied financial education, meaningful product use and a sustainable local community.</div>
       </div>
     </section>
 
-    <section>
-      <div class="eyebrow">90-Day Pilot</div>
-      <h2>A structured journey from discovery to active usage</h2>
-      <div class="timeline">
-        <div class="phase"><b>Month 1</b><strong>Discovery & Trust</strong><p>Digital Finance fundamentals, security, stablecoins, P2P, Bybit ecosystem, registration, and KYC.</p></div>
-        <div class="phase"><b>Month 2</b><strong>Activation</strong><p>Funding, Earn, payments, liquidity, Bybit Card, Spot trading, and practical use cases.</p></div>
-        <div class="phase"><b>Month 3</b><strong>Adoption & Retention</strong><p>Portfolio construction, diversification, responsible trading, risk management, and continued product usage.</p></div>
-        <div class="phase"><b>Closing Week</b><strong>Bybit Community Night</strong><p>Recognition, certification, networking, leaders, ambassadors, referrals, and next-stage community development.</p></div>
-      </div>
-      <div class="quote">21 adoption touchpoints across 3 universities, 3 coworking spaces, 1 business pilot, and 1 final community event.</div>
-    </section>
-
-    <section>
-      <div class="eyebrow">Educational Content</div>
-      <h2>Three modules designed around real adoption milestones</h2>
-      <div class="grid">
-        <div class="card"><strong>Module 1 — Digital Finance Fundamentals</strong><ul><li>Bitcoin, Blockchain, Web3, and real use cases</li><li>How markets work: supply, demand, liquidity, volatility</li><li>Exchanges as the gateway to Digital Finance</li><li>Security, 2FA, passkeys, phishing, and wallets</li></ul><span class="badge">Goal: Registration + KYC</span></div>
-        <div class="card"><strong>Module 2 — Navigating the Bybit Ecosystem</strong><ul><li>Fiat ramps and P2P</li><li>Earn, payments, Bybit Card, and QR use cases</li><li>Spot trading and product navigation</li><li>Practical demonstrations inside the app</li></ul><span class="badge">Goal: First Funding + Product Use</span></div>
-        <div class="card"><strong>Module 3 — Responsible Trading & Risk Management</strong><ul><li>Investing vs. trading</li><li>Order types and leverage</li><li>Diversification and capital allocation</li><li>Psychology, conviction, and risk control</li></ul><span class="badge">Goal: Active & Retained User</span></div>
-      </div>
-    </section>
-
-    <section>
-      <div class="eyebrow">User Journey</div>
-      <h2>From attendee to active user and community advocate</h2>
-      <div class="path">
-        <div class="step">Workshop 1</div><div class="arrow">→</div>
-        <div class="step">Account</div><div class="arrow">→</div>
-        <div class="step">KYC</div><div class="arrow">→</div>
-        <div class="step">Workshop 2</div><div class="arrow">→</div>
-        <div class="step">Funding</div><div class="arrow">→</div>
-        <div class="step">Earn / P2P / Card / Spot</div><div class="arrow">→</div>
-        <div class="step">Workshop 3</div><div class="arrow">→</div>
-        <div class="step">Active User</div><div class="arrow">→</div>
-        <div class="step">Community Night</div><div class="arrow">→</div>
-        <div class="step">Ambassador / Referral</div>
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow reveal">Market Opportunity</div>
+            <h2 class="reveal delay-1">A growing audience needs a trusted route into Digital Finance.</h2>
+          </div>
+          <p class="copy reveal delay-2">The opportunity is to connect brand visibility with continuity, product understanding and responsible adoption.</p>
+        </div>
+        <div class="grid grid-3">
+          <article class="card reveal">
+            <div class="icon">🎓</div>
+            <h3>Universities</h3>
+            <p>Future finance, business and technology professionals who can become long-term users, community leaders and brand ambassadors.</p>
+            <div class="tags"><span class="tag">Universidad del Pacífico</span><span class="tag">Universidad de Lima</span><span class="tag">ESAN</span></div>
+          </article>
+          <article class="card reveal delay-1">
+            <div class="icon">🏢</div>
+            <h3>Coworking Communities</h3>
+            <p>Entrepreneurs, freelancers and professionals who need global financial tools, liquidity, stablecoins and cross-border solutions.</p>
+            <div class="tags"><span class="tag">WeWork</span><span class="tag">Comunal</span><span class="tag">Worx</span></div>
+          </article>
+          <article class="card reveal delay-2">
+            <div class="icon">💼</div>
+            <h3>Business Pilot</h3>
+            <p>A controlled introduction to digital treasury, stablecoins, international payments, liquidity and selected Bybit products.</p>
+            <div class="tags"><span class="tag">Digital Treasury</span><span class="tag">Stablecoins</span><span class="tag">Global Liquidity</span></div>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section>
-      <div class="eyebrow">Lifestyle & New-Market Activations</div>
-      <h2>Instead of waiting for new audiences to discover crypto, Bybit can enter their world.</h2>
-      <p class="lead">Many communities outside the traditional crypto ecosystem already understand investment, performance, maintenance costs, asset value, and long-term returns.</p>
-      <div class="grid2">
-        <div class="card"><strong>Motorcycle & Motorsport Communities</strong><span>Ducati, KTM, BMW Motorrad, Triumph, Harley-Davidson, racing clubs, track days, and premium vehicle communities.</span></div>
-        <div class="card"><strong>Premium Sports & Lifestyle</strong><span>Golf, padel, cycling, triathlon, sailing, surfing, and other communities with strong engagement and purchasing power.</span></div>
-        <div class="card"><strong>Entrepreneur & Executive Networks</strong><span>Founder groups, business associations, private clubs, and professional communities interested in global finance and alternative assets.</span></div>
-        <div class="card"><strong>Regional Communities</strong><span>Mining, agribusiness, export, and commercial ecosystems in Arequipa, Trujillo, and Piura.</span></div>
-      </div>
-      <div class="quote">The strategic advantage is not simply exposure. It is contextual relevance: presenting Bybit inside environments where people already trust the community around them.</div>
-    </section>
-
-    <section>
-      <div class="eyebrow">Activation Examples</div>
-      <h2>Experiential campaigns tailored to each community</h2>
-      <div class="grid">
-        <div class="card"><strong>Bybit Experience Booth</strong><span>Physical activation at races, club meetings, fairs, and community events with app onboarding, QR codes, and guided product demos.</span></div>
-        <div class="card"><strong>Bybit Card & Payments</strong><span>Demonstrations of payments, card activation, and practical use cases connected to the participant's lifestyle.</span></div>
-        <div class="card"><strong>Partner Benefits</strong><span>Discounts or benefits for helmets, motorcycle gear, parts, maintenance, sports apparel, event tickets, or premium experiences.</span></div>
-        <div class="card"><strong>Education in Context</strong><span>Short sessions on Digital Finance, market risk, stablecoins, and investment fundamentals integrated into the community event.</span></div>
-        <div class="card"><strong>Community Challenges</strong><span>Kahoot, trading education challenges, prizes, merchandise, and referral campaigns designed for the specific audience.</span></div>
-        <div class="card"><strong>Content & Storytelling</strong><span>High-quality social content that connects Bybit with performance, technology, discipline, and aspirational communities.</span></div>
+    <section class="section compact">
+      <div class="wrap">
+        <div class="eyebrow reveal">Growth Framework</div>
+        <h2 class="reveal delay-1">Four pillars. One measurable user journey.</h2>
+        <div class="grid grid-4">
+          <article class="card reveal"><span class="kpi">01</span><h3>Education</h3><p>Clear, practical and responsible content adapted to each audience.</p></article>
+          <article class="card reveal delay-1"><span class="kpi">02</span><h3>Activation</h3><p>Registration, KYC, app onboarding and first practical interaction.</p></article>
+          <article class="card reveal delay-2"><span class="kpi">03</span><h3>Product Adoption</h3><p>Earn, P2P, Bybit Card, Spot and other relevant products according to user profile.</p></article>
+          <article class="card reveal delay-3"><span class="kpi">04</span><h3>Community</h3><p>Retention, recurring education, local leaders, ambassadors and referrals.</p></article>
+        </div>
+        <div class="timeline reveal">
+          <div class="timeline-item"><b>Stage 1</b><strong>Discover</strong><p class="small">Awareness and education</p></div>
+          <div class="timeline-item"><b>Stage 2</b><strong>Register</strong><p class="small">Account and KYC</p></div>
+          <div class="timeline-item"><b>Stage 3</b><strong>Activate</strong><p class="small">First funding and use</p></div>
+          <div class="timeline-item"><b>Stage 4</b><strong>Retain</strong><p class="small">Recurring product usage</p></div>
+          <div class="timeline-item"><b>Stage 5</b><strong>Advocate</strong><p class="small">Community and referrals</p></div>
+        </div>
       </div>
     </section>
 
-    <section>
-      <div class="eyebrow">Proposed KPIs</div>
-      <h2>Measuring real adoption, not only registrations</h2>
-      <div class="grid">
-        <div class="card"><span class="kpi">200–300</span><strong>New Users</strong><span>Accounts registered through the pilot.</span></div>
-        <div class="card"><span class="kpi">150+</span><strong>KYC Completions</strong><span>Users ready to operate within the ecosystem.</span></div>
-        <div class="card"><span class="kpi">75+</span><strong>Active Users</strong><span>Use of Earn, P2P, Bybit Card, Spot, or other products.</span></div>
-        <div class="card"><span class="kpi">500+</span><strong>Total Participants</strong><span>Cumulative educational reach.</span></div>
-        <div class="card"><span class="kpi">500+</span><strong>Local Community</strong><span>Telegram, community channels, and recurring engagement.</span></div>
-        <div class="card"><span class="kpi">3+</span><strong>Community Leaders</strong><span>Student ambassadors, local advocates, and referral partners.</span></div>
+    <section class="section" id="calendar">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow reveal">Operational Plan</div>
+            <h2 class="reveal delay-1">90-Day Educational & Adoption Calendar</h2>
+          </div>
+          <p class="copy reveal delay-2">21 planned touchpoints across three universities, three coworking communities, one business pilot and a final Bybit Community Night.</p>
+        </div>
+
+        <div class="calendar-shell reveal">
+          <div class="calendar-scroll">
+            <table class="calendar" aria-label="Bybit Peru 90-day operating calendar">
+              <colgroup>
+                <col style="width:8%"><col style="width:10%">
+                <col span="4" style="width:4.7%"><col span="4" style="width:4.7%"><col span="4" style="width:4.7%"><col style="width:25.6%">
+              </colgroup>
+              <tr>
+                <th></th><th></th>
+                <th colspan="4" class="month">Month 1</th>
+                <th colspan="4" class="month">Month 2</th>
+                <th colspan="4" class="month">Month 3</th>
+                <th class="month">Finale</th>
+              </tr>
+              <tr>
+                <th></th><th></th>
+                <th class="week">W1</th><th class="week">W2</th><th class="week">W3</th><th class="week">W4</th>
+                <th class="week">W1</th><th class="week">W2</th><th class="week">W3</th><th class="week">W4</th>
+                <th class="week">W1</th><th class="week">W2</th><th class="week">W3</th><th class="week">W4</th>
+                <th class="week">W5</th>
+              </tr>
+              <tr><td rowspan="3" class="segment">University</td><td class="place">U. Pacífico</td><td><span class="xmark">×</span></td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td></td><td><span class="xmark">×</span></td></tr>
+              <tr><td class="place">U. Lima</td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td><span class="xmark">×</span></td></tr>
+              <tr><td class="place">U. ESAN</td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td><span class="xmark">×</span></td></tr>
+              <tr><td rowspan="3" class="segment">Cowork</td><td class="place">WeWork</td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td><span class="xmark">×</span></td></tr>
+              <tr><td class="place">Comunal</td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td><span class="xmark">×</span></td></tr>
+              <tr><td class="place">Worx</td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td><span class="xmark">×</span></td></tr>
+              <tr><td class="segment">Business</td><td class="place">Pilot Company</td><td></td><td></td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td><span class="xmark">×</span></td></tr>
+              <tr>
+                <td class="segment">Learning</td><td class="place">Program Phase</td>
+                <td colspan="4" class="phase">Digital Finance Fundamentals</td>
+                <td colspan="4" class="phase">Digital Financial Management</td>
+                <td colspan="4" class="phase">Portfolio Building & Risk Management</td>
+                <td class="phase">Bybit Community Night</td>
+              </tr>
+              <tr><th colspan="15" class="subhead">Core Content</th></tr>
+              <tr>
+                <td colspan="2"></td>
+                <td colspan="4" class="content">Stablecoins · P2P · Bybit Card · Security · Bybit ecosystem</td>
+                <td colspan="4" class="content">Earn · Yield · Liquidity · Loans · Real-world payment use cases</td>
+                <td colspan="4" class="content">Portfolio design · Diversification · Responsible trading · Capital management</td>
+                <td class="content">Certificates · Recognition · Community leaders · Referrals</td>
+              </tr>
+              <tr><th colspan="15" class="subhead">Primary Objective</th></tr>
+              <tr>
+                <td colspan="2"></td>
+                <td colspan="4" class="objective">Registration + KYC<br><span class="small">Possible first funding</span></td>
+                <td colspan="4" class="objective">First deposit + initial product use</td>
+                <td colspan="4" class="objective">Active user + responsible product adoption</td>
+                <td class="objective">Community + ambassadors + referrals</td>
+              </tr>
+            </table>
+          </div>
+          <div class="calendar-note">The calendar is a proposed operating model and can be adjusted to Bybit's regional priorities, campaign availability, local compliance requirements and venue schedules.</div>
+        </div>
+
+        <div class="mobile-calendar">
+          <article class="phase-card reveal">
+            <div class="phase-label">Month 1 · Discovery</div>
+            <h3>Digital Finance Fundamentals</h3>
+            <p class="muted">Registration, KYC and possible first funding.</p>
+            <div class="tags"><span class="tag">Stablecoins</span><span class="tag">P2P</span><span class="tag">Security</span><span class="tag">Bybit Ecosystem</span></div>
+            <div class="schedule">
+              <div class="slot"><b>W1</b><span>U. Pacífico</span></div>
+              <div class="slot"><b>W2</b><span>U. Lima + WeWork</span></div>
+              <div class="slot"><b>W3</b><span>U. ESAN + Comunal</span></div>
+              <div class="slot"><b>W4</b><span>Worx</span></div>
+            </div>
+          </article>
+          <article class="phase-card reveal">
+            <div class="phase-label">Month 2 · Activation</div>
+            <h3>Digital Financial Management</h3>
+            <p class="muted">First deposit and initial use of relevant Bybit products.</p>
+            <div class="tags"><span class="tag">Earn</span><span class="tag">Yield</span><span class="tag">Liquidity</span><span class="tag">Card / Payments</span></div>
+            <div class="schedule">
+              <div class="slot"><b>W1</b><span>U. Pacífico</span></div>
+              <div class="slot"><b>W2</b><span>U. Lima + WeWork + Business Pilot</span></div>
+              <div class="slot"><b>W3</b><span>U. ESAN + Comunal</span></div>
+              <div class="slot"><b>W4</b><span>Worx</span></div>
+            </div>
+          </article>
+          <article class="phase-card reveal">
+            <div class="phase-label">Month 3 · Adoption</div>
+            <h3>Portfolio Building & Risk Management</h3>
+            <p class="muted">Responsible product adoption, portfolio design and active-user development.</p>
+            <div class="tags"><span class="tag">Portfolios</span><span class="tag">Diversification</span><span class="tag">Risk</span><span class="tag">Capital Management</span></div>
+            <div class="schedule">
+              <div class="slot"><b>W1</b><span>U. Pacífico</span></div>
+              <div class="slot"><b>W2</b><span>U. Lima + WeWork + Business Pilot</span></div>
+              <div class="slot"><b>W3</b><span>U. ESAN + Comunal</span></div>
+              <div class="slot"><b>W4</b><span>Worx</span></div>
+            </div>
+          </article>
+          <article class="phase-card reveal">
+            <div class="phase-label">Finale · Week 5</div>
+            <h3>Bybit Community Night</h3>
+            <p class="muted">Certificates, recognition, community leaders, ambassadors and referrals.</p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section>
-      <div class="eyebrow">Benefits for Bybit</div>
-      <h2>A pilot with commercial, institutional, and community value</h2>
-      <div class="grid2">
-        <div class="card"><strong>User Growth</strong><span>New accounts, KYC, first funding, product usage, and retention.</span></div>
-        <div class="card"><strong>Institutional Presence</strong><span>Relationships with universities, coworking spaces, companies, and community organizations.</span></div>
-        <div class="card"><strong>Organic Content</strong><span>Educational content and program documentation for Bybit Square, social media, local channels, and partner communications.</span></div>
-        <div class="card"><strong>Scalability</strong><span>A repeatable framework for other cities in Peru and potentially other LATAM markets.</span></div>
-        <div class="card"><strong>Brand Differentiation</strong><span>Positioning Bybit as a Digital Finance ecosystem, not only a trading platform.</span></div>
-        <div class="card"><strong>New Audience Access</strong><span>Entry into high-value communities that are not currently reached by traditional crypto marketing.</span></div>
+    <section class="section compact">
+      <div class="wrap">
+        <div class="eyebrow reveal">User Journey</div>
+        <h2 class="reveal delay-1">From attendee to active community member.</h2>
+        <div class="journey reveal delay-2">
+          <span class="step primary">Workshop 1</span><span class="arrow">→</span>
+          <span class="step">Account</span><span class="arrow">→</span>
+          <span class="step">KYC</span><span class="arrow">→</span>
+          <span class="step primary">Workshop 2</span><span class="arrow">→</span>
+          <span class="step">Funding</span><span class="arrow">→</span>
+          <span class="step">Earn / P2P / Card / Spot</span><span class="arrow">→</span>
+          <span class="step primary">Workshop 3</span><span class="arrow">→</span>
+          <span class="step">Active User</span><span class="arrow">→</span>
+          <span class="step primary">Community Night</span><span class="arrow">→</span>
+          <span class="step">Leader / Referral</span>
+        </div>
       </div>
     </section>
 
-    <section>
-      <div class="eyebrow">Expansion Roadmap</div>
-      <h2>Validate in Lima, then expand nationally</h2>
-      <div class="grid">
-        <div class="card"><strong>Arequipa</strong><span>Mining, entrepreneurs, universities, and strong professional purchasing power.</span></div>
-        <div class="card"><strong>Trujillo</strong><span>Commerce, entrepreneurship, universities, and regional business networks.</span></div>
-        <div class="card"><strong>Piura</strong><span>Exports, agribusiness, international payments, and regional growth opportunities.</span></div>
+    <section class="section" id="activations">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow reveal">New Market Activations</div>
+            <h2 class="reveal delay-1">Bring Bybit into communities with capital, affinity and trust.</h2>
+          </div>
+          <p class="copy reveal delay-2">Rather than waiting for high-value communities to discover crypto, Bybit can enter their world through relevant experiences and partner benefits.</p>
+        </div>
+        <div class="grid grid-3">
+          <article class="card activation-card reveal">
+            <span class="number">COMMUNITY 01</span>
+            <h3>Motorcycle & Motorsport</h3>
+            <p>Ducati, KTM, BMW Motorrad, Triumph, Harley-Davidson, racing clubs and track-day communities.</p>
+          </article>
+          <article class="card activation-card reveal delay-1">
+            <span class="number">COMMUNITY 02</span>
+            <h3>Premium Lifestyle</h3>
+            <p>Golf, sailing, cycling, padel, endurance sports and member-based professional clubs.</p>
+          </article>
+          <article class="card activation-card reveal delay-2">
+            <span class="number">COMMUNITY 03</span>
+            <h3>Entrepreneurs & Executives</h3>
+            <p>Founder networks, business associations, coworking communities and professional leadership groups.</p>
+          </article>
+        </div>
+
+        <div class="concept reveal">
+          <div>
+            <div class="eyebrow">Example Activation</div>
+            <h2>Bybit x Motorsport Community Experience</h2>
+            <p class="copy">A branded activation integrated into the culture of the community—not a generic crypto booth.</p>
+            <div class="quote">The objective is to position Bybit as a modern financial and lifestyle platform, not only as a trading exchange.</div>
+          </div>
+          <div class="concept-list">
+            <div>Bybit experience tent at races and community rides</div>
+            <div>QR registration, KYC support and app onboarding</div>
+            <div>Live Bybit Card and payment-use demonstrations</div>
+            <div>Partner benefits on gear, accessories or maintenance</div>
+            <div>Educational micro-sessions on Digital Finance</div>
+            <div>Giveaways, branded content and community challenges</div>
+          </div>
+        </div>
       </div>
-      <div class="quote">If the Lima pilot proves effective, the same operating model can be adapted to other cities and audience segments.</div>
     </section>
 
-    <section>
-      <div class="eyebrow">Why Fernando G. / Feraf Trades</div>
-      <h2>Education, trading experience, community building, and execution</h2>
-      <div class="grid2">
-        <div class="card"><strong>Market Experience</strong><span>Multi-exchange lead copy trader with several years of strategy development, market analysis, and risk management experience.</span></div>
-        <div class="card"><strong>Educational Focus</strong><span>Workshops and content centered on responsible adoption, risk management, exchange navigation, and Digital Finance.</span></div>
-        <div class="card"><strong>Community Positioning</strong><span>A growing professional audience, especially on LinkedIn, with an education-first approach rather than hype-driven crypto marketing.</span></div>
-        <div class="card"><strong>Execution Capability</strong><span>Experience designing educational labs, event concepts, onboarding journeys, partner activations, and digital resources.</span></div>
+    <section class="section" id="kpis">
+      <div class="wrap">
+        <div class="eyebrow reveal">Success Metrics</div>
+        <h2 class="reveal delay-1">Measure adoption—not only attendance.</h2>
+        <div class="grid grid-3">
+          <article class="card kpi-card reveal"><span class="kpi counter" data-target="250" data-suffix="+">0</span><div class="kpi-label">New Users</div><div class="kpi-note">Target range: 200–300 registrations.</div></article>
+          <article class="card kpi-card reveal delay-1"><span class="kpi counter" data-target="150" data-suffix="+">0</span><div class="kpi-label">KYC Completed</div><div class="kpi-note">Users ready for compliant platform use.</div></article>
+          <article class="card kpi-card reveal delay-2"><span class="kpi counter" data-target="75" data-suffix="+">0</span><div class="kpi-label">Active Users</div><div class="kpi-note">Use of relevant Bybit products.</div></article>
+          <article class="card kpi-card reveal"><span class="kpi counter" data-target="500" data-suffix="+">0</span><div class="kpi-label">Accumulated Attendance</div><div class="kpi-note">Educational reach across all sessions.</div></article>
+          <article class="card kpi-card reveal delay-1"><span class="kpi counter" data-target="500" data-suffix="+">0</span><div class="kpi-label">Local Community</div><div class="kpi-note">Telegram and recurring participant base.</div></article>
+          <article class="card kpi-card reveal delay-2"><span class="kpi counter" data-target="3" data-suffix="+">0</span><div class="kpi-label">Community Leaders</div><div class="kpi-note">Potential university or local ambassadors.</div></article>
+        </div>
+        <p class="small reveal" style="margin-top:18px">All figures are proposed pilot targets and should be validated with Bybit based on budget, campaign mechanics, compliance, market conditions and available product support.</p>
       </div>
     </section>
 
-    <section>
-      <div class="eyebrow">Next Steps</div>
-      <h2>Suggested path to move forward</h2>
-      <div class="table-wrap">
-        <table>
-          <thead><tr><th>Step</th><th>Objective</th><th>Output</th></tr></thead>
-          <tbody>
-            <tr><td><strong>1. Alignment Call</strong></td><td>Confirm Bybit's current priorities in Peru and LATAM.</td><td>Shared scope and decision criteria.</td></tr>
-            <tr><td><strong>2. Pilot Design</strong></td><td>Select institutions, dates, target users, products, and campaign mechanics.</td><td>90-day operating plan.</td></tr>
-            <tr><td><strong>3. Budget & Resources</strong></td><td>Define venue, materials, incentives, content, team support, and compliance needs.</td><td>Approved pilot budget and responsibilities.</td></tr>
-            <tr><td><strong>4. Launch</strong></td><td>Begin with one university or coworking activation and optimize from real feedback.</td><td>First live activation.</td></tr>
-            <tr><td><strong>5. Review & Scale</strong></td><td>Measure registrations, KYC, funding, product usage, and retention.</td><td>Decision on expansion to more institutions, cities, and communities.</td></tr>
-          </tbody>
-        </table>
+    <section class="section compact">
+      <div class="wrap">
+        <div class="eyebrow reveal">Benefits for Bybit</div>
+        <h2 class="reveal delay-1">Commercial, institutional and community value.</h2>
+        <div class="grid grid-2">
+          <article class="card reveal"><div class="icon">📈</div><h3>User Growth</h3><p>Registrations, KYC, first funding, product activation and retention.</p></article>
+          <article class="card reveal delay-1"><div class="icon">🏛️</div><h3>Institutional Presence</h3><p>Relationships with universities, coworking operators, companies and community organizations.</p></article>
+          <article class="card reveal"><div class="icon">🎥</div><h3>Organic Content</h3><p>Educational content and documented activations for social channels, Bybit community platforms and local media.</p></article>
+          <article class="card reveal delay-1"><div class="icon">🌎</div><h3>Scalable Model</h3><p>A repeatable framework for other Peruvian cities and potentially other LATAM markets.</p></article>
+        </div>
       </div>
     </section>
 
-    <section>
-      <div class="eyebrow">Closing</div>
-      <h2>From isolated events to a sustainable country-level community program</h2>
-      <p class="lead">If the objective is to organize a monthly event, that can be done. If the objective is to accelerate Bybit adoption in Peru, this pilot creates a broader, measurable, and scalable framework.</p>
-      <div class="quote">My goal is to help Bybit build an active, educated, and sustainable community in Peru.</div>
-      <div class="cta">
-        <a class="button primary" href="https://feraftrades.com/lab" target="_blank" rel="noopener">View Feraf's Exchange Lab</a>
-        <a class="button secondary" href="https://feraftrades.com" target="_blank" rel="noopener">Visit Feraf Trades</a>
+    <section class="section" id="budget">
+      <div class="wrap">
+        <div class="eyebrow reveal">Initial Event Budget Reference</div>
+        <h2 class="reveal delay-1">Lean execution with an institutional venue.</h2>
+        <div class="budget">
+          <div class="card reveal">
+            <table class="budget-table" aria-label="Initial event budget">
+              <thead><tr><th>Concept</th><th>Estimated Amount</th></tr></thead>
+              <tbody>
+                <tr><td>Innovation Hub / venue</td><td>0 USDT</td></tr>
+                <tr><td>Coffee break</td><td>10 USDT per attendee</td></tr>
+                <tr><td>Professional photographer</td><td>105 USDT</td></tr>
+                <tr><td>Operational support — 2 assistants</td><td>50 USDT</td></tr>
+                <tr><td>Bybit merchandising</td><td>Subject to availability</td></tr>
+                <tr><td>Bybit activation materials</td><td>Subject to availability</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <aside class="card reveal delay-1">
+            <div class="eyebrow">Estimated Total</div>
+            <div class="budget-total">700–800 USDT</div>
+            <p class="muted">Reference budget for a 50+ attendee activation. Final scope depends on venue, attendance, approved materials and available Bybit campaigns.</p>
+            <h3>Suggested Materials</h3>
+            <ul class="clean">
+              <li>Roll-up banners and illuminated logo</li>
+              <li>Photo area and handheld signs</li>
+              <li>QR registration and app-download stands</li>
+              <li>Official presentation template</li>
+              <li>Social media and campaign assets</li>
+            </ul>
+          </aside>
+        </div>
       </div>
-      <p class="contact">Fernando G. — Founder, Feraf Trades</p>
-      <p class="footer">Prepared for Bybit regional review — 2026</p>
+    </section>
+
+    <section class="section compact">
+      <div class="wrap">
+        <div class="eyebrow reveal">National Expansion</div>
+        <h2 class="reveal delay-1">Validate Lima. Then scale the model.</h2>
+        <div class="grid grid-3">
+          <article class="card reveal"><span class="kpi">01</span><h3>Arequipa</h3><p>Mining, business communities, universities and strong professional potential.</p></article>
+          <article class="card reveal delay-1"><span class="kpi">02</span><h3>Trujillo</h3><p>Commerce, entrepreneurship, universities and regional business networks.</p></article>
+          <article class="card reveal delay-2"><span class="kpi">03</span><h3>Piura</h3><p>Exports, agribusiness, international payments and cross-border financial needs.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap profile">
+        <div class="profile-mark reveal" aria-label="Fernando G. / Feraf Trades"></div>
+        <article class="card profile-copy reveal delay-1">
+          <div class="eyebrow">Proposal Lead</div>
+          <h2>Why Fernando G.</h2>
+          <p class="lead">A trader, educator and community builder focused on responsible Digital Finance adoption.</p>
+          <ul class="clean">
+            <li>Founder of Feraf Trades</li>
+            <li>Multiexchange Lead Copy Trader</li>
+            <li>Public speaker and Digital Finance workshop facilitator</li>
+            <li>Content focused on risk management, education and responsible adoption</li>
+            <li>Experience building relationships across exchanges, events and professional communities</li>
+          </ul>
+          <div class="quote" style="font-size:22px">The goal is not to create hype. The goal is to build an active, educated and sustainable Bybit community in Peru.</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="closing section" id="next">
+      <div class="wrap">
+        <div class="eyebrow reveal">Next Steps</div>
+        <h2 class="reveal delay-1">From monthly events to a measurable country program.</h2>
+        <p class="lead reveal delay-2">Review the pilot, align it with Bybit's regional priorities, approve the first activation and measure the results before scaling.</p>
+        <div class="timeline reveal delay-2" style="max-width:980px;margin-inline:auto;margin-top:34px;text-align:left">
+          <div class="timeline-item"><b>Step 1</b><strong>Review</strong><p class="small">Scope and priorities</p></div>
+          <div class="timeline-item"><b>Step 2</b><strong>Adapt</strong><p class="small">Compliance and campaigns</p></div>
+          <div class="timeline-item"><b>Step 3</b><strong>Launch</strong><p class="small">First pilot activation</p></div>
+          <div class="timeline-item"><b>Step 4</b><strong>Measure</strong><p class="small">Acquisition and adoption</p></div>
+          <div class="timeline-item"><b>Step 5</b><strong>Scale</strong><p class="small">Lima and other cities</p></div>
+        </div>
+        <div class="closing-actions reveal delay-3">
+          <a class="btn btn-primary pulse" href="https://feraftrades.com/lab" target="_blank" rel="noopener noreferrer">View Feraf's Exchange Lab</a>
+          <button class="btn btn-secondary" type="button" onclick="window.print()">Save / Print Proposal</button>
+        </div>
+      </div>
     </section>
   </main>
+
+  <footer>
+    <div class="wrap footer-row">
+      <span>Fernando G. — Founder, Feraf Trades</span>
+      <span>Bybit Peru Growth Strategy 2026 · Confidential discussion draft</span>
+    </div>
+  </footer>
+
+  <script>
+    (() => {
+      const progress = document.getElementById('progress');
+      const updateProgress = () => {
+        const max = document.documentElement.scrollHeight - window.innerHeight;
+        progress.style.width = (max > 0 ? (window.scrollY / max) * 100 : 0) + '%';
+      };
+      addEventListener('scroll', updateProgress, {passive:true});
+      updateProgress();
+
+      const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if(entry.isIntersecting){
+            entry.target.classList.add('visible');
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      }, {threshold:.12, rootMargin:'0px 0px -6% 0px'});
+      document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+      const animateCounter = (el) => {
+        const target = Number(el.dataset.target || 0);
+        const suffix = el.dataset.suffix || '';
+        const duration = 1100;
+        const start = performance.now();
+        const tick = (now) => {
+          const t = Math.min((now - start) / duration, 1);
+          const eased = 1 - Math.pow(1 - t, 3);
+          el.textContent = Math.round(target * eased).toLocaleString('en-US') + suffix;
+          if(t < 1) requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+      };
+      const counterObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if(entry.isIntersecting){
+            animateCounter(entry.target);
+            counterObserver.unobserve(entry.target);
+          }
+        });
+      }, {threshold:.6});
+      document.querySelectorAll('.counter').forEach(el => counterObserver.observe(el));
+    })();
+  </script>
 </body>
 </html>
