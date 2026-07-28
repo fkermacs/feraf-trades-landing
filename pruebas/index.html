@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="description" content="Bybit Peru Growth Strategy 2026 — a 90-day adoption, education and community growth proposal by Fernando G., Founder of Feraf Trades.">
   <meta name="theme-color" content="#0b0e11">
-  <title>Bybit Peru Growth Strategy 2026</title>
+  <title>Bybit Peru Community Growth Strategy 2026</title>
   <style>
     :root{
       --bg:#07090c;
@@ -300,13 +300,329 @@
       .reveal{opacity:1;transform:none}
       a{text-decoration:none}
     }
+  
+    /* Official Bybit logo integration */
+    .brand-logo-link{min-width:0}
+    .bybit-logo-nav{
+      width:112px;
+      height:auto;
+      object-fit:contain;
+      display:block;
+      border-radius:6px;
+      flex:0 0 auto;
+    }
+    .brand-context{
+      color:#f7a600;
+      font-size:11px;
+      font-weight:950;
+      letter-spacing:.12em;
+      white-space:nowrap;
+    }
+    .bybit-logo-hero{
+      width:clamp(180px,22vw,280px);
+      height:auto;
+      margin:0 0 28px;
+      border-radius:14px;
+      box-shadow:0 22px 70px rgba(0,0,0,.35);
+    }
+    .footer-brand{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+    .bybit-logo-footer{width:82px;height:auto;border-radius:7px}
+
+    /* Production responsive refinements */
+    :root{
+      --safe-top:env(safe-area-inset-top,0px);
+      --safe-right:env(safe-area-inset-right,0px);
+      --safe-bottom:env(safe-area-inset-bottom,0px);
+      --safe-left:env(safe-area-inset-left,0px);
+    }
+    body{
+      padding-left:var(--safe-left);
+      padding-right:var(--safe-right);
+      text-rendering:optimizeLegibility;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+    .nav{
+      top:calc(10px + var(--safe-top));
+      max-width:calc(100vw - 28px - var(--safe-left) - var(--safe-right));
+    }
+    .hero{min-height:100dvh}
+    .card,.hero-card,.concept,.calendar-shell{contain:layout paint style}
+    .calendar-scroll{scrollbar-width:thin;scrollbar-color:rgba(247,166,0,.45) rgba(255,255,255,.04)}
+    .calendar-scroll::-webkit-scrollbar{height:8px}
+    .calendar-scroll::-webkit-scrollbar-track{background:rgba(255,255,255,.04)}
+    .calendar-scroll::-webkit-scrollbar-thumb{background:rgba(247,166,0,.45);border-radius:999px}
+    .btn,.nav a,.journey .step{-webkit-tap-highlight-color:transparent}
+    .btn:focus-visible,.nav a:focus-visible,a:focus-visible,button:focus-visible{
+      outline:3px solid rgba(247,166,0,.7);
+      outline-offset:3px;
+    }
+
+    @supports not (height:100dvh){
+      .hero{min-height:100vh}
+    }
+
+    /* Large desktop / 4K */
+    @media(min-width:1600px){
+      :root{--max:1380px}
+      .section{padding-block:128px}
+      .hero-grid{gap:84px}
+      .card{padding:30px}
+      .copy{font-size:19px}
+    }
+
+    /* iPad landscape / compact laptops */
+    @media(min-width:981px) and (max-width:1180px){
+      .wrap{width:min(var(--max),calc(100% - 34px))}
+      .hero-grid{grid-template-columns:minmax(0,1.15fr) minmax(300px,.85fr);gap:34px}
+      .nav-links a{padding-inline:7px;font-size:12px}
+      .bybit-logo-nav{width:96px}
+      .grid-4{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .timeline{grid-template-columns:repeat(5,minmax(0,1fr))}
+      .timeline-item{padding:16px 13px}
+      .timeline-item strong{font-size:14px}
+    }
+
+    /* iPad portrait / Android tablets */
+    @media(min-width:721px) and (max-width:980px){
+      .wrap{width:min(var(--max),calc(100% - 34px))}
+      .hero{padding-top:138px}
+      .hero-grid{gap:34px}
+      .bybit-logo-hero{width:220px}
+      .hero-card{width:100%}
+      .concept{grid-template-columns:1fr}
+      .calendar-shell{display:none}
+      .mobile-calendar{display:block}
+      .grid-3{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .grid-4{grid-template-columns:repeat(2,minmax(0,1fr))}
+    }
+
+    /* Phones */
+    @media(max-width:720px){
+      body{padding-bottom:var(--safe-bottom)}
+      .nav{
+        width:calc(100% - 18px);
+        max-width:none;
+        border-radius:16px;
+        padding:9px 11px;
+      }
+      .brand-context{display:none}
+      .bybit-logo-nav{width:96px}
+      .hero{
+        padding-top:calc(108px + var(--safe-top));
+        padding-bottom:72px;
+        min-height:auto;
+      }
+      .bybit-logo-hero{
+        width:min(210px,62vw);
+        margin-bottom:22px;
+        border-radius:11px;
+      }
+      .hero-grid{gap:28px}
+      .hero-kicker{gap:7px}
+      .pill{font-size:10px;padding:6px 9px}
+      h1{font-size:clamp(40px,12vw,58px);line-height:1.01}
+      h2{font-size:clamp(32px,9.2vw,44px)}
+      .lead{font-size:18px}
+      .copy{font-size:16px}
+      .hero-card{padding:22px;border-radius:22px}
+      .hero-card .metric{gap:16px}
+      .hero-card b{font-size:28px}
+      .hero-card span{max-width:165px}
+      .section{padding-block:72px}
+      .section.compact{padding-block:58px}
+      .card{padding:21px;border-radius:19px}
+      .quote{padding:21px 20px;font-size:21px;border-left-width:3px}
+      .slot{align-items:flex-start}
+      .slot span{max-width:72%}
+      .journey{padding-bottom:15px}
+      .profile-mark{min-height:250px}
+      .profile-mark::before{font-size:108px}
+      .profile-mark::after{bottom:19px}
+      .closing{padding-top:82px;padding-bottom:72px}
+      footer{padding-bottom:calc(32px + var(--safe-bottom))}
+      .footer-row{align-items:flex-start}
+      .footer-brand{display:grid;gap:10px}
+      .bybit-logo-footer{width:94px}
+    }
+
+    /* Small Android / iPhone SE */
+    @media(max-width:390px){
+      .nav{width:calc(100% - 14px)}
+      .bybit-logo-nav{width:86px}
+      .hero{padding-top:104px}
+      .hero-card .metric{align-items:center}
+      .hero-card span{font-size:12px}
+      .pill{font-size:9px}
+      .step{font-size:10px}
+      .btn{width:100%}
+      .closing-actions{display:grid}
+    }
+
+    /* Landscape phones */
+    @media(max-height:560px) and (orientation:landscape){
+      .hero{min-height:auto;padding-top:104px;padding-bottom:58px}
+      .hero-grid{grid-template-columns:1fr 1fr}
+      .bybit-logo-hero{width:160px;margin-bottom:14px}
+      h1{font-size:44px}
+      .lead{font-size:17px}
+      .hero-path{margin-block:18px}
+    }
+
+    @media print{
+      .bybit-logo-nav{width:90px}
+      .bybit-logo-hero{width:190px;box-shadow:none}
+      .bybit-logo-footer{width:72px}
+    }
+
+  
+    /* Final executive art direction — logo used only where it adds value */
+    :root{
+      --orange:#F7A600;
+      --orange-2:#FFB72B;
+      --bg:#050505;
+      --bg-2:#0A0A0A;
+      --panel:#111111;
+      --panel-2:#171717;
+      --panel-3:#1D1D1D;
+      --text:#FFFFFF;
+      --muted:#A3A3A3;
+      --line:rgba(255,255,255,.10);
+    }
+
+    body{
+      background:
+        radial-gradient(circle at 84% 2%,rgba(247,166,0,.12),transparent 28rem),
+        linear-gradient(180deg,#050505 0%,#0A0A0A 50%,#050505 100%);
+    }
+
+    .brand-wordmark{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      min-width:0;
+    }
+    .brand-bybit{
+      font-size:18px;
+      font-weight:1000;
+      letter-spacing:.06em;
+      color:#fff;
+      line-height:1;
+    }
+    .brand-i{color:var(--orange)}
+    .brand-divider{
+      width:1px;
+      height:18px;
+      background:rgba(255,255,255,.20);
+    }
+    .brand-context{
+      display:inline-block;
+      color:#b9b9b9;
+      font-size:10px;
+      font-weight:900;
+      letter-spacing:.16em;
+      white-space:nowrap;
+    }
+
+    .bybit-logo-hero{display:none!important}
+
+    .footer-brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+    .footer-prepared{
+      color:#777;
+      font-size:11px;
+      text-transform:uppercase;
+      letter-spacing:.10em;
+      font-weight:800;
+    }
+    .bybit-logo-footer{
+      width:72px;
+      height:72px;
+      object-fit:contain;
+      border-radius:10px;
+      flex:0 0 auto;
+      box-shadow:none;
+    }
+
+    .hero{
+      background:
+        linear-gradient(180deg,rgba(255,255,255,.01),transparent 34%),
+        radial-gradient(circle at 78% 35%,rgba(247,166,0,.08),transparent 24rem);
+    }
+
+    .hero h1{
+      max-width:980px;
+    }
+
+    .hero-kicker{
+      margin-bottom:20px;
+    }
+
+    .pill{
+      color:#FFD895;
+      background:rgba(247,166,0,.06);
+      border-color:rgba(247,166,0,.20);
+    }
+
+    .card,
+    .hero-card,
+    .concept,
+    .calendar-shell{
+      background:linear-gradient(180deg,rgba(20,20,20,.96),rgba(10,10,10,.98));
+    }
+
+    .card::after{
+      opacity:.55;
+    }
+
+    .nav{
+      background:rgba(6,6,6,.82);
+      border-color:rgba(255,255,255,.08);
+    }
+
+    .quote{
+      background:linear-gradient(90deg,rgba(247,166,0,.10),rgba(247,166,0,.015));
+    }
+
+    @media(max-width:720px){
+      .brand-context{display:none}
+      .brand-divider{display:none}
+      .brand-bybit{font-size:17px}
+      .footer-brand{
+        display:grid;
+        grid-template-columns:auto 1fr;
+        align-items:center;
+      }
+      .footer-prepared{
+        grid-column:1 / -1;
+      }
+      .bybit-logo-footer{
+        width:64px;
+        height:64px;
+      }
+    }
+
+    @media print{
+      .brand-bybit{color:#111}
+      .brand-i{color:#F7A600}
+      .footer-prepared{color:#444}
+    }
+
   </style>
 </head>
 <body>
   <div class="progress" id="progress"></div>
 
   <nav class="nav" aria-label="Proposal navigation">
-    <a class="brand" href="#top"><span class="brand-mark">B</span><span>BYBIT PERU 2026</span></a>
+    <a class="brand brand-wordmark" href="#top" aria-label="Bybit Peru 2026">
+      <span class="brand-bybit">BYB<span class="brand-i">I</span>T</span>
+      <span class="brand-divider"></span>
+      <span class="brand-context">PERU 2026</span>
+    </a>
     <div class="nav-links">
       <a href="#strategy">Strategy</a>
       <a href="#calendar">90-Day Plan</a>
@@ -324,13 +640,13 @@
       <div class="wrap hero-grid">
         <div>
           <div class="hero-kicker reveal">
-            <span class="pill">PERU · 2026</span>
+            <span class="pill">CONFIDENTIAL DRAFT</span><span class="pill">PERU · 2026</span>
             <span class="pill">90-DAY PILOT</span>
             <span class="pill">COMMUNITY + ADOPTION</span>
           </div>
           <div class="eyebrow reveal delay-1">Growth Strategy Proposal</div>
           <h1 class="reveal delay-2">Bybit Peru Community Growth Strategy</h1>
-          <p class="lead reveal delay-3">A measurable route from education to registration, KYC, funding, product adoption and long-term community participation.</p>
+          <p class="lead reveal delay-3">Building the next generation of Digital Finance communities in Peru through education, activation and measurable product adoption.</p>
           <div class="hero-path reveal delay-4" aria-label="User adoption path">
             <span class="step">Education</span><span class="arrow">→</span>
             <span class="step">Registration</span><span class="arrow">→</span>
@@ -707,7 +1023,11 @@
 
   <footer>
     <div class="wrap footer-row">
-      <span>Fernando G. — Founder, Feraf Trades</span>
+      <span class="footer-brand">
+        <span class="footer-prepared">Prepared exclusively for</span>
+        <img class="bybit-logo-footer" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAioAAAIqCAIAAACFUvbkAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAACKqADAAQAAAABAAACKgAAAACcBm+DAAAjnUlEQVR4Ae3dfcxcRbkA8HqlvRe1UCuR+EVRrJCgYnIjiikkgg3F8gdB/qE1WpCkohQLka+CtpiC4EeF1iioUGJsDUa8MSktCKFJeyVFGyJCTD8kApJWCdAU2xTkGu9zqby89/3cd2Z2d3bPrzFx37Nn5jzzm2WfPefMmZk0yT8CBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQINBdgdd19/COToBAzwncdN6kWcclRv3f2yYtXp1YVrE+Ezikz9qjOQQItFtgxhGT/nPmpH+8POHjvH7ypB27J1xKgX4VkH76tWe1i0AbBSL3vPyPNtav6iYI/FsTGqmNBAgQIFCbgPRTW4+IhwABAo0QkH4a0c0aSYAAgdoEpJ/aekQ8BAgQaISA9NOIbtZIAgQI1CYg/dTWI+IhQIBAIwSkn0Z0s0YSIECgNgHpp7YeEQ8BAgQaISD9NKKbNZIAAQK1CUg/tfWIeAgQINAIAemnEd2skQQIEKhNQPqprUfEQ4AAgUYISD+N6GaNJECAQG0C0k9tPSIeAgQINEJA+mlEN2skAQIEahOQfmrrEfEQIECgEQLSTyO6WSMJECBQm4D0U1uPiIcAAQKNEJB+GtHNGkmAAIHaBKSf2npEPAQIEGiEgPTTiG7WSAIECNQmIP3U1iPiIUCAQCMEpJ9GdLNGEiBAoDYB6ae2HhEPAQIEGiEg/TSimzWSAAECtQlIP7X1iHgIECDQCAHppxHdrJEECBCoTeCQ2gLqWDzPPffc9OnTO3a4EQ/00ksv7d+/f9euXXv27Pnzn/+8ZcuW3/72t4899ti+fftG3L/gxn/+8585tUXkRxxxRAfiHAjyoYceOvHEEwf+THhx3HHHbd++vZWCTz311Lve9a5W9mzrPs8///zBz8YzzzyzdevWENi2bdvu3bvbetA6K9+0adPJJ59cZ2yZUUUvv+Utb8mspEeLNzf9xPd+19PPv7/ybyCMefPmxcfo4JfO+vXr77nnno0bN7bpg7Vy5cqLL744ufII/Ctf+coVV1yRXMOECkbiycw9d9xxR4u5JwI7cODAhMJr087xwRj4bHzqU5+Ko7zwwguRGh944IH4bGzYsKFNx62w2vi5U2FURUKKL6Ii9fRiJS6+Vddr8Y3z/ve///LLL49vmfjGvPHGG9sR4tVXXx3fZTk1f/7zn88pPqGyX/3qVye0/5Cd48vr2muvHbKxF/887LDD4rMRvxvi10nkoVtuueVtb3tbLzZEzARCQPqp+mPwvve9L/JQXChbs2ZN2UDjull8eeXUGV+FV155ZU4NLZZ905veNHfu3BZ3HnG3OPV54oknRnyrdzfG5cGFCxfG1bn77rvv2GOP7d2GiLyxAtJPb3R9XJeLJJSZMIY0NS6dxYW+IRsn9Odll102of3Tdo7kkVbwYKk4yevkiVpOqGllP/GJT8Q9oZ///OdpxZUi0C0B6adb8inHjV+7ccnljDPOSCk8Upm4AzTS5la3xXXCdp8AHX300WeeeWarAY20X9mcPdIRqtgWN4f27t27aNGiKqIRBIEWBKSfFpBq2iUuucR1/1I3hOKOSOYJ0HnnnddWnqVLl8Ywh+RDxKlPx8ZHJAdZqmBcDo3fE06DSnmqp90C0k+7hdtSf9wQWrduXZGqly1bllNP3J06//zzc2oYo2ycXZ199tlj7DDuWytWrBh3nz7bIU6DHn300T5rlOb0pYD006vdGnfj42GI/OhXrVq1Y8eOnHouueSSnOJjlI0Tl/hFP8YOY78Vj1L1x4C3sZs5/N0YHdf6KPPhxW0h0BkB6aczzm05SjyIV+QcKPNSXnzZZZ6jjKZzwQUXjPZWK9u/+c1vtrJbX+4TZ6XOgfqyZ/upUdJPb/dmnAPdfPPNmW24/fbbY6qFnEracX8lBjUMPHSZEFuc0sWJXULBvikSPwuK/DrpGxANqU1A+qmtRyYcTzyEmH/ycf3110/4wIMK5M9KMKiyf73MHNX9ne98Z3idTdsSv07aPTSxaaTaW1BA+imI2bWqfvjDH2Ye+6c//elvfvObnEq+9a1v5RQfUjYGEOec+sTJXEPGWw9xG/7n17/+dTMjDGexpQYB6aeGXsiNIb6p879tMye2iRtRH/3oR3Nb8mr5iy666NWXKf8fw7VTivVpmTvvvLNPW6ZZvS0g/fR2/w1Ev2DBgpicZuDPhBf33nvv5s2bEwoOFLnmmmsGXue8OPfcc+POeXINcerzi1/8Irl4/xWMXwYFH1XuPx8t6paA9NMt+cLHjWcz8++0f/GLX8wJK2Z/+cAHPpBTw8GyS5YsyakkZybvnOPWXPaqq66qOTyxNVNA+umffs8fgBBDde++++5kkUiB+Ve94nd6DNlKjiFO4Nq3SkVyVF0vGCdAmStWdLcJOTNfdDfycY/+xje+cdx9+nWH5q73k9yjMXt/TIKZvABJPEc5derUmKL48MMPL7umWdQcd+wzz4HiZ3LO9NIxP1vc6M5ZEi3zd3p+/kv+YBwseP/99//hD39Iq+TgZyM+FdOmTZsxY0bZ79yYnCJzdElao4qUigEUa9euLVJVVBKT48W90uQnmuP0+uWXXy4YTKmq1NMzAjF3Z8whnfAvPruZd1kGjOJSVYyLjQfUE8IYsUiReRBi0rARK29x4+rVqwcaONEXkZVbPMqIu8XSAxM94oj75/RIqYHOM2fOjIm6Y4XTEVuasLHgPAj/ddmk/7lz0oG1E/5flFq7eETyTm+M/4oTDA8WKfWff6fbXN/xXHxL6ZNYZzql2LAycbHrhhtuiO/cmKcrZogZ9v6EN5xwwgn5/218+ctfTj63i4hjEMSE4361wLe//e1XX6b8/6WXXppSrGiZUqcsO3fujF/oH/nIR0466aTMh4IPti9GcxiBXaSr4+pFkXpUIv1U8RmIkVpHHXVUXLfJjCauJ3z4wx/OrCRWZovHgHIqSZuIIb4cc6773XXXXX05zcyWLVviLLnIpafPfvazOd2qLIGyAtJPWc+s2mbPnp2fgebMmZMVxCuFYxmFzp8AZT64es455+Q3vNoa5s+fn7nsXjRt1qxZ1TZQYA0UkH7q6vTIQJlX4Y4//vgiTbr11luT64mTsOXLl0+oeJz6xBXICRUZvHP+V/Pg2up8Hb8JMscOxHCGOpsmqmYKSD/V9Xvm9J2lvmK+9KUvxVptyToXXnjhhMrmLCsXJ2rtXvVuQm1p386f+cxnciqP4Qw5xZUlUFZA+inrWaC2uO+SswDP29/+9gJBvFJFzhjumAeo9TFgMVwiZjpIDjvnRC35oF0pGKPXci7PlhoW0ZW2O2j/CUg/NfbpPffckxxWzkydQw4ak+jkXAn8whe+MKTC0f6MRJX8EEYsFn711VePVnP/bY/VMXIaZfBbjp6yZQWkn7KeZWpbv359mYqya7ntttuS64jHJ+PJlVaKT/RK3eA6f/SjH+3bt2/wlv5+nTkoseyTzv1NrXXtFpB+2i2cUn/M/plSrA1lYrHqnBOgVmZvi1Of5DO2OPXJvFXWBrO2VxmtbvsxHIBA+wWkn/Yb9/gRclaii9/a485E1/o1uuGQzVxO+9lnnx1OYQuBnhOQfnquyzodcDx7n3MCFOdPY0QcV+eSLwfFSUDMGTFG5f361qGHHprctAMHDiSXVZBAWQHpp6xn92trx5WZnAtcMX31GCdAOUs8NGrEweAPVs4cyX05McRgHK97SED6qbGzTj/99OSwdu3alVx2tIJxuztn2rHRslcMtk5eWyHGpsdp2WgB9/f25FtlOTNZ9Dep1nVFQPrpCvs4Bz311FPH2WP0t5988snR30x/J2chg1hpZsSEunhx+uzHN954Y3pjerlkzgNSjzzySC83Xez9JiD91NijZ511VnJYbRo1F5Oi5sz4ErNoD2nRxz/+8eQF0OJULPPxlyHB9NCfMflbcrR//OMfk8sqSKC4gPRTnDS3wrhTEnPjJ9fyq1/9Krns2AWXLVs29g5jvBvrcB999NGDd2hlTPbg/Qe/zhmMN7iennsdhjmTgv/kJz/puSYLuI8FpJ/qOvemm25KjilOCwquKjYkjA0bNuTM+PLd7353oML4Go2ENPDnhF7ESVjmo5cTOlxVO//4xz9Ojidm8IseTC6uIIHiAtJPcdKsCtetW5c8EDkOHAuVZh1+vMI567nFz/aBpfAGp6Lxjjn0/ZgLdeimZvwdQy1OPvnk5LbGRyu5rIIE2iEg/bRDNbHO+ILIubQSP28zVwsdN+4Ytnv33XePu9toOxycGzRnWbnNmzfH8muj1d/H2yP3LFy4MKeBaWsA5hxRWQJjC0g/Y/t06N0zzjjjqaeeysk9EWhckurA7GcXXXRRMsrBFX1y7twMH8KQHEyvFIylTiPrZ+aeuGqaM3KkV6zE2VsC0k9Kf5Wa9SRugSxatCi+XGKO0ZxrbtGGeNq0xfk9Uxo8qEwsxZ288HNM+L9mzZoxnkIddJwRXsaJV/3foaWerYlzxPPPP/+hhx76/e9/n/x01EHECCnnR8MIPWETgRICh5SopFl1xHfodddd9+KLL6Y1+/DDD586dep73/veadOm5YxwG3L0Tn6/xHQDcR6TtnjMvHnzhkTe4p/xHXrVVVe1uHMXdzvttNPiFtfkyZMTYojPRqgec8wxRx55ZCwbmCY8/LhxzbN9A1KGH84WAi0KSD8tQr22W3wpXHzxxa/9XcGrOC3o5GCwOAGKwy1YsKCTTY8bYz0xYUyM6Ese1NcOzxgM2djBGu3wVGdBARffCmJ2p6qYfubMM8/s8LFjcetSV5lajLzD2a7FqCrfLUajnHTSSZUHKbzGCkg/vd31ccunW98vnRxJFZePOjCqorc/CsOij98HMX0Gt2EwNtQiIP3U0hMJcUTu+djHPtaOKa5bCSYmEo0f163smblPfI12ZlRFZpxVFQ+0uM22cePGqqISDIHBAtLPYI1eeh1r8MSAqO7eUl6xYkUHyA4+LdSBA/XNIeJnQQzlj2n6+qZFGtKXAtJPT3ZrPMZx1FFH7d69u7vRZy7F3UrwcW7nznkrUAP7xFiDd7zjHc57BkC8qFZA+qm2a0YOLH7Yxri72bNnj/x2x7d+73vfa+sxv//977e1/n6qPC64feMb34jHVN3v6adu7eO2GHjdS50bF9zipKeqiGO56xgFV/ABpsGti/Zec801g7d4PZpA5J5TTjml/sdyR4vf9gYKOPvppU6PmRH27t27fPnyqoLOmT907Ia0+9Rq7KP31rvxONqmTZtWr17dW2GLtskC0k+P9f5hhx0Wkw7EBHGxXFsloa9atSqePSoeTJz6xKlV8Wr7uMLIQPF0VPxAidl6+riZmtY3AtJPT3ZlnAY98MAD9Sw43Y7pcHJWt+vJTi0UdPxAue2222JuvUL1qYZAuwSkn3bJdqDeyy+//L777uvAgcY9RIzxjQFX4+7W+g5xOtXY5bRbVxpjz3joJ+Yomj59+hj7eItAdwWkn+765x49pheLSZFzaylRPnJhiWr+VYdTn3zMeCzsd7/7XX49aiDQJgHpp02wnav2xBNPrCEDxULOsRZckWbHiVQnZ1AtEnOdlcRF2rhNWGdsoiIg/fTDZyAyULuX2W6FaenSpa3sNu4+peoZ90BN2CEyUE/MFN6EvtDGIQLSzxCQXv0zFuC58soruxt9PGkf0zFkxhBPrpgtJtNwSPG4ChdrdQ/Z6E8CXReQfrreBcUCiOFnsXxqseqSKopB4UnlXitkip3XLMq9irW66xmpX65ZauptAeknpf8+97nPvS773wc/+MELL7wwFq6OB1xSghhWJkbctu8J0GFHG3lDnLvE2ncjv9fC1jh52rJlSws71rtLDJrI/mi8rvhnI7xWrlxZr5rIGikg/aR0+5QpU1KK/f8ycUU+LonMnz8/5tGZM2dOkfv2c+fOjftA//84nf7r6aefTj7kM888k1y2nwoO/mzEek45GX2AJS7BeRx1QMOLGgSknxp6YdK9994bE3bFsxr5K+iUHQBdhU6zg4jTwVjN9pOf/GT+WfIll1zSbEutr0tA+qmoP2K08QknnJD5LRNjECpqklAKCcS49jhLzny2N06AYj7sQhGphkCugPSTK1i2/BNPPPGhD30o8xyo60PgypqobUAgkkfmr5NLL710oDYvCHRXQPrprv8IR48F1jLXlj7ttNNGqNemvhDI7NzM4n1BqBG1CEg/tfTE4DjiKlzOwi1dH30wuC1elxXYuXNnjJZMrvOtb31r10fnJwevYJ8JSD+VdmjObNYxAnvmzJmVNkxY2QJf+9rXkuuIRRlOPfXU5OIKEigoIP0UxCxZVTz5n3MHyDWWkp1RWV3bt2/PGYPwnve8p7IGCaehAtJPvR3/yCOPJAf3zne+M7msgvULbN26NTnId7/73cllFSRQUED6KYhZuKqcMU5Tp04tHI3qahJ4+OGHk8OJSUiTyypIoKDAIQXrUlVZgT/96U/JFcbtn+SyCtYvsH///uQg3/zmNyeXPVjwP6ZMev3k//tfwr9Dk0olHEiR+gWkn/r7SIQE6hI447q64hFNjwq4+FZvx7mAVm/fiIwAgWwB6SebsG0VHHPMMW2rW8W9LeD+TW/3n+hfEZB+6v0gzJgxIzm4nEHbyQdVsGMCs2bNSj7Wnj17kssqSKCggPRTELNwVTFBZHKNf/vb35LLKli/wLHHHpscpFUtkukULCsg/ZT1LFbb8uXLc+r661//mlNc2ZoFzj333JyLb48//njNrRNbcwSkn0r7OhZCzYks56n4nOMq2wGBJUuW5BwlZz3AnOMqS2CIgPQzBKSKP1evXj19+vTkUF566aWNGzcmF1ewZoFFixblXJWNpvlpUnP/Nio26ae67o7vlwULFuSE9eSTT+YUV7ZagdNPP33lypU54cWYFD9NcgCVLSgg/RTELFBVrBSX+f0SQTz44IMFQlFFZQJnn332L3/5y8ygciYSzDy04gSGCJj1YAhIN/9ct27d3Llz8yP42c9+ll+JGqoSuOWWWxYuXJgf0qZNm/IrUQOBIgLOflIY//73v6cUG6VMrKC8Zs2aF198sUjuiRs/GzZsGOVQNrddIPwLHiNuAd58883PPfdckdwTgd1www0Fw1MVgRwBZz8perGc6JQpU1JKvlLmyCOPnDx5csx7H8Nnjz/++JxRBsNjuOuuu4ZvtKVjAvFjImet9GnTpsWKcLEgaSyZEQ/35AywHt7kWEJ33759w7fbQqArAtJPCnupn6Ipxx6vTPxYHm8X77dRYN4r/9p4gIyqb7311ozSihIoLODiW2HQ7la3efPm+IXb3RgcvU6BWD7q9ttvrzM2UTVTQPrpq35funRpX7VHY8oJXH/99eUqUxOBAgLSTwHESqqIuz4e6aikL2oLI86JY+xcbVGJp+EC0k+ffACef/75c845p08aoxlFBWIw3gUXXFC0SpURKCAg/RRArKGKT3/60zWEIYYKBZYtW/boo49WGJiQGi4g/fTDByC+Xzzr0w8d2YY2rF271rM+bXBVZQEB6acAYneriNG01157bXdjcPQ6Be6///758+fXGZuoCEg/vf0ZiNyT85Bjbzde9GMKRO6ZPXv2mLt4k0A3BaSfbupnHjuuuck9mYb9WvyOO+6Qe/q1c/umXWY96MmujHFuMdbA/Z6e7Lw2Bx3j3BYvXmyYdZuZVV9AQPopgNjhKuL5HmOsO2zeK4eLaS/OOuus+HXSKwGLs8kCLr71Uu/Hw4Nz5syRe3qpzzoV644dO2K2uVNOOUXu6RS54+QKOPvJFexM+biNvGLFClfbOqPdW0eJHyUxAsV8br3Va6INAemn6o/BY489tn79+iuuuKLqKAXXDYE43Yk5lpYsWeJ0pxv8jllAQPopgFiqirhpvH///l27dm3duvXhhx9etWpVqZrV0+sC8dmIf3/5y19i/oL4ePzgBz+QdXq9T8Xf3PSzffv2vXv3dvET8Otf/zq+UGKR0z179kTWefbZZ+Ncpw8mR9m9e3f8ME9YEDZW8Hv66ae72CMDh965c2dC/APFM1+Ew4MPPvjCCy8M/mw8/vjjltLIhB1cfNu2bW94wxsGb2nxdc46ky0ewm4ECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIBApwT+F1A0BYlj0ZtOAAAAAElFTkSuQmCC" alt="Bybit">
+        <span>Fernando G. — Founder, Feraf Trades</span>
+      </span>
       <span>Bybit Peru Growth Strategy 2026 · Confidential discussion draft</span>
     </div>
   </footer>
