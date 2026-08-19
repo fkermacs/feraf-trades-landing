@@ -1,1 +1,740 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Binance Perú 2026 — propuesta de crecimiento, educación, adopción y comunidad a 90 días preparada por Fernando G., Founder de Feraf Trades.">
+  <meta name="theme-color" content="#0b0e11">
+  <title>Binance Perú | Estrategia de Crecimiento y Comunidad 2026</title>
+  <style>
+    :root{
+      --bg:#07090c;
+      --bg-2:#0b0e11;
+      --panel:#11151b;
+      --panel-2:#171c24;
+      --panel-3:#1e2530;
+      --text:#f7f8fa;
+      --muted:#9ca5b2;
+      --line:rgba(255,255,255,.09);
+      --orange:#F0B90B;
+      --orange-2:#F8D33A;
+      --green:#33d69f;
+      --blue:#5aa7ff;
+      --radius:22px;
+      --shadow:0 28px 90px rgba(0,0,0,.42);
+      --max:1200px;
+    }
 
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+    body{
+      margin:0;
+      min-width:320px;
+      color:var(--text);
+      font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+      background:
+        radial-gradient(circle at 82% 4%,rgba(240,185,11,.14),transparent 28rem),
+        radial-gradient(circle at 12% 28%,rgba(90,167,255,.06),transparent 30rem),
+        linear-gradient(180deg,var(--bg) 0%,var(--bg-2) 45%,var(--bg) 100%);
+      line-height:1.5;
+      overflow-x:hidden;
+    }
+    body::before{
+      content:"";
+      position:fixed;inset:0;pointer-events:none;z-index:-1;
+      background-image:
+        linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),
+        linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);
+      background-size:52px 52px;
+      mask-image:linear-gradient(to bottom,black,transparent 82%);
+    }
+    a{color:inherit;text-decoration:none}
+    button{font:inherit}
+    img,svg{max-width:100%;display:block}
+    strong{color:var(--text)}
+    .wrap{width:min(var(--max),calc(100% - 40px));margin-inline:auto}
+    .section{padding:110px 0;position:relative;border-bottom:1px solid rgba(240,185,11,.10)}
+    .section.compact{padding:78px 0}
+    .eyebrow{
+      display:inline-flex;align-items:center;gap:10px;
+      color:var(--orange);font-size:12px;font-weight:900;letter-spacing:.17em;text-transform:uppercase;
+      margin-bottom:16px
+    }
+    .eyebrow::before{content:"";width:8px;height:8px;background:var(--orange);transform:rotate(45deg);box-shadow:0 0 24px rgba(240,185,11,.65)}
+    h1,h2,h3,p{margin-top:0}
+    h1{font-size:clamp(46px,7vw,86px);line-height:.98;letter-spacing:-.055em;margin-bottom:22px;max-width:1050px}
+    h2{font-size:clamp(34px,5vw,58px);line-height:1.02;letter-spacing:-.045em;margin-bottom:22px;max-width:990px}
+    h3{font-size:22px;line-height:1.12;margin-bottom:11px}
+    .lead{font-size:clamp(20px,2.4vw,29px);line-height:1.36;color:#e8ebef;max-width:980px}
+    .copy{font-size:18px;color:var(--muted);max-width:900px}
+    .muted{color:var(--muted)}
+    .orange{color:var(--orange)}
+    .small{font-size:13px;color:var(--muted)}
+    .section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:34px}
+    .section-head p{max-width:430px;margin-bottom:4px}
+
+    /* top bar */
+    .progress{position:fixed;left:0;top:0;width:0;height:3px;background:linear-gradient(90deg,var(--orange),var(--orange-2));z-index:1000;box-shadow:0 0 18px rgba(240,185,11,.7)}
+    .nav{
+      position:fixed;top:14px;left:50%;transform:translateX(-50%);
+      width:min(1160px,calc(100% - 28px));z-index:900;
+      display:flex;align-items:center;justify-content:space-between;gap:18px;
+      padding:11px 14px;border:1px solid rgba(255,255,255,.10);border-radius:18px;
+      background:rgba(8,10,13,.72);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
+      box-shadow:0 14px 50px rgba(0,0,0,.28)
+    }
+    .brand{display:flex;align-items:center;gap:10px;font-weight:950;letter-spacing:-.03em}
+    .brand-mark{width:32px;height:32px;border-radius:9px;background:linear-gradient(135deg,var(--orange),#F8D33A);display:grid;place-items:center;color:#0a0a0a;font-weight:1000}
+    .nav-links{display:flex;gap:6px;flex-wrap:wrap;justify-content:center}
+    .nav-links a{padding:8px 10px;border-radius:10px;color:#bac1ca;font-size:13px;font-weight:750}
+    .nav-links a:hover{background:rgba(255,255,255,.06);color:#fff}
+    .nav-cta{padding:9px 13px;border-radius:11px;background:var(--orange);color:#090909;font-weight:900;font-size:13px}
+
+    /* hero */
+    .hero{min-height:100svh;display:flex;align-items:center;padding:150px 0 90px;overflow:hidden}
+    .hero-orb{position:absolute;border-radius:50%;filter:blur(1px);pointer-events:none}
+    .orb-a{right:-160px;top:80px;width:620px;height:620px;background:radial-gradient(circle,rgba(240,185,11,.18),rgba(240,185,11,0) 68%);animation:float 8s ease-in-out infinite}
+    .orb-b{left:-120px;bottom:0;width:390px;height:390px;background:radial-gradient(circle,rgba(90,167,255,.09),transparent 68%);animation:float 10s ease-in-out infinite reverse}
+    .hero-grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(300px,.65fr);gap:56px;align-items:center}
+    .hero-kicker{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:24px}
+    .pill{display:inline-flex;align-items:center;gap:7px;padding:7px 11px;border-radius:999px;border:1px solid rgba(240,185,11,.28);background:rgba(240,185,11,.07);color:#F8D978;font-size:12px;font-weight:850;letter-spacing:.04em}
+    .hero-path{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin:28px 0 30px}
+    .step{padding:10px 13px;border:1px solid rgba(255,255,255,.10);border-radius:12px;background:rgba(255,255,255,.035);font-weight:850;font-size:13px}
+    .arrow{color:var(--orange);font-weight:950}
+    .hero-card{
+      position:relative;padding:28px;border-radius:28px;
+      background:linear-gradient(180deg,rgba(27,31,39,.96),rgba(12,15,19,.96));
+      border:1px solid rgba(240,185,11,.26);box-shadow:var(--shadow);overflow:hidden
+    }
+    .hero-card::before{content:"";position:absolute;inset:0 0 auto 0;height:2px;background:linear-gradient(90deg,var(--orange),transparent)}
+    .hero-card h3{font-size:26px}
+    .hero-card .metric{display:flex;justify-content:space-between;align-items:baseline;padding:16px 0;border-bottom:1px solid var(--line)}
+    .hero-card .metric:last-child{border:0}
+    .hero-card b{font-size:31px;color:var(--orange);letter-spacing:-.04em}
+    .hero-card span{color:var(--muted);font-size:13px;max-width:150px;text-align:right}
+
+    /* reusable */
+    .grid{display:grid;gap:18px}
+    .grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .grid-4{grid-template-columns:repeat(4,minmax(0,1fr))}
+    .card{
+      position:relative;padding:24px;border:1px solid var(--line);border-radius:var(--radius);
+      background:linear-gradient(180deg,rgba(24,29,37,.92),rgba(13,16,21,.96));
+      box-shadow:0 18px 58px rgba(0,0,0,.20);overflow:hidden;
+      transition:transform .28s ease,border-color .28s ease,box-shadow .28s ease
+    }
+    .card::after{content:"";position:absolute;left:0;top:0;width:100%;height:2px;background:linear-gradient(90deg,var(--orange),transparent 72%);opacity:.75}
+    .card:hover{transform:translateY(-5px);border-color:rgba(240,185,11,.32);box-shadow:0 24px 70px rgba(0,0,0,.32)}
+    .card p,.card li{color:var(--muted)}
+    .icon{
+      width:42px;height:42px;display:grid;place-items:center;border-radius:13px;margin-bottom:18px;
+      background:rgba(240,185,11,.11);border:1px solid rgba(240,185,11,.23);font-size:20px
+    }
+    .quote{
+      margin-top:30px;padding:26px 28px;border-left:4px solid var(--orange);border-radius:0 18px 18px 0;
+      background:linear-gradient(90deg,rgba(240,185,11,.12),rgba(240,185,11,.025));
+      font-size:clamp(22px,3vw,32px);font-weight:850;line-height:1.28;max-width:1020px
+    }
+    .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:15px}
+    .tag{padding:6px 9px;border-radius:999px;background:rgba(255,255,255,.045);border:1px solid var(--line);color:#cbd1d8;font-size:12px;font-weight:750}
+    .kpi-card{text-align:left}
+    .kpi{display:block;font-size:clamp(38px,5vw,58px);line-height:1;color:var(--orange);font-weight:950;letter-spacing:-.055em;margin-bottom:10px}
+    .kpi-label{font-size:17px;font-weight:850}
+    .kpi-note{font-size:13px;color:var(--muted);margin-top:7px}
+    ul.clean{list-style:none;padding:0;margin:15px 0 0}
+    ul.clean li{position:relative;padding-left:20px;margin:9px 0}
+    ul.clean li::before{content:"";position:absolute;left:1px;top:.65em;width:7px;height:7px;border-radius:50%;background:var(--orange)}
+
+    /* timeline */
+    .timeline{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:32px}
+    .timeline-item{position:relative;padding:19px 18px;border-radius:17px;border:1px solid var(--line);background:rgba(255,255,255,.028)}
+    .timeline-item b{display:block;color:var(--orange);font-size:12px;letter-spacing:.10em;text-transform:uppercase;margin-bottom:8px}
+    .timeline-item strong{font-size:16px}
+    .timeline-item::after{content:"→";position:absolute;right:-12px;top:50%;transform:translateY(-50%);color:var(--orange);font-weight:950;z-index:2}
+    .timeline-item:last-child::after{display:none}
+
+    /* calendar */
+    .calendar-shell{
+      border:1px solid rgba(240,185,11,.28);border-radius:26px;overflow:hidden;
+      background:linear-gradient(180deg,rgba(240,185,11,.065),rgba(12,15,19,.96));
+      box-shadow:var(--shadow)
+    }
+    .calendar-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+    table.calendar{border-collapse:separate;border-spacing:0;width:100%;min-width:1120px;table-layout:fixed}
+    .calendar th,.calendar td{padding:9px 7px;border-right:1px solid rgba(255,255,255,.07);border-bottom:1px solid rgba(255,255,255,.07);text-align:center;vertical-align:middle;font-size:11px}
+    .calendar th{background:rgba(240,185,11,.13);font-weight:900;text-transform:uppercase;letter-spacing:.045em}
+    .calendar .month{font-size:13px;color:#fff}
+    .calendar .week{color:var(--muted);background:rgba(255,255,255,.03)}
+    .calendar .segment{background:rgba(240,185,11,.09);color:var(--orange);font-weight:900;text-transform:uppercase;letter-spacing:.04em}
+    .calendar .place{text-align:left;font-weight:800;background:rgba(255,255,255,.025)}
+    .calendar .phase{font-size:12px;font-weight:900;background:linear-gradient(90deg,rgba(240,185,11,.16),rgba(240,185,11,.045));line-height:1.15}
+    .calendar .subhead{background:rgba(0,0,0,.38);color:var(--orange);font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.08em}
+    .calendar .content{text-align:left;color:#c7cdd5;background:rgba(255,255,255,.02);line-height:1.35}
+    .calendar .objective{font-weight:850;background:rgba(255,255,255,.04)}
+    .xmark{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:50%;border:1px solid var(--orange);background:rgba(240,185,11,.13);color:var(--orange);font-weight:950;box-shadow:0 0 18px rgba(240,185,11,.16)}
+    .calendar-note{padding:14px 17px;color:var(--muted);font-size:12px;border-top:1px solid var(--line)}
+    .mobile-calendar{display:none}
+    .phase-card{padding:20px;border:1px solid rgba(240,185,11,.24);border-radius:20px;background:linear-gradient(180deg,rgba(240,185,11,.07),rgba(16,19,24,.96));margin-bottom:12px}
+    .phase-card .phase-label{color:var(--orange);font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.10em}
+    .phase-card h3{margin:7px 0 9px}
+    .schedule{display:grid;gap:8px;margin-top:14px}
+    .slot{display:flex;justify-content:space-between;gap:18px;padding:10px 12px;border-radius:12px;background:rgba(255,255,255,.035);border:1px solid var(--line)}
+    .slot b{color:var(--orange);font-size:12px}
+    .slot span{font-size:13px;text-align:right}
+
+    /* journey */
+    .journey{display:flex;align-items:center;gap:9px;overflow-x:auto;padding:18px 2px 10px;scroll-snap-type:x proximity}
+    .journey .step{white-space:nowrap;scroll-snap-align:start}
+    .journey .step.primary{background:rgba(240,185,11,.12);border-color:rgba(240,185,11,.32)}
+
+    /* activation */
+    .activation-card{min-height:280px;display:flex;flex-direction:column}
+    .activation-card .number{font-size:12px;color:var(--orange);font-weight:900;letter-spacing:.12em;margin-bottom:auto}
+    .activation-card h3{font-size:25px;margin-top:55px}
+    .activation-card p{margin-bottom:0}
+    .concept{
+      margin-top:28px;padding:32px;border-radius:26px;border:1px solid rgba(240,185,11,.26);
+      background:
+        radial-gradient(circle at 88% 12%,rgba(240,185,11,.15),transparent 14rem),
+        linear-gradient(135deg,#171b22,#0d1014);
+      display:grid;grid-template-columns:1fr .85fr;gap:34px;align-items:center
+    }
+    .concept-list{display:grid;gap:10px}
+    .concept-list div{padding:13px 15px;border:1px solid var(--line);border-radius:13px;background:rgba(255,255,255,.03);font-weight:750}
+    .concept-list div::before{content:"✓";color:var(--orange);font-weight:950;margin-right:10px}
+
+    /* budget */
+    .budget{display:grid;grid-template-columns:1.1fr .9fr;gap:20px}
+    .budget-table{width:100%;border-collapse:collapse}
+    .budget-table th,.budget-table td{padding:14px 12px;border-bottom:1px solid var(--line);text-align:left}
+    .budget-table th{color:var(--orange);font-size:12px;text-transform:uppercase;letter-spacing:.08em}
+    .budget-table td:last-child,.budget-table th:last-child{text-align:right}
+    .budget-total{font-size:40px;font-weight:950;color:var(--orange);letter-spacing:-.045em}
+
+    /* profile */
+    .profile{display:grid;grid-template-columns:.7fr 1.3fr;gap:28px;align-items:stretch}
+    .profile-mark{
+      min-height:420px;border-radius:28px;border:1px solid rgba(240,185,11,.25);
+      background:
+        radial-gradient(circle at 50% 30%,rgba(240,185,11,.23),transparent 19rem),
+        linear-gradient(145deg,#1b2029,#0b0e12);
+      display:grid;place-items:center;position:relative;overflow:hidden
+    }
+    .profile-mark::before{content:"FG";font-size:150px;font-weight:1000;letter-spacing:-.09em;color:rgba(255,255,255,.88)}
+    .profile-mark::after{content:"FERAF TRADES";position:absolute;bottom:28px;color:var(--orange);font-size:12px;font-weight:900;letter-spacing:.20em}
+    .profile-copy{padding:32px}
+
+    /* footer */
+    .closing{text-align:center;padding:130px 0 110px}
+    .closing h2{margin-inline:auto}
+    .closing .lead{margin-inline:auto}
+    .closing-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:30px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 17px;border-radius:13px;border:1px solid var(--line);font-weight:900}
+    .btn-primary{background:var(--orange);color:#080808;border-color:var(--orange)}
+    .btn-secondary{background:rgba(255,255,255,.04)}
+    footer{padding:24px 0 40px;color:var(--muted);font-size:13px}
+    .footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+
+    /* reveal animation */
+    .reveal{opacity:0;transform:translateY(26px);transition:opacity .75s cubic-bezier(.2,.7,.2,1),transform .75s cubic-bezier(.2,.7,.2,1)}
+    .reveal.visible{opacity:1;transform:none}
+    .delay-1{transition-delay:.08s}.delay-2{transition-delay:.16s}.delay-3{transition-delay:.24s}.delay-4{transition-delay:.32s}
+    @keyframes float{0%,100%{transform:translate3d(0,0,0)}50%{transform:translate3d(0,-18px,0)}}
+    @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(240,185,11,.15)}50%{box-shadow:0 0 0 12px rgba(240,185,11,0)}}
+    .pulse{animation:pulse 2.5s ease-in-out infinite}
+
+    @media(max-width:980px){
+      .nav-links{display:none}
+      .hero-grid,.concept,.budget,.profile{grid-template-columns:1fr}
+      .hero-card{max-width:620px}
+      .grid-4{grid-template-columns:repeat(2,1fr)}
+      .grid-3{grid-template-columns:repeat(2,1fr)}
+      .timeline{grid-template-columns:1fr}
+      .timeline-item::after{content:"↓";right:auto;left:50%;top:auto;bottom:-17px;transform:translateX(-50%)}
+      .profile-mark{min-height:320px}
+    }
+    @media(max-width:720px){
+      .wrap{width:min(100% - 28px,var(--max))}
+      .section{padding:78px 0}
+      .hero{padding-top:118px}
+      .nav{top:9px}
+      .nav-cta{display:none}
+      .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+      .section-head{display:block}
+      .section-head p{max-width:none}
+      .calendar-shell{display:none}
+      .mobile-calendar{display:block}
+      .concept{padding:22px}
+      .budget-total{font-size:34px}
+      .hero-path{gap:7px}
+      .hero-path .step{font-size:11px;padding:8px 9px}
+      .hero-path .arrow{font-size:11px}
+      .profile-copy{padding:24px}
+      .closing{text-align:left;padding:90px 0}
+      .closing h2,.closing .lead{margin-inline:0}
+      .closing-actions{justify-content:flex-start}
+    }
+    @media(max-width:390px){
+      .wrap{width:min(100% - 22px,var(--max))}
+      h1{font-size:42px}
+      .brand span{font-size:13px}
+      .nav{padding:9px 10px}
+    }
+    @media(prefers-reduced-motion:reduce){
+      html{scroll-behavior:auto}
+      *,*::before,*::after{animation:none!important;transition:none!important}
+      .reveal{opacity:1;transform:none}
+    }
+    @media print{
+      :root{--text:#111;--muted:#444;--line:#ddd}
+      body{background:#fff;color:#111}
+      body::before,.nav,.progress,.hero-orb,.closing-actions{display:none!important}
+      .wrap{width:100%;max-width:none}
+      .section{padding:34px 24px;min-height:auto;page-break-after:always;border-bottom:0}
+      .card,.hero-card,.calendar-shell,.concept,.profile-mark{box-shadow:none;background:#fff;color:#111;border-color:#bbb}
+      .card p,.card li,.copy,.muted,.small,.kpi-note,.calendar-note{color:#444!important}
+      .calendar{min-width:0;font-size:8px}
+      .calendar th,.calendar td{padding:5px 3px;color:#111;border-color:#ccc}
+      .calendar .segment,.calendar .phase,.calendar .subhead{color:#111;background:#eee}
+      .reveal{opacity:1;transform:none}
+      a{text-decoration:none}
+    }
+  
+    /* Binance brand integration */
+    .brand-logo-link{min-width:0}
+    .legacy-logo-nav{
+      width:112px;
+      height:auto;
+      object-fit:contain;
+      display:block;
+      border-radius:6px;
+      flex:0 0 auto;
+    }
+    .brand-context{
+      color:#F0B90B;
+      font-size:11px;
+      font-weight:950;
+      letter-spacing:.12em;
+      white-space:nowrap;
+    }
+    .legacy-logo-hero{
+      width:clamp(180px,22vw,280px);
+      height:auto;
+      margin:0 0 28px;
+      border-radius:14px;
+      box-shadow:0 22px 70px rgba(0,0,0,.35);
+    }
+    .footer-brand{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+    .legacy-logo-footer{width:82px;height:auto;border-radius:7px}
+
+    /* Production responsive refinements */
+    :root{
+      --safe-top:env(safe-area-inset-top,0px);
+      --safe-right:env(safe-area-inset-right,0px);
+      --safe-bottom:env(safe-area-inset-bottom,0px);
+      --safe-left:env(safe-area-inset-left,0px);
+    }
+    body{
+      padding-left:var(--safe-left);
+      padding-right:var(--safe-right);
+      text-rendering:optimizeLegibility;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+    .nav{
+      top:calc(10px + var(--safe-top));
+      max-width:calc(100vw - 28px - var(--safe-left) - var(--safe-right));
+    }
+    .hero{min-height:100dvh}
+    .card,.hero-card,.concept,.calendar-shell{contain:layout paint style}
+    .calendar-scroll{scrollbar-width:thin;scrollbar-color:rgba(240,185,11,.45) rgba(255,255,255,.04)}
+    .calendar-scroll::-webkit-scrollbar{height:8px}
+    .calendar-scroll::-webkit-scrollbar-track{background:rgba(255,255,255,.04)}
+    .calendar-scroll::-webkit-scrollbar-thumb{background:rgba(240,185,11,.45);border-radius:999px}
+    .btn,.nav a,.journey .step{-webkit-tap-highlight-color:transparent}
+    .btn:focus-visible,.nav a:focus-visible,a:focus-visible,button:focus-visible{
+      outline:3px solid rgba(240,185,11,.7);
+      outline-offset:3px;
+    }
+
+    @supports not (height:100dvh){
+      .hero{min-height:100vh}
+    }
+
+    /* Large desktop / 4K */
+    @media(min-width:1600px){
+      :root{--max:1380px}
+      .section{padding-block:128px}
+      .hero-grid{gap:84px}
+      .card{padding:30px}
+      .copy{font-size:19px}
+    }
+
+    /* iPad landscape / compact laptops */
+    @media(min-width:981px) and (max-width:1180px){
+      .wrap{width:min(var(--max),calc(100% - 34px))}
+      .hero-grid{grid-template-columns:minmax(0,1.15fr) minmax(300px,.85fr);gap:34px}
+      .nav-links a{padding-inline:7px;font-size:12px}
+      .legacy-logo-nav{width:96px}
+      .grid-4{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .timeline{grid-template-columns:repeat(5,minmax(0,1fr))}
+      .timeline-item{padding:16px 13px}
+      .timeline-item strong{font-size:14px}
+    }
+
+    /* iPad portrait / Android tablets */
+    @media(min-width:721px) and (max-width:980px){
+      .wrap{width:min(var(--max),calc(100% - 34px))}
+      .hero{padding-top:138px}
+      .hero-grid{gap:34px}
+      .legacy-logo-hero{width:220px}
+      .hero-card{width:100%}
+      .concept{grid-template-columns:1fr}
+      .calendar-shell{display:none}
+      .mobile-calendar{display:block}
+      .grid-3{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .grid-4{grid-template-columns:repeat(2,minmax(0,1fr))}
+    }
+
+    /* Phones */
+    @media(max-width:720px){
+      body{padding-bottom:var(--safe-bottom)}
+      .nav{
+        width:calc(100% - 18px);
+        max-width:none;
+        border-radius:16px;
+        padding:9px 11px;
+      }
+      .brand-context{display:none}
+      .legacy-logo-nav{width:96px}
+      .hero{
+        padding-top:calc(108px + var(--safe-top));
+        padding-bottom:72px;
+        min-height:auto;
+      }
+      .legacy-logo-hero{
+        width:min(210px,62vw);
+        margin-bottom:22px;
+        border-radius:11px;
+      }
+      .hero-grid{gap:28px}
+      .hero-kicker{gap:7px}
+      .pill{font-size:10px;padding:6px 9px}
+      h1{font-size:clamp(40px,12vw,58px);line-height:1.01}
+      h2{font-size:clamp(32px,9.2vw,44px)}
+      .lead{font-size:18px}
+      .copy{font-size:16px}
+      .hero-card{padding:22px;border-radius:22px}
+      .hero-card .metric{gap:16px}
+      .hero-card b{font-size:28px}
+      .hero-card span{max-width:165px}
+      .section{padding-block:72px}
+      .section.compact{padding-block:58px}
+      .card{padding:21px;border-radius:19px}
+      .quote{padding:21px 20px;font-size:21px;border-left-width:3px}
+      .slot{align-items:flex-start}
+      .slot span{max-width:72%}
+      .journey{padding-bottom:15px}
+      .profile-mark{min-height:250px}
+      .profile-mark::before{font-size:108px}
+      .profile-mark::after{bottom:19px}
+      .closing{padding-top:82px;padding-bottom:72px}
+      footer{padding-bottom:calc(32px + var(--safe-bottom))}
+      .footer-row{align-items:flex-start}
+      .footer-brand{display:grid;gap:10px}
+      .legacy-logo-footer{width:94px}
+    }
+
+    /* Small Android / iPhone SE */
+    @media(max-width:390px){
+      .nav{width:calc(100% - 14px)}
+      .legacy-logo-nav{width:86px}
+      .hero{padding-top:104px}
+      .hero-card .metric{align-items:center}
+      .hero-card span{font-size:12px}
+      .pill{font-size:9px}
+      .step{font-size:10px}
+      .btn{width:100%}
+      .closing-actions{display:grid}
+    }
+
+    /* Landscape phones */
+    @media(max-height:560px) and (orientation:landscape){
+      .hero{min-height:auto;padding-top:104px;padding-bottom:58px}
+      .hero-grid{grid-template-columns:1fr 1fr}
+      .legacy-logo-hero{width:160px;margin-bottom:14px}
+      h1{font-size:44px}
+      .lead{font-size:17px}
+      .hero-path{margin-block:18px}
+    }
+
+    @media print{
+      .legacy-logo-nav{width:90px}
+      .legacy-logo-hero{width:190px;box-shadow:none}
+      .legacy-logo-footer{width:72px}
+    }
+
+  
+    /* Final executive art direction — Binance identity */
+    :root{
+      --orange:#F0B90B;
+      --orange-2:#F8D33A;
+      --bg:#050505;
+      --bg-2:#0A0A0A;
+      --panel:#111111;
+      --panel-2:#171717;
+      --panel-3:#1D1D1D;
+      --text:#FFFFFF;
+      --muted:#A3A3A3;
+      --line:rgba(255,255,255,.10);
+    }
+
+    body{
+      background:
+        radial-gradient(circle at 84% 2%,rgba(240,185,11,.12),transparent 28rem),
+        linear-gradient(180deg,#050505 0%,#0A0A0A 50%,#050505 100%);
+    }
+
+    .brand-wordmark{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      min-width:0;
+    }
+    .legacy-brand-word{
+      font-size:18px;
+      font-weight:1000;
+      letter-spacing:.06em;
+      color:#fff;
+      line-height:1;
+    }
+    .brand-i{color:var(--orange)}
+    .brand-divider{
+      width:1px;
+      height:18px;
+      background:rgba(255,255,255,.20);
+    }
+    .brand-context{
+      display:inline-block;
+      color:#b9b9b9;
+      font-size:10px;
+      font-weight:900;
+      letter-spacing:.16em;
+      white-space:nowrap;
+    }
+
+    .legacy-logo-hero{display:none!important}
+
+    .footer-brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+    .footer-prepared{
+      color:#777;
+      font-size:11px;
+      text-transform:uppercase;
+      letter-spacing:.10em;
+      font-weight:800;
+    }
+    .legacy-logo-footer{
+      width:72px;
+      height:72px;
+      object-fit:contain;
+      border-radius:10px;
+      flex:0 0 auto;
+      box-shadow:none;
+    }
+
+    .hero{
+      background:
+        linear-gradient(180deg,rgba(255,255,255,.01),transparent 34%),
+        radial-gradient(circle at 78% 35%,rgba(240,185,11,.08),transparent 24rem);
+    }
+
+    .hero h1{
+      max-width:980px;
+    }
+
+    .hero-kicker{
+      margin-bottom:20px;
+    }
+
+    .pill{
+      color:#F8D978;
+      background:rgba(240,185,11,.06);
+      border-color:rgba(240,185,11,.20);
+    }
+
+    .card,
+    .hero-card,
+    .concept,
+    .calendar-shell{
+      background:linear-gradient(180deg,rgba(20,20,20,.96),rgba(10,10,10,.98));
+    }
+
+    .card::after{
+      opacity:.55;
+    }
+
+    .nav{
+      background:rgba(6,6,6,.82);
+      border-color:rgba(255,255,255,.08);
+    }
+
+    .quote{
+      background:linear-gradient(90deg,rgba(240,185,11,.10),rgba(240,185,11,.015));
+    }
+
+    @media(max-width:720px){
+      .brand-context{display:none}
+      .brand-divider{display:none}
+      .legacy-brand-word{font-size:17px}
+      .footer-brand{
+        display:grid;
+        grid-template-columns:auto 1fr;
+        align-items:center;
+      }
+      .footer-prepared{
+        grid-column:1 / -1;
+      }
+      .legacy-logo-footer{
+        width:64px;
+        height:64px;
+      }
+    }
+
+    @media print{
+      .legacy-brand-word{color:#111}
+      .brand-i{color:#F0B90B}
+      .footer-prepared{color:#444}
+    }
+
+  
+    /* Binance official-style inline mark */
+    .binance-lockup{display:flex;align-items:center;gap:10px;min-width:0}
+    .binance-symbol{width:28px;height:28px;flex:0 0 auto}
+    .binance-word{font-size:18px;font-weight:1000;letter-spacing:.035em;color:#F0B90B;line-height:1}
+    .binance-hero-mark{width:64px;height:64px;margin-bottom:22px;filter:drop-shadow(0 12px 32px rgba(240,185,11,.18))}
+    .binance-footer-mark{width:34px;height:34px;flex:0 0 auto}
+    @media(max-width:720px){.binance-word{font-size:16px}.binance-symbol{width:25px;height:25px}.binance-hero-mark{width:54px;height:54px}}
+
+    /* Official Binance logo assets supplied for this proposal */
+    .binance-lockup{display:flex;align-items:center;gap:12px;min-width:0}
+    .binance-nav-logo{width:142px;height:auto;display:block;object-fit:contain;flex:0 0 auto}
+    .binance-hero-logo{width:82px;height:82px;display:block;object-fit:contain;margin-bottom:24px;filter:drop-shadow(0 14px 34px rgba(240,185,11,.20))}
+    .binance-footer-logo{width:128px;height:auto;display:block;object-fit:contain;flex:0 0 auto}
+    @media(max-width:980px){.binance-nav-logo{width:126px}}
+    @media(max-width:720px){.binance-nav-logo{width:116px}.binance-hero-logo{width:68px;height:68px}.binance-footer-logo{width:116px}}
+    @media(max-width:390px){.binance-nav-logo{width:106px}}
+    @media print{.binance-nav-logo{width:120px}.binance-hero-logo{width:64px;height:64px}.binance-footer-logo{width:105px}}
+</style>
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+
+  <nav class="nav" aria-label="Navegación de la propuesta">
+    <a class="brand binance-lockup" href="#top" aria-label="Binance Perú 2026">
+      <img class="binance-nav-logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAABQCAYAAAA3ICPMAAAX2ElEQVR42u2dfXhU1Z3Hv787EwjkDgnailrqUouwFZg7EEtXkT6kZCaQimstAQUEfKtWSG0rW1tdMVDdtlu1XWnVqltfgRpct9SqmRcb3QpWlpCZALWCtbZbkUohydwbhMzM/e0fvAWB3DMzd2buTM7nH56H507uOfe8fM4599zzAxyMHvQ16UFfEyQSiUTiOBQnywPEd4L4TikRiUQikQJJTx5HkBKRSCQSKZC05SElIpFIJFIgGctDSkQikUikQDKWh5SIRCKRSIFkLA8pEYlEIpECyVgeUiISiUQiBZKxPKREJBKJZOAKJGt5SIlIJBLJwBOIbfKQEpFIJJKBIxDb5SElIpFIJKUvkJzJQ0pEIpFISlcgOZeHlIhEIpGUnkDyJg8pEYlEIikdgeRdHlIiEolEUvwCKZg8pEQkEomkeAVScHlIiUgkEkluu1eHy+Mnh/9dmvVfYlrhqYtKkUgkElvgJigfTvaenSyjUQqxykxD2UQvKWQo4O7EQfPdqku2dkqBFEgenkCsEQD0kLaq1CQSD2v3KYxhtlVmkAHwPhA6mfnPKCvbOKym7e+5SPuH4epzUpxcbpkm5ts8dR0fpPv3jZB2C4DP9PN3TR5Udptd+esO+c5zgW/t//ki6QnEbsxb59Q6qtzordoGMqv6ab4HEuQed5q/rdsp9dYkxD3D3bfSBW0Je/oT7xeIaJ5F2fzZE4h9Nx/573zJN8rt5llgzAIwFUC51U9A2AbGK2Azor6+9TVqgpmvepvTOkqIup0uDwDwBGKNekjLfiZyaDkLTpAIMeYxMMLG4jz6D4GARBJ6yPsmQfklyhL3qzXbd9t1pxSnTmPgWqvrTHZ/H8AHGeRkJoDpp354BCRSI7kJl9jRGIl4BLNlfg4CyJtA9ETVFUT8aasx3iBOLAbwH06pt8SAvi9pAlhmyw0VOt+6bKgNQM4Ewq2jynsSlTcxsBjgCUeamiDDwZgKYCpIucO4SHvPCOIp0zX4nmG1m/bmod7mDpPX2/YOJFfy6CsRHFvSylYijpiF5KG5f4bB3+GE+1096Htgz/qxntKZOvNMY4rvOyW5NMIgIm4UnHku5SZnBYYj4JZ40HdZ0ZdDc4PLCPoWGYnKHQzcC2CCDX/2E0z4NpkH3zZC2i384ujBxfyMbKl4uZaHlEjWDAbxV8uHlP8uHtHGlFBPu1Jv0WpKrbD0kO9CMCYJXj6652JvwHGCJ368KzLh3GItAyMy3mtU7tzCxI8D+GQOblHFwD097oo3jYh3xoAVSL7kISViC+eTiU16eNJnSiQ/ChSs7WmpPquk5o2Cs4+jKwkmGh2YjUqXqTzLraPKi+35x4PeWWy6NoDYm/MxEPApNukFI6h9gzk3m5ocKxA9rF2eT3nkRCJh7fIBJpFKcGr93hc/N6xE8jPCVFK/4NZp7lLITE9o4tkAZqdVjUEzu1smjXZgdiYaicofF8+EFmSEvcuIaD0ANZ/9MBPuMyLaQ7y5umzACETtHLMehNX5lIetEiGsVjvHrMfA47xB7gPLSic7/Pme3s7vlkJOTJg3AEhXhqRQcolDs3SDEfTNL4Znb4S025nph0CBZgKMq/fvM7UBIxCasy6ldo5ZlIVEMpKHLRJhXqN2jllEc9alBqBAQMA3S2gWAiZ8Ox7ULinqPDSPGwTghswKlK75oHWc6szKxj9z+rJpd9j3RRBWFrhNXlMRaN9cTHU262k/zVmX4iYsNKZoACOdkUZW8ugrkbS3+DKvUbvHLnS8PJjXgJQ9/ReAWQamsxgYSYAGYJDYYAcVZe4D0wH8d8lIkfBk50u+ScNnRt8txvT3VJY1AJzp1u5hQ5KuqwA86LhqDFSAU8/uDnonn1nX0eM4eYR85ynMqzOYeZgAvQbwqwB2gXgPmYpqKnwWMUYSUM/ApwT/1p1qIPZ0DrKXBPMLOSrXN2xZN6YmmNwUS0citsgjI4kUizwAECk/VAPRqPAUPDJ+BLNyI5huB2C5lkrAtFISCIDhLpe5jl8cfTHVv32w+AzI2bUJpqXMeIgozS8V8sP5Q4keYsZCJ6WPN1eXGfuSzwGoTONnBoi+D9N8xFMX++DUXQ0oHtQ+qyi4BsD1p1rxYfATHn9HrpZgezx1HZfl6vnZtn+cmmCqG2ILGbCyqK3y6CsRWC5n0dpikUcmqLXb/ubxd6xgEl4GObPUngGBLjDcFfcW3ewj4vssA5/LtpM2Qt4a55YNFhgh3/VOSpO+N7EQwPg0VgXWK6Z7jMcfvdvqlAUicOWM2CZPIHYjmcokAK+d5KG0erpSX3Go9O0RiOj2MmqC6dkYW9SPRNKSBzc3uLi5wWWPRGit2nXeVaLyKMYtdUfXMvyxx8AcEbi0EqXJEj2ozS2mBKdSArNnwhbrFk2Njs4o8f09Ld5JTkgKvzh6MBGWp/GTn6rdY79cMaPt/bQHdzPaY6o/9nkCbgGOnp7w+6SbLqc523sznHEWXDqWAtGDviYj7PtRBhJ5Klt5GMN3rDaG71idvUTSl4cR1lbpIe2Ooh2JE7UJXBZHqUJ4NP6Sd2wxJFUPes8g4issLns/RWZDn87nFJUXl3748sR/cHB2B5sKrets9VUVOiGGW70OoHMEK9Sjqj/WmM3qBRFYDcTuI0WpA/D7ZIq+OLwm2lXMzUyxkseh7zz45gwksriPRDKSBxhzwZibpUR+kYk8ACwBsLKYJSKwpPAnlC4quehZfr56qPNboXI9rDc/PFJVu/UdAqxeiCqplHmTw3N8rjvJjxVyls8MYvC/CF6+TT3outmuZSa1tj2iboxNKNbNHkICOfEL88wkQkwLMpbHsVFVRhIhpsVq15gFGcrjCCv1kLa82AqWgYlW15jMr6G0Ga8PTjzg5OVI3lxdBuavWhWVK8mPHFoBMh8UKPvreOOFQxxeQS/rCWlfL9TteyITxhMgNFMzTVxLs9r22zp4s+lEXkcK5NTHk/DNRlj7cToSUeuiwt+InFQeWUhErYs+kaU8jrCimCRiBH1+AAGr2Ydn0GkvFXHdFRoNEmiRHvJe49iy2pe6DMAnLCrn80PrO/4KAENf3xoUmDmepus985xeNkz493jQd1EhEmiyUi/YL7RUzohtgkRMIAJnW30tHYnYIo8sJGKDPI5JJOy908mFuf9F70g97LudiX8l0MJ/QDWvJIu47v4MwB4hiRD9xGiZ6MwvfAW27pJCD/YdlJmH8m6V58ZCzbyI8QMAIvFA3ET8TLy1+mN5TyPhi2IdJN0nNdFPAaYpj2MSCWnEHLNlXVBIHsdLBNzcMN+O7biC8jgyZGrSw154/B0r8jKMY74mHtZ29TOMIgU0DISPM2FMinExmEU6jY1qsufxoq65jPfIpcxj0wzB+gOwclbMZ/eFqy/IZ/Aly9lHy0SN2Zxqcdk7FRti4eM6v6Tyc7jNlej/vYmmR7QpQCzvy5Qm6A1icxmIROKUjKRE8mluQn2+lnW4dVS5kYDIzGd/Rcr4nyLv41UjpP3atmdHSHj8sS+dIJC0T9UlNBohDdlKhFunuY3kjqeF5GGzRNKSR1+JBH2Ul6BUhMZ+N+r1ffDiJfAHVgZfSvWxgyj2llHbHtHD3hVgEimL0WVm8j+Z0eCYPfeK2Whd1elnH+1YPfXte/Sg91lYROojRiNO9u1BPsom0LHKCGsXA2gQuLzOuEi7HchPVEEjNfxcwBRZxfhtUX6QejwuhthsS7DvPXj8DA1ZHMlOaDTC2v2ZTpW5dZrbSHStTUsex0sk4+WsjORxrGUW5VHwzGhRoEzPNhKaoyTSOfYuAGHB+vrlnrD3a05Idzwy+XSG5akNvZSkx05aln2Wtfrhy/tf1j5RiPwRgXuT5dcB2Cn4kxVGyDs9P97mUYIN5k1I+n+WNsTzWJqJRI7KAzw74ztnKJGs5FGkEiHCzz2BWH1FoH1XKVVgmrMuhaQyH8B7YlWG7ukOe/+p4Ak3e6+FVTxtwjpPfftJ3/N4amMbAGy1Gn2mzPyF4f0op9e/ESclNRvAAaEWBVpz+Dj73D56YqFDJ5nE3rENaIGA2I4XbSQfpeNnH9cYYe03eotWU8xf2Z+0M61v38OguQBEljPdClNzPDL59IKVRXODC+CbrMvs1LMMIjCIrWchjK8UMmyqWrutg1l4oHaGSWbOY7uQSUJbnInQKXsOC4Go/lgTkNUxxj9V/bHGdNeVqeaVpFpWdSVAz2ahrWfUzjFpvwchAqv+WCOIH8i8F6AVeXkPYi/ToOA3RkR7zrFHf2fIsEB0AwG3Cl7+SZi9TxUqlrheuXOWwDcI2zz+6Mb+Ljiw/+DTAAyrTrnHXTGnoGVTF/s5AY8LripM7Ul03pXbaaspdHQIMzk73AEX/l2ecrgzbQKQyQusjORxokSwLl/yOE4itR1LM5JIccqjb8W7bEjC/dv9L3pHlpJEKvyx+0D4pVj14ZnGFN93CpFOoZC1TA9atauP//NbOqwPL4WJwoe8rTjoXgLrJbfD1RO35jK2i8mW0j36iOUcw0IgfUbkd6YpkazkcbxEhs9LSyJZyuMEiTCJx1Aodnkcw5dy06YPw9XnlEplJgIn3XQ1gHfEypJX6i1aXk+v1Vu0cQC+0H/1Rk9varBQbAhSUg9aNxd8trtFm1zQspnVtp9T3CAwYzpSlk92vuQblYu0uFzKbqE0MI+GpF/cfRsfc+xOI6IRGP+aD3n0lQi3TptnJDoZwJx8yOP4fEeXGCEfQBZHSuRdHrSUFPOPQn2hqXjA5llEdDYDUwBcLPCzs5JIPs6M6cV6nPRHGV4T7epp8TaYCm0EYLX2r0DBWmJqRL6yr1ifusvA0MHuA7uMkMC3j4JfTpCCRgBXFbJshs3seEsPa9eC8YxIUbpc5jpi+oXdJZNMJv6oKG6RzmEaNze4ijz8gwngETsf30kF0kciy42Ihn4kYqs8PiKR+UaiE6eUiM3yOC7fTdGlxoX9SKQAMw8CNqi1HdFMftsTnFBtknI/YPHBFKNGD3ovBjp+WyqjoooZHVv0kHYzgIcELh8B8Kp8pKuz1VeFBC8UGvwCFTbXpblGZPwytXbb3wpZNh5/rFkPaVMhEPyNQBcw8Em701A5Y/s+PaS9A+Bcq0v1096eDOD1Im4OCU8glrOdeMrJl3Viy8F8d7by4OYGlxHSFgifnXVoOWs+gOZs5cEMiod8i0V3dFATTPX16NKTdjpFuGxVUbe1jZXBl4LJcgajKLSo1KbWqj/2MAii57CNyEeaynr5agCFOh24jE3XVxxRNsmeZQz8b4HLRujrbGJzCSTiAjkqkUDHHR+RSNry0Kt2PM7AU0ZYW5WWRLrGzDtOIhnIwwhrqwj8mJHoXJ2WRDbGlhwnkSJ+5zGsdtNeKHybwJLJ1FKr2ETgD93JGwH83gnp4SYoDCp0Z3Qjb64uK3jZ1L99sMylNACF2yZLTGLHezCu7G6ZJN+FpCOQk0gk/ZnH8B1PELDg8H8tSUsic9aljkokQ3ng2EeCczKWSAm8MDeZ2gUuO69QW1pzyRk12w2QazYBPYVOS3yKbyaIP13gZJxt7E1e7oSyGTK9/c8mUcHeyVR0J16F2At9RVFSD9jdPkrlWyzFahSnBjruSEserdPcRuVbT4JPOKYhI4lkKQ/0kciatCTij91UErutTEWk3KhzSrWnFEdIHv+WN0FU8KUbhdkZoWYJjgl5W+mPvkCg7xXkMczZ3kt0kqXyk+PXL/Its+veetB7hhHRXjVC2lXF3r4srUoETkseia4n+znkLW2J2BTPAwAajETnGtEpfKnsSlIUc6JQft2pkj1NQPVH10DshXpuZh8RbQyAOoc8jik9YW2iU8qmoqxqOcCvFuLeSZPvgtix8yDw9+Jh3/XZ3tOIjPcy0SYwpjLwhBH0zS/mtmXbtOyoPMBXWlyalkRskscxiexLrnbCOnA+4NZR5QCLhOQ9UDUt2l3Kz0It6/4GCFsKMto14agXsSywAypvz6bmlaRill0JIO+7w6rqOv4EYtEtrgoxP6yHtBWZ9B/cPG6QHvbdzqZrU59TCIiJnzRC3iuLtV3ZcubMIXl0PgXgCsGfLDHCGpiz3w6cwcGIDca+JHhz9Xy6oC2BEoSboBgXTZxq9Ka+B8IEgZ/sKpUZ16k7qncPdEUmNLhY2QKgMl/33bN+rAeEqwWe7kpm4Z1J/Q2V5/Z593iqNjMvHpn8Laecylwxo+19Pey7Aswv2zmoFbJCquwuU0leDUA0BPByY19ythH0fb0iEI1YtRtuHjdIr3LNMEB3g3n8yZLAoKf1oGZ66mLPpJV4FzHMwjbbrAWSgTxsk0gWp+o2GPtSxJur5zlZIgy+NB7y+QSn2IPB+DgIZxrATMA8FyQ8yQsNhBlZVe3Wd+Jh3yJi/mW+7lk+ZMhCMFu9X/q7muz5NztiT3SHfG8ReIFVsmAevA7AD5xSNh5/9JV4yHsHge7Ot7ziYd/NxPxwGj87n4lDRlh72wjhOQK9ysAuxcV7kknTQ+QeATbPBHi6QTSbgOGWK0GE1XrIZ3oC0XU2Z9Gdy1PDsxLIoWBQnU8DGcTzyFIi2R/JzrONfSk4XCIr0nosmS4KsrkWA4Rh/uj6eNB3DxEvy/W9DtVRtv5gjvgxuwIXVQaiO/WQFgbgtxhw3MSt0+51Ulhjz8aO7+sXeacQqD7PdeIRPaRNAtI++n40A99i8LcAIJUCiBQA5uG2mFaDdAG8Vg9rKY8/9pyN2XNlGa7DwnxZYCS6vpRRMKgTJZLWOxFb4nkckUhn8ksY0FCb+vrW1wZSjj2nu25DHiL19YR8tQD+0eq6VMr9sL1FKrJhgM7RE52zHFUTm2BCKV8I8F/yfW+1K3kzChS9sW+Xykx/K6a2lJVAPIHoOjDZER9cWCL2yQOHPhL0x5oxcDnAnFqQr1jUjumoLmhLuFy4AshxwCAS2robqpyx5W1bO0P38F8BsAwcRg7a0nt0NlC7aa/JmAPB3VG2FdWc7b1IKpcD+F2Bsv4BgaYNC0Q3DBiBAICnLtqUL4nYLo/SOFU3U5JgLB5Wt/UPAzHzQ6fH3iNFmYccnaLYFZlwLgOWR5JzDrYXU80rSTBZ7y5i1Bw+HdhRVNZ1vAHO/RLjCX1Zffsetay7hpmezPOt/48VTFUD0WixtSNbdjzkQyJSHrYucejEVJ/2ro8SQ61tj4B4RU4alqncBOtF8F2e09y/zsX9XSnzUYhEaFScs6X3uLIJdKxCJnGCspbvuwc8gehiApZBLMJltm3xGSpLTh5WG9tRjG3Iti1zuZSIlIeNsw7iB8idHKPWRcOQQO0cexcAW5/F7qC3goBrBS59NFcbOIbWd/wVhOcFLl3Y2eqrctwYh8C9yfLrAOwsxL3VQOxeTvE4MP4rR7d5hwgzPP7YFWrN9t3F2n5s3XOdC4lIedhCDIw7Uoo51uPvWFLMFdb2zmLOuhSSynwA79n1NyugzAdg1SmbriQ/ktO8MUQCpQ09fEqw4zi9/o04KanZAA4U4v7DZna85amLzTZNfA7Ayzb92fcBLFfVoeNVfyxY7O3H9uD1nrpokx70wYatY0uM8NGAOqUojxhAp9s3E+YkM+sgihOhC+A3AdpKrGytCLTvsjPhZsr8kFwUs7pukIt6M8zMH8H4WL/Fqdi3W8VT374nHvLNJfBPT3k/oFe8qvFUAqyez++G1nf8NZcVrGJjLGJc6I2AqN/QrIcDkP1I8M9uB7C7f3GxbacaqLXbOoyw9wZm+mY/l+V0+adyRmwTgNqe0MSzTeZLSOFZzKgFUC5YI/5CoLBJ9LzHXfWCXVunFSR6GK5YITuxnJ1/pAd9TbncfyxnHhKJpGBdyvPVQ+PlCa/LVMaygpEwzSGkYBCbyn4m7Aebewm8U+FBO4fWte0u1ZMecnqAniMkIuUhkUgkOSGn587Y+E5EykMikUgGkkAKKhEpD4lEIilugRREIlIeEolEUhoCyatEpDwkEomktASSF4lIeUgkEklpCiSnEpHykEgkktIWSE4kIuUhkUgkA0MgtkpEykMikUgGlkBskYiUh0QikQxMgWQlESkPiUQiGdgCyUgiUh4SiUQiBZK2RKQ8JBKJRAokbYlIeUgkEokUSNoSkfKQSCQSKZC0JSLlIZFIJJJ00IO+Jj3ok+KQSCQSB/L/JZ61E+lO58IAAAAASUVORK5CYII=" alt="Binance">
+      <span class="brand-divider"></span><span class="brand-context">PERÚ 2026</span>
+    
+    <div class="nav-links">
+      <a href="#strategy">Estrategia</a><a href="#calendar">Plan 90 días</a><a href="#activations">Activaciones</a><a href="#kpis">KPIs</a><a href="#budget">Presupuesto</a>
+    </div>
+    <a class="nav-cta" href="#next">Siguientes pasos</a>
+  </nav>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="hero-orb orb-a"></div><div class="hero-orb orb-b"></div>
+      <div class="wrap hero-grid">
+        <div>
+          <img class="binance-hero-logo" src="data:image/png;base64,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" alt="Binance">
+          <div class="hero-kicker reveal"><span class="pill">BORRADOR CONFIDENCIAL</span><span class="pill">PERÚ · 2026</span><span class="pill">PILOTO 90 DÍAS</span><span class="pill">COMUNIDAD + ADOPCIÓN</span></div>
+          <div class="eyebrow reveal delay-1">Propuesta de estrategia de crecimiento</div>
+          <h1 class="reveal delay-2">Binance Perú: Estrategia de Crecimiento y Comunidad</h1>
+          <p class="lead reveal delay-3">Construir la próxima generación de comunidades de finanzas digitales en Perú mediante educación, activación y adopción medible del ecosistema Binance.</p>
+          <div class="hero-path reveal delay-4" aria-label="Ruta de adopción"><span class="step">Educación</span><span class="arrow">→</span><span class="step">Registro</span><span class="arrow">→</span><span class="step">KYC</span><span class="arrow">→</span><span class="step">Fondeo</span><span class="arrow">→</span><span class="step">Usuario activo</span></div>
+          <p class="small reveal delay-4">Preparado por Fernando G. — Founder, Feraf Trades</p>
+        </div>
+        <aside class="hero-card reveal delay-3">
+          <div class="eyebrow">El piloto en una mirada</div><h3>No es otro evento aislado.</h3><p class="muted">Un programa estructurado de adopción diseñado para generar resultados comerciales, educativos y de comunidad medibles.</p>
+          <div class="metric"><b class="counter" data-target="90">0</b><span>días de activación guiada</span></div><div class="metric"><b class="counter" data-target="21">0</b><span>puntos de contacto planificados</span></div><div class="metric"><b class="counter" data-target="7">0</b><span>instituciones objetivo</span></div><div class="metric"><b class="counter" data-target="1">0</b><span>evento final de comunidad</span></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section compact" id="strategy"><div class="wrap"><div class="eyebrow reveal">Resumen ejecutivo</div><h2 class="reveal delay-1">No proponemos más eventos. Proponemos una ruta de adopción.</h2><p class="lead reveal delay-2">Muchas iniciativas de crecimiento terminan en awareness o registro. Esta propuesta busca acompañar a las personas desde su primer contacto con las finanzas digitales hasta un uso real, responsable y recurrente del ecosistema Binance.</p><div class="quote reveal delay-3">Binance puede reforzar su liderazgo en Perú combinando alcance de marca con educación aplicada, adopción responsable de productos y una comunidad local sostenible.</div></div></section>
+
+    <section class="section"><div class="wrap"><div class="section-head"><div><div class="eyebrow reveal">Oportunidad de mercado</div><h2 class="reveal delay-1">Una audiencia en crecimiento necesita una ruta confiable hacia las finanzas digitales.</h2></div><p class="copy reveal delay-2">La oportunidad es conectar visibilidad de marca con continuidad, comprensión de producto y adopción responsable.</p></div><div class="grid grid-3">
+      <article class="card reveal"><div class="icon">🎓</div><h3>Universidades</h3><p>Futuros profesionales de finanzas, negocios y tecnología que pueden convertirse en usuarios de largo plazo y líderes de comunidad.</p><div class="tags"><span class="tag">Universidad del Pacífico</span><span class="tag">Universidad de Lima</span><span class="tag">ESAN</span></div></article>
+      <article class="card reveal delay-1"><div class="icon">🏢</div><h3>Comunidades de coworking</h3><p>Emprendedores, freelancers y profesionales que necesitan herramientas financieras globales, stablecoins, liquidez y soluciones transfronterizas.</p><div class="tags"><span class="tag">WeWork</span><span class="tag">Comunal</span><span class="tag">Worx</span></div></article>
+      <article class="card reveal delay-2"><div class="icon">💼</div><h3>Piloto empresarial</h3><p>Introducción controlada a tesorería digital, stablecoins, pagos internacionales, liquidez y soluciones relevantes del ecosistema Binance.</p><div class="tags"><span class="tag">Tesorería digital</span><span class="tag">Stablecoins</span><span class="tag">Liquidez global</span></div></article>
+    </div></div></section>
+
+    <section class="section compact"><div class="wrap"><div class="eyebrow reveal">Marco de crecimiento</div><h2 class="reveal delay-1">Cuatro pilares. Un journey de usuario medible.</h2><div class="grid grid-4">
+      <article class="card reveal"><span class="kpi">01</span><h3>Educación</h3><p>Contenido claro, práctico y responsable adaptado a cada audiencia.</p></article><article class="card reveal delay-1"><span class="kpi">02</span><h3>Activación</h3><p>Registro, KYC, onboarding de la app y primera interacción práctica.</p></article><article class="card reveal delay-2"><span class="kpi">03</span><h3>Adopción de producto</h3><p>Spot, P2P, Earn y otros productos relevantes según el perfil y disponibilidad local.</p></article><article class="card reveal delay-3"><span class="kpi">04</span><h3>Comunidad</h3><p>Retención, educación recurrente, líderes locales y crecimiento orgánico.</p></article>
+    </div><div class="timeline reveal"><div class="timeline-item"><b>Etapa 1</b><strong>Descubrir</strong><p class="small">Awareness y educación</p></div><div class="timeline-item"><b>Etapa 2</b><strong>Registrar</strong><p class="small">Cuenta y KYC</p></div><div class="timeline-item"><b>Etapa 3</b><strong>Activar</strong><p class="small">Primer fondeo y uso</p></div><div class="timeline-item"><b>Etapa 4</b><strong>Retener</strong><p class="small">Uso recurrente</p></div><div class="timeline-item"><b>Etapa 5</b><strong>Multiplicar</strong><p class="small">Comunidad y liderazgo</p></div></div></div></section>
+
+    <section class="section" id="calendar"><div class="wrap"><div class="section-head"><div><div class="eyebrow reveal">Plan operativo</div><h2 class="reveal delay-1">Calendario educativo y de adopción de 90 días</h2></div><p class="copy reveal delay-2">21 puntos de contacto entre tres universidades, tres comunidades de coworking, un piloto empresarial y un Binance Community Night final.</p></div>
+      <div class="calendar-shell reveal"><div class="calendar-scroll"><table class="calendar" aria-label="Calendario operativo Binance Perú 90 días"><colgroup><col style="width:8%"><col style="width:10%"><col span="4" style="width:4.7%"><col span="4" style="width:4.7%"><col span="4" style="width:4.7%"><col style="width:25.6%"></colgroup>
+        <tr><th></th><th></th><th colspan="4" class="month">Mes 1</th><th colspan="4" class="month">Mes 2</th><th colspan="4" class="month">Mes 3</th><th class="month">Final</th></tr>
+        <tr><th></th><th></th><th class="week">S1</th><th class="week">S2</th><th class="week">S3</th><th class="week">S4</th><th class="week">S1</th><th class="week">S2</th><th class="week">S3</th><th class="week">S4</th><th class="week">S1</th><th class="week">S2</th><th class="week">S3</th><th class="week">S4</th><th class="week">S5</th></tr>
+        <tr><td rowspan="3" class="segment">Universidad</td><td class="place">U. Pacífico</td><td><span class="xmark">×</span></td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td></td><td><span class="xmark">×</span></td></tr>
+        <tr><td class="place">U. Lima</td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td><span class="xmark">×</span></td></tr>
+        <tr><td class="place">U. ESAN</td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td><span class="xmark">×</span></td></tr>
+        <tr><td rowspan="3" class="segment">Cowork</td><td class="place">WeWork</td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td><span class="xmark">×</span></td></tr>
+        <tr><td class="place">Comunal</td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td><span class="xmark">×</span></td></tr>
+        <tr><td class="place">Worx</td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td><span class="xmark">×</span></td></tr>
+        <tr><td class="segment">Empresa</td><td class="place">Empresa piloto</td><td></td><td></td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td><span class="xmark">×</span></td></tr>
+        <tr><td class="segment">Aprendizaje</td><td class="place">Fase</td><td colspan="4" class="phase">Fundamentos de finanzas digitales</td><td colspan="4" class="phase">Gestión financiera digital</td><td colspan="4" class="phase">Portafolio y gestión de riesgo</td><td class="phase">Binance Community Night</td></tr>
+        <tr><th colspan="15" class="subhead">Contenido principal</th></tr><tr><td colspan="2"></td><td colspan="4" class="content">Stablecoins · P2P · Seguridad · Ecosistema Binance</td><td colspan="4" class="content">Earn · Liquidez · Pagos · Casos de uso reales</td><td colspan="4" class="content">Portafolio · Diversificación · Trading responsable · Gestión de capital</td><td class="content">Reconocimiento · Comunidad · Líderes locales</td></tr>
+        <tr><th colspan="15" class="subhead">Objetivo principal</th></tr><tr><td colspan="2"></td><td colspan="4" class="objective">Registro + KYC<br><span class="small">Posible primer fondeo</span></td><td colspan="4" class="objective">Primer depósito + uso inicial</td><td colspan="4" class="objective">Usuario activo + adopción responsable</td><td class="objective">Comunidad + continuidad</td></tr>
+      </table></div><div class="calendar-note">Calendario propuesto. Puede ajustarse a prioridades regionales de Binance, disponibilidad de campañas, requerimientos de compliance y agenda de las instituciones.</div></div>
+      <div class="mobile-calendar">
+        <article class="phase-card reveal"><div class="phase-label">Mes 1 · Descubrimiento</div><h3>Fundamentos de finanzas digitales</h3><p class="muted">Registro, KYC y posible primer fondeo.</p><div class="tags"><span class="tag">Stablecoins</span><span class="tag">P2P</span><span class="tag">Seguridad</span><span class="tag">Binance</span></div></article>
+        <article class="phase-card reveal"><div class="phase-label">Mes 2 · Activación</div><h3>Gestión financiera digital</h3><p class="muted">Primer depósito y uso inicial de productos relevantes de Binance.</p><div class="tags"><span class="tag">Earn</span><span class="tag">Liquidez</span><span class="tag">Pagos</span><span class="tag">Casos de uso</span></div></article>
+        <article class="phase-card reveal"><div class="phase-label">Mes 3 · Adopción</div><h3>Portafolio y gestión de riesgo</h3><p class="muted">Adopción responsable, diseño de portafolio y desarrollo de usuarios activos.</p><div class="tags"><span class="tag">Portafolio</span><span class="tag">Diversificación</span><span class="tag">Riesgo</span><span class="tag">Capital</span></div></article>
+        <article class="phase-card reveal"><div class="phase-label">Final · Semana 5</div><h3>Binance Community Night</h3><p class="muted">Cierre, reconocimiento, networking y continuidad de comunidad.</p></article>
+      </div>
+    </div></section>
+
+    <section class="section compact"><div class="wrap"><div class="eyebrow reveal">Journey del usuario</div><h2 class="reveal delay-1">De asistente a miembro activo de la comunidad.</h2><div class="journey reveal delay-2"><span class="step primary">Workshop 1</span><span class="arrow">→</span><span class="step">Cuenta</span><span class="arrow">→</span><span class="step">KYC</span><span class="arrow">→</span><span class="step primary">Workshop 2</span><span class="arrow">→</span><span class="step">Fondeo</span><span class="arrow">→</span><span class="step">P2P / Earn / Spot</span><span class="arrow">→</span><span class="step primary">Workshop 3</span><span class="arrow">→</span><span class="step">Usuario activo</span><span class="arrow">→</span><span class="step primary">Community Night</span></div></div></section>
+
+    <section class="section" id="activations"><div class="wrap"><div class="section-head"><div><div class="eyebrow reveal">Nuevas activaciones de mercado</div><h2 class="reveal delay-1">Llevar Binance a comunidades con afinidad, poder adquisitivo y confianza.</h2></div><p class="copy reveal delay-2">En lugar de esperar a que comunidades de alto valor descubran cripto, Binance puede entrar a sus espacios con experiencias relevantes y educación aplicada.</p></div><div class="grid grid-3">
+      <article class="card activation-card reveal"><span class="number">COMUNIDAD 01</span><h3>Motociclismo y motorsport</h3><p>Ducati, KTM, BMW Motorrad, Triumph, Harley-Davidson, clubes de carreras y track days.</p></article><article class="card activation-card reveal delay-1"><span class="number">COMUNIDAD 02</span><h3>Lifestyle premium</h3><p>Golf, vela, ciclismo, pádel, deportes de endurance y clubes profesionales.</p></article><article class="card activation-card reveal delay-2"><span class="number">COMUNIDAD 03</span><h3>Emprendedores y ejecutivos</h3><p>Founder networks, asociaciones empresariales, coworkings y comunidades profesionales.</p></article>
+    </div><div class="concept reveal"><div><div class="eyebrow">Ejemplo de activación</div><h2>Binance x Comunidad Motorsport</h2><p class="copy">Una activación integrada a la cultura de la comunidad, no un stand cripto genérico.</p><div class="quote">El objetivo es posicionar a Binance como infraestructura financiera digital y una marca relevante para nuevas comunidades, no únicamente como plataforma de trading.</div></div><div class="concept-list"><div>Zona de experiencia Binance en carreras y rodadas</div><div>Registro por QR, KYC y onboarding de la app</div><div>Demostraciones de P2P, pagos y productos disponibles</div><div>Beneficios con partners y comercios aliados</div><div>Micro sesiones educativas de finanzas digitales</div><div>Contenido, merchandising y dinámicas de comunidad</div></div></div></div></section>
+
+    <section class="section" id="kpis"><div class="wrap"><div class="eyebrow reveal">Métricas de éxito</div><h2 class="reveal delay-1">Medir adopción, no solamente asistencia.</h2><div class="grid grid-3">
+      <article class="card kpi-card reveal"><span class="kpi counter" data-target="250" data-suffix="+">0</span><div class="kpi-label">Nuevos usuarios</div><div class="kpi-note">Meta referencial: 200–300 registros.</div></article><article class="card kpi-card reveal delay-1"><span class="kpi counter" data-target="150" data-suffix="+">0</span><div class="kpi-label">KYC completado</div><div class="kpi-note">Usuarios habilitados para uso de plataforma.</div></article><article class="card kpi-card reveal delay-2"><span class="kpi counter" data-target="75" data-suffix="+">0</span><div class="kpi-label">Usuarios activos</div><div class="kpi-note">Uso de productos relevantes de Binance.</div></article><article class="card kpi-card reveal"><span class="kpi counter" data-target="500" data-suffix="+">0</span><div class="kpi-label">Asistencia acumulada</div><div class="kpi-note">Alcance educativo de todas las sesiones.</div></article><article class="card kpi-card reveal delay-1"><span class="kpi counter" data-target="500" data-suffix="+">0</span><div class="kpi-label">Comunidad local</div><div class="kpi-note">Base recurrente de participantes.</div></article><article class="card kpi-card reveal delay-2"><span class="kpi counter" data-target="3" data-suffix="+">0</span><div class="kpi-label">Líderes de comunidad</div><div class="kpi-note">Potenciales líderes universitarios o locales.</div></article>
+    </div><p class="small reveal" style="margin-top:18px">Todas las cifras son objetivos propuestos para el piloto y deberán validarse con Binance según presupuesto, mecánicas de campaña, compliance, condiciones de mercado y soporte disponible.</p></div></section>
+
+    <section class="section compact"><div class="wrap"><div class="eyebrow reveal">Valor para Binance</div><h2 class="reveal delay-1">Impacto comercial, institucional y de comunidad.</h2><div class="grid grid-2"><article class="card reveal"><div class="icon">📈</div><h3>Crecimiento de usuarios</h3><p>Registros, KYC, primer fondeo, activación de producto y retención.</p></article><article class="card reveal delay-1"><div class="icon">🏛️</div><h3>Presencia institucional</h3><p>Relaciones con universidades, coworkings, empresas y organizaciones de comunidad.</p></article><article class="card reveal"><div class="icon">🎥</div><h3>Contenido orgánico</h3><p>Contenido educativo y activaciones documentadas para canales sociales y comunidades locales.</p></article><article class="card reveal delay-1"><div class="icon">🌎</div><h3>Modelo escalable</h3><p>Un framework replicable en otras ciudades del Perú y potencialmente en otros mercados LATAM.</p></article></div></div></section>
+
+    <section class="section" id="budget"><div class="wrap"><div class="eyebrow reveal">Referencia de presupuesto inicial</div><h2 class="reveal delay-1">Ejecución lean con sede institucional.</h2><div class="budget"><div class="card reveal"><table class="budget-table" aria-label="Presupuesto inicial"><thead><tr><th>Concepto</th><th>Monto estimado</th></tr></thead><tbody><tr><td>Innovation Hub / venue</td><td>0 USDT</td></tr><tr><td>Coffee break</td><td>10 USDT por asistente</td></tr><tr><td>Fotógrafo profesional</td><td>105 USDT</td></tr><tr><td>Soporte operativo — 2 asistentes</td><td>50 USDT</td></tr><tr><td>Merchandising Binance</td><td>Sujeto a disponibilidad</td></tr><tr><td>Materiales de activación Binance</td><td>Sujeto a disponibilidad</td></tr></tbody></table></div><aside class="card reveal delay-1"><div class="eyebrow">Total estimado</div><div class="budget-total">700–800 USDT</div><p class="muted">Presupuesto referencial para una activación de 50+ asistentes. El alcance final dependerá de sede, asistencia, materiales aprobados y campañas disponibles.</p><h3>Materiales sugeridos</h3><ul class="clean"><li>Roll-ups y señalética de marca</li><li>Photo area y elementos para contenido</li><li>Stands QR para registro y descarga de app</li><li>Plantilla oficial de presentación</li><li>Assets de campaña y social media</li></ul></aside></div></div></section>
+
+    <section class="section compact"><div class="wrap"><div class="eyebrow reveal">Expansión nacional</div><h2 class="reveal delay-1">Validar Lima. Luego escalar el modelo.</h2><div class="grid grid-3"><article class="card reveal"><span class="kpi">01</span><h3>Arequipa</h3><p>Minería, negocios, universidades y comunidades profesionales.</p></article><article class="card reveal delay-1"><span class="kpi">02</span><h3>Trujillo</h3><p>Comercio, emprendimiento, universidades y redes empresariales regionales.</p></article><article class="card reveal delay-2"><span class="kpi">03</span><h3>Piura</h3><p>Exportaciones, agroindustria, pagos internacionales y necesidades financieras transfronterizas.</p></article></div></div></section>
+
+    <section class="section"><div class="wrap profile"><div class="profile-mark reveal" aria-label="Fernando G. / Feraf Trades"></div><article class="card profile-copy reveal delay-1"><div class="eyebrow">Liderazgo de la propuesta</div><h2>Fernando G.</h2><p class="lead">Trader, educador y builder enfocado en educación financiera, gestión de riesgo y adopción responsable de activos digitales.</p><ul class="clean"><li>Founder de Feraf Trades</li><li>Lead Copy Trader público en Binance</li><li>Facilitador de workshops de finanzas digitales</li><li>Contenido enfocado en gestión de riesgo, educación y adopción responsable</li><li>Experiencia desarrollando iniciativas con exchanges, eventos y comunidades profesionales</li></ul><div class="quote" style="font-size:22px">El objetivo no es generar hype. Es construir una comunidad Binance en Perú activa, educada y sostenible.</div></article></div></section>
+
+    <section class="closing section" id="next"><div class="wrap"><div class="eyebrow reveal">Siguientes pasos</div><h2 class="reveal delay-1">De eventos mensuales a un programa país medible.</h2><p class="lead reveal delay-2">Revisar el piloto, alinearlo con las prioridades regionales de Binance, aprobar la primera activación y medir resultados antes de escalar.</p><div class="timeline reveal delay-2" style="max-width:980px;margin-inline:auto;margin-top:34px;text-align:left"><div class="timeline-item"><b>Paso 1</b><strong>Revisar</strong><p class="small">Alcance y prioridades</p></div><div class="timeline-item"><b>Paso 2</b><strong>Adaptar</strong><p class="small">Compliance y campañas</p></div><div class="timeline-item"><b>Paso 3</b><strong>Lanzar</strong><p class="small">Primera activación</p></div><div class="timeline-item"><b>Paso 4</b><strong>Medir</strong><p class="small">Adquisición y adopción</p></div><div class="timeline-item"><b>Paso 5</b><strong>Escalar</strong><p class="small">Lima y otras ciudades</p></div></div></div></section>
+  </main>
+
+  <footer><div class="wrap footer-row"><span class="footer-brand"><img class="binance-footer-logo" src="data:image/png;base64,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" alt="Binance"><span>Fernando G. — Founder, Feraf Trades</span></span><span>Binance Perú · Estrategia de Crecimiento 2026 · Borrador confidencial</span></div></footer>
+
+  <script>
+    (() => {
+      const progress = document.getElementById('progress');
+      const updateProgress = () => { const max = document.documentElement.scrollHeight - window.innerHeight; progress.style.width = (max > 0 ? (window.scrollY / max) * 100 : 0) + '%'; };
+      addEventListener('scroll', updateProgress, {passive:true}); updateProgress();
+      const revealObserver = new IntersectionObserver((entries) => { entries.forEach(entry => { if(entry.isIntersecting){ entry.target.classList.add('visible'); revealObserver.unobserve(entry.target); } }); }, {threshold:.12, rootMargin:'0px 0px -6% 0px'});
+      document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+      const animateCounter = (el) => { const target=Number(el.dataset.target||0), suffix=el.dataset.suffix||'', duration=1100, start=performance.now(); const tick=(now)=>{ const t=Math.min((now-start)/duration,1), eased=1-Math.pow(1-t,3); el.textContent=Math.round(target*eased).toLocaleString('es-PE')+suffix; if(t<1) requestAnimationFrame(tick); }; requestAnimationFrame(tick); };
+      const counterObserver = new IntersectionObserver((entries)=>{ entries.forEach(entry=>{ if(entry.isIntersecting){ animateCounter(entry.target); counterObserver.unobserve(entry.target); } }); },{threshold:.6});
+      document.querySelectorAll('.counter').forEach(el=>counterObserver.observe(el));
+    })();
+  </script>
+</body>
+</html>
