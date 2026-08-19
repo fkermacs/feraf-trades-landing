@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="description" content="Bybit Peru Growth Strategy 2026 — a 90-day adoption, education and community growth proposal by Fernando G., Founder of Feraf Trades.">
+  <meta name="description" content="Binance Perú 2026 — propuesta de crecimiento, educación, adopción y comunidad a 90 días preparada por Fernando G., Founder de Feraf Trades.">
   <meta name="theme-color" content="#0b0e11">
-  <title>Bybit Peru Community Growth Strategy 2026</title>
+  <title>Binance Perú | Estrategia de Crecimiento y Comunidad 2026</title>
   <style>
     :root{
       --bg:#07090c;
@@ -16,8 +16,8 @@
       --text:#f7f8fa;
       --muted:#9ca5b2;
       --line:rgba(255,255,255,.09);
-      --orange:#f7a600;
-      --orange-2:#ffb82e;
+      --orange:#F0B90B;
+      --orange-2:#F8D33A;
       --green:#33d69f;
       --blue:#5aa7ff;
       --radius:22px;
@@ -33,7 +33,7 @@
       color:var(--text);
       font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
       background:
-        radial-gradient(circle at 82% 4%,rgba(247,166,0,.14),transparent 28rem),
+        radial-gradient(circle at 82% 4%,rgba(240,185,11,.14),transparent 28rem),
         radial-gradient(circle at 12% 28%,rgba(90,167,255,.06),transparent 30rem),
         linear-gradient(180deg,var(--bg) 0%,var(--bg-2) 45%,var(--bg) 100%);
       line-height:1.5;
@@ -53,14 +53,14 @@
     img,svg{max-width:100%;display:block}
     strong{color:var(--text)}
     .wrap{width:min(var(--max),calc(100% - 40px));margin-inline:auto}
-    .section{padding:110px 0;position:relative;border-bottom:1px solid rgba(247,166,0,.10)}
+    .section{padding:110px 0;position:relative;border-bottom:1px solid rgba(240,185,11,.10)}
     .section.compact{padding:78px 0}
     .eyebrow{
       display:inline-flex;align-items:center;gap:10px;
       color:var(--orange);font-size:12px;font-weight:900;letter-spacing:.17em;text-transform:uppercase;
       margin-bottom:16px
     }
-    .eyebrow::before{content:"";width:8px;height:8px;background:var(--orange);transform:rotate(45deg);box-shadow:0 0 24px rgba(247,166,0,.65)}
+    .eyebrow::before{content:"";width:8px;height:8px;background:var(--orange);transform:rotate(45deg);box-shadow:0 0 24px rgba(240,185,11,.65)}
     h1,h2,h3,p{margin-top:0}
     h1{font-size:clamp(46px,7vw,86px);line-height:.98;letter-spacing:-.055em;margin-bottom:22px;max-width:1050px}
     h2{font-size:clamp(34px,5vw,58px);line-height:1.02;letter-spacing:-.045em;margin-bottom:22px;max-width:990px}
@@ -74,7 +74,7 @@
     .section-head p{max-width:430px;margin-bottom:4px}
 
     /* top bar */
-    .progress{position:fixed;left:0;top:0;width:0;height:3px;background:linear-gradient(90deg,var(--orange),var(--orange-2));z-index:1000;box-shadow:0 0 18px rgba(247,166,0,.7)}
+    .progress{position:fixed;left:0;top:0;width:0;height:3px;background:linear-gradient(90deg,var(--orange),var(--orange-2));z-index:1000;box-shadow:0 0 18px rgba(240,185,11,.7)}
     .nav{
       position:fixed;top:14px;left:50%;transform:translateX(-50%);
       width:min(1160px,calc(100% - 28px));z-index:900;
@@ -84,7 +84,7 @@
       box-shadow:0 14px 50px rgba(0,0,0,.28)
     }
     .brand{display:flex;align-items:center;gap:10px;font-weight:950;letter-spacing:-.03em}
-    .brand-mark{width:32px;height:32px;border-radius:9px;background:linear-gradient(135deg,var(--orange),#ffcf67);display:grid;place-items:center;color:#0a0a0a;font-weight:1000}
+    .brand-mark{width:32px;height:32px;border-radius:9px;background:linear-gradient(135deg,var(--orange),#F8D33A);display:grid;place-items:center;color:#0a0a0a;font-weight:1000}
     .nav-links{display:flex;gap:6px;flex-wrap:wrap;justify-content:center}
     .nav-links a{padding:8px 10px;border-radius:10px;color:#bac1ca;font-size:13px;font-weight:750}
     .nav-links a:hover{background:rgba(255,255,255,.06);color:#fff}
@@ -93,18 +93,18 @@
     /* hero */
     .hero{min-height:100svh;display:flex;align-items:center;padding:150px 0 90px;overflow:hidden}
     .hero-orb{position:absolute;border-radius:50%;filter:blur(1px);pointer-events:none}
-    .orb-a{right:-160px;top:80px;width:620px;height:620px;background:radial-gradient(circle,rgba(247,166,0,.18),rgba(247,166,0,0) 68%);animation:float 8s ease-in-out infinite}
+    .orb-a{right:-160px;top:80px;width:620px;height:620px;background:radial-gradient(circle,rgba(240,185,11,.18),rgba(240,185,11,0) 68%);animation:float 8s ease-in-out infinite}
     .orb-b{left:-120px;bottom:0;width:390px;height:390px;background:radial-gradient(circle,rgba(90,167,255,.09),transparent 68%);animation:float 10s ease-in-out infinite reverse}
     .hero-grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(300px,.65fr);gap:56px;align-items:center}
     .hero-kicker{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:24px}
-    .pill{display:inline-flex;align-items:center;gap:7px;padding:7px 11px;border-radius:999px;border:1px solid rgba(247,166,0,.28);background:rgba(247,166,0,.07);color:#ffd68a;font-size:12px;font-weight:850;letter-spacing:.04em}
+    .pill{display:inline-flex;align-items:center;gap:7px;padding:7px 11px;border-radius:999px;border:1px solid rgba(240,185,11,.28);background:rgba(240,185,11,.07);color:#F8D978;font-size:12px;font-weight:850;letter-spacing:.04em}
     .hero-path{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin:28px 0 30px}
     .step{padding:10px 13px;border:1px solid rgba(255,255,255,.10);border-radius:12px;background:rgba(255,255,255,.035);font-weight:850;font-size:13px}
     .arrow{color:var(--orange);font-weight:950}
     .hero-card{
       position:relative;padding:28px;border-radius:28px;
       background:linear-gradient(180deg,rgba(27,31,39,.96),rgba(12,15,19,.96));
-      border:1px solid rgba(247,166,0,.26);box-shadow:var(--shadow);overflow:hidden
+      border:1px solid rgba(240,185,11,.26);box-shadow:var(--shadow);overflow:hidden
     }
     .hero-card::before{content:"";position:absolute;inset:0 0 auto 0;height:2px;background:linear-gradient(90deg,var(--orange),transparent)}
     .hero-card h3{font-size:26px}
@@ -125,15 +125,15 @@
       transition:transform .28s ease,border-color .28s ease,box-shadow .28s ease
     }
     .card::after{content:"";position:absolute;left:0;top:0;width:100%;height:2px;background:linear-gradient(90deg,var(--orange),transparent 72%);opacity:.75}
-    .card:hover{transform:translateY(-5px);border-color:rgba(247,166,0,.32);box-shadow:0 24px 70px rgba(0,0,0,.32)}
+    .card:hover{transform:translateY(-5px);border-color:rgba(240,185,11,.32);box-shadow:0 24px 70px rgba(0,0,0,.32)}
     .card p,.card li{color:var(--muted)}
     .icon{
       width:42px;height:42px;display:grid;place-items:center;border-radius:13px;margin-bottom:18px;
-      background:rgba(247,166,0,.11);border:1px solid rgba(247,166,0,.23);font-size:20px
+      background:rgba(240,185,11,.11);border:1px solid rgba(240,185,11,.23);font-size:20px
     }
     .quote{
       margin-top:30px;padding:26px 28px;border-left:4px solid var(--orange);border-radius:0 18px 18px 0;
-      background:linear-gradient(90deg,rgba(247,166,0,.12),rgba(247,166,0,.025));
+      background:linear-gradient(90deg,rgba(240,185,11,.12),rgba(240,185,11,.025));
       font-size:clamp(22px,3vw,32px);font-weight:850;line-height:1.28;max-width:1020px
     }
     .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:15px}
@@ -156,26 +156,26 @@
 
     /* calendar */
     .calendar-shell{
-      border:1px solid rgba(247,166,0,.28);border-radius:26px;overflow:hidden;
-      background:linear-gradient(180deg,rgba(247,166,0,.065),rgba(12,15,19,.96));
+      border:1px solid rgba(240,185,11,.28);border-radius:26px;overflow:hidden;
+      background:linear-gradient(180deg,rgba(240,185,11,.065),rgba(12,15,19,.96));
       box-shadow:var(--shadow)
     }
     .calendar-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
     table.calendar{border-collapse:separate;border-spacing:0;width:100%;min-width:1120px;table-layout:fixed}
     .calendar th,.calendar td{padding:9px 7px;border-right:1px solid rgba(255,255,255,.07);border-bottom:1px solid rgba(255,255,255,.07);text-align:center;vertical-align:middle;font-size:11px}
-    .calendar th{background:rgba(247,166,0,.13);font-weight:900;text-transform:uppercase;letter-spacing:.045em}
+    .calendar th{background:rgba(240,185,11,.13);font-weight:900;text-transform:uppercase;letter-spacing:.045em}
     .calendar .month{font-size:13px;color:#fff}
     .calendar .week{color:var(--muted);background:rgba(255,255,255,.03)}
-    .calendar .segment{background:rgba(247,166,0,.09);color:var(--orange);font-weight:900;text-transform:uppercase;letter-spacing:.04em}
+    .calendar .segment{background:rgba(240,185,11,.09);color:var(--orange);font-weight:900;text-transform:uppercase;letter-spacing:.04em}
     .calendar .place{text-align:left;font-weight:800;background:rgba(255,255,255,.025)}
-    .calendar .phase{font-size:12px;font-weight:900;background:linear-gradient(90deg,rgba(247,166,0,.16),rgba(247,166,0,.045));line-height:1.15}
+    .calendar .phase{font-size:12px;font-weight:900;background:linear-gradient(90deg,rgba(240,185,11,.16),rgba(240,185,11,.045));line-height:1.15}
     .calendar .subhead{background:rgba(0,0,0,.38);color:var(--orange);font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.08em}
     .calendar .content{text-align:left;color:#c7cdd5;background:rgba(255,255,255,.02);line-height:1.35}
     .calendar .objective{font-weight:850;background:rgba(255,255,255,.04)}
-    .xmark{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:50%;border:1px solid var(--orange);background:rgba(247,166,0,.13);color:var(--orange);font-weight:950;box-shadow:0 0 18px rgba(247,166,0,.16)}
+    .xmark{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:50%;border:1px solid var(--orange);background:rgba(240,185,11,.13);color:var(--orange);font-weight:950;box-shadow:0 0 18px rgba(240,185,11,.16)}
     .calendar-note{padding:14px 17px;color:var(--muted);font-size:12px;border-top:1px solid var(--line)}
     .mobile-calendar{display:none}
-    .phase-card{padding:20px;border:1px solid rgba(247,166,0,.24);border-radius:20px;background:linear-gradient(180deg,rgba(247,166,0,.07),rgba(16,19,24,.96));margin-bottom:12px}
+    .phase-card{padding:20px;border:1px solid rgba(240,185,11,.24);border-radius:20px;background:linear-gradient(180deg,rgba(240,185,11,.07),rgba(16,19,24,.96));margin-bottom:12px}
     .phase-card .phase-label{color:var(--orange);font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.10em}
     .phase-card h3{margin:7px 0 9px}
     .schedule{display:grid;gap:8px;margin-top:14px}
@@ -186,7 +186,7 @@
     /* journey */
     .journey{display:flex;align-items:center;gap:9px;overflow-x:auto;padding:18px 2px 10px;scroll-snap-type:x proximity}
     .journey .step{white-space:nowrap;scroll-snap-align:start}
-    .journey .step.primary{background:rgba(247,166,0,.12);border-color:rgba(247,166,0,.32)}
+    .journey .step.primary{background:rgba(240,185,11,.12);border-color:rgba(240,185,11,.32)}
 
     /* activation */
     .activation-card{min-height:280px;display:flex;flex-direction:column}
@@ -194,9 +194,9 @@
     .activation-card h3{font-size:25px;margin-top:55px}
     .activation-card p{margin-bottom:0}
     .concept{
-      margin-top:28px;padding:32px;border-radius:26px;border:1px solid rgba(247,166,0,.26);
+      margin-top:28px;padding:32px;border-radius:26px;border:1px solid rgba(240,185,11,.26);
       background:
-        radial-gradient(circle at 88% 12%,rgba(247,166,0,.15),transparent 14rem),
+        radial-gradient(circle at 88% 12%,rgba(240,185,11,.15),transparent 14rem),
         linear-gradient(135deg,#171b22,#0d1014);
       display:grid;grid-template-columns:1fr .85fr;gap:34px;align-items:center
     }
@@ -215,9 +215,9 @@
     /* profile */
     .profile{display:grid;grid-template-columns:.7fr 1.3fr;gap:28px;align-items:stretch}
     .profile-mark{
-      min-height:420px;border-radius:28px;border:1px solid rgba(247,166,0,.25);
+      min-height:420px;border-radius:28px;border:1px solid rgba(240,185,11,.25);
       background:
-        radial-gradient(circle at 50% 30%,rgba(247,166,0,.23),transparent 19rem),
+        radial-gradient(circle at 50% 30%,rgba(240,185,11,.23),transparent 19rem),
         linear-gradient(145deg,#1b2029,#0b0e12);
       display:grid;place-items:center;position:relative;overflow:hidden
     }
@@ -241,7 +241,7 @@
     .reveal.visible{opacity:1;transform:none}
     .delay-1{transition-delay:.08s}.delay-2{transition-delay:.16s}.delay-3{transition-delay:.24s}.delay-4{transition-delay:.32s}
     @keyframes float{0%,100%{transform:translate3d(0,0,0)}50%{transform:translate3d(0,-18px,0)}}
-    @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(247,166,0,.15)}50%{box-shadow:0 0 0 12px rgba(247,166,0,0)}}
+    @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(240,185,11,.15)}50%{box-shadow:0 0 0 12px rgba(240,185,11,0)}}
     .pulse{animation:pulse 2.5s ease-in-out infinite}
 
     @media(max-width:980px){
@@ -301,9 +301,9 @@
       a{text-decoration:none}
     }
   
-    /* Official Bybit logo integration */
+    /* Binance brand integration */
     .brand-logo-link{min-width:0}
-    .bybit-logo-nav{
+    .legacy-logo-nav{
       width:112px;
       height:auto;
       object-fit:contain;
@@ -312,13 +312,13 @@
       flex:0 0 auto;
     }
     .brand-context{
-      color:#f7a600;
+      color:#F0B90B;
       font-size:11px;
       font-weight:950;
       letter-spacing:.12em;
       white-space:nowrap;
     }
-    .bybit-logo-hero{
+    .legacy-logo-hero{
       width:clamp(180px,22vw,280px);
       height:auto;
       margin:0 0 28px;
@@ -326,7 +326,7 @@
       box-shadow:0 22px 70px rgba(0,0,0,.35);
     }
     .footer-brand{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
-    .bybit-logo-footer{width:82px;height:auto;border-radius:7px}
+    .legacy-logo-footer{width:82px;height:auto;border-radius:7px}
 
     /* Production responsive refinements */
     :root{
@@ -348,13 +348,13 @@
     }
     .hero{min-height:100dvh}
     .card,.hero-card,.concept,.calendar-shell{contain:layout paint style}
-    .calendar-scroll{scrollbar-width:thin;scrollbar-color:rgba(247,166,0,.45) rgba(255,255,255,.04)}
+    .calendar-scroll{scrollbar-width:thin;scrollbar-color:rgba(240,185,11,.45) rgba(255,255,255,.04)}
     .calendar-scroll::-webkit-scrollbar{height:8px}
     .calendar-scroll::-webkit-scrollbar-track{background:rgba(255,255,255,.04)}
-    .calendar-scroll::-webkit-scrollbar-thumb{background:rgba(247,166,0,.45);border-radius:999px}
+    .calendar-scroll::-webkit-scrollbar-thumb{background:rgba(240,185,11,.45);border-radius:999px}
     .btn,.nav a,.journey .step{-webkit-tap-highlight-color:transparent}
     .btn:focus-visible,.nav a:focus-visible,a:focus-visible,button:focus-visible{
-      outline:3px solid rgba(247,166,0,.7);
+      outline:3px solid rgba(240,185,11,.7);
       outline-offset:3px;
     }
 
@@ -376,7 +376,7 @@
       .wrap{width:min(var(--max),calc(100% - 34px))}
       .hero-grid{grid-template-columns:minmax(0,1.15fr) minmax(300px,.85fr);gap:34px}
       .nav-links a{padding-inline:7px;font-size:12px}
-      .bybit-logo-nav{width:96px}
+      .legacy-logo-nav{width:96px}
       .grid-4{grid-template-columns:repeat(2,minmax(0,1fr))}
       .timeline{grid-template-columns:repeat(5,minmax(0,1fr))}
       .timeline-item{padding:16px 13px}
@@ -388,7 +388,7 @@
       .wrap{width:min(var(--max),calc(100% - 34px))}
       .hero{padding-top:138px}
       .hero-grid{gap:34px}
-      .bybit-logo-hero{width:220px}
+      .legacy-logo-hero{width:220px}
       .hero-card{width:100%}
       .concept{grid-template-columns:1fr}
       .calendar-shell{display:none}
@@ -407,13 +407,13 @@
         padding:9px 11px;
       }
       .brand-context{display:none}
-      .bybit-logo-nav{width:96px}
+      .legacy-logo-nav{width:96px}
       .hero{
         padding-top:calc(108px + var(--safe-top));
         padding-bottom:72px;
         min-height:auto;
       }
-      .bybit-logo-hero{
+      .legacy-logo-hero{
         width:min(210px,62vw);
         margin-bottom:22px;
         border-radius:11px;
@@ -443,13 +443,13 @@
       footer{padding-bottom:calc(32px + var(--safe-bottom))}
       .footer-row{align-items:flex-start}
       .footer-brand{display:grid;gap:10px}
-      .bybit-logo-footer{width:94px}
+      .legacy-logo-footer{width:94px}
     }
 
     /* Small Android / iPhone SE */
     @media(max-width:390px){
       .nav{width:calc(100% - 14px)}
-      .bybit-logo-nav{width:86px}
+      .legacy-logo-nav{width:86px}
       .hero{padding-top:104px}
       .hero-card .metric{align-items:center}
       .hero-card span{font-size:12px}
@@ -463,23 +463,23 @@
     @media(max-height:560px) and (orientation:landscape){
       .hero{min-height:auto;padding-top:104px;padding-bottom:58px}
       .hero-grid{grid-template-columns:1fr 1fr}
-      .bybit-logo-hero{width:160px;margin-bottom:14px}
+      .legacy-logo-hero{width:160px;margin-bottom:14px}
       h1{font-size:44px}
       .lead{font-size:17px}
       .hero-path{margin-block:18px}
     }
 
     @media print{
-      .bybit-logo-nav{width:90px}
-      .bybit-logo-hero{width:190px;box-shadow:none}
-      .bybit-logo-footer{width:72px}
+      .legacy-logo-nav{width:90px}
+      .legacy-logo-hero{width:190px;box-shadow:none}
+      .legacy-logo-footer{width:72px}
     }
 
   
-    /* Final executive art direction — logo used only where it adds value */
+    /* Final executive art direction — Binance identity */
     :root{
-      --orange:#F7A600;
-      --orange-2:#FFB72B;
+      --orange:#F0B90B;
+      --orange-2:#F8D33A;
       --bg:#050505;
       --bg-2:#0A0A0A;
       --panel:#111111;
@@ -492,7 +492,7 @@
 
     body{
       background:
-        radial-gradient(circle at 84% 2%,rgba(247,166,0,.12),transparent 28rem),
+        radial-gradient(circle at 84% 2%,rgba(240,185,11,.12),transparent 28rem),
         linear-gradient(180deg,#050505 0%,#0A0A0A 50%,#050505 100%);
     }
 
@@ -502,7 +502,7 @@
       gap:10px;
       min-width:0;
     }
-    .brand-bybit{
+    .legacy-brand-word{
       font-size:18px;
       font-weight:1000;
       letter-spacing:.06em;
@@ -524,7 +524,7 @@
       white-space:nowrap;
     }
 
-    .bybit-logo-hero{display:none!important}
+    .legacy-logo-hero{display:none!important}
 
     .footer-brand{
       display:flex;
@@ -539,7 +539,7 @@
       letter-spacing:.10em;
       font-weight:800;
     }
-    .bybit-logo-footer{
+    .legacy-logo-footer{
       width:72px;
       height:72px;
       object-fit:contain;
@@ -551,7 +551,7 @@
     .hero{
       background:
         linear-gradient(180deg,rgba(255,255,255,.01),transparent 34%),
-        radial-gradient(circle at 78% 35%,rgba(247,166,0,.08),transparent 24rem);
+        radial-gradient(circle at 78% 35%,rgba(240,185,11,.08),transparent 24rem);
     }
 
     .hero h1{
@@ -563,9 +563,9 @@
     }
 
     .pill{
-      color:#FFD895;
-      background:rgba(247,166,0,.06);
-      border-color:rgba(247,166,0,.20);
+      color:#F8D978;
+      background:rgba(240,185,11,.06);
+      border-color:rgba(240,185,11,.20);
     }
 
     .card,
@@ -585,13 +585,13 @@
     }
 
     .quote{
-      background:linear-gradient(90deg,rgba(247,166,0,.10),rgba(247,166,0,.015));
+      background:linear-gradient(90deg,rgba(240,185,11,.10),rgba(240,185,11,.015));
     }
 
     @media(max-width:720px){
       .brand-context{display:none}
       .brand-divider{display:none}
-      .brand-bybit{font-size:17px}
+      .legacy-brand-word{font-size:17px}
       .footer-brand{
         display:grid;
         grid-template-columns:auto 1fr;
@@ -600,480 +600,140 @@
       .footer-prepared{
         grid-column:1 / -1;
       }
-      .bybit-logo-footer{
+      .legacy-logo-footer{
         width:64px;
         height:64px;
       }
     }
 
     @media print{
-      .brand-bybit{color:#111}
-      .brand-i{color:#F7A600}
+      .legacy-brand-word{color:#111}
+      .brand-i{color:#F0B90B}
       .footer-prepared{color:#444}
     }
 
-  </style>
+  
+    /* Binance official-style inline mark */
+    .binance-lockup{display:flex;align-items:center;gap:10px;min-width:0}
+    .binance-symbol{width:28px;height:28px;flex:0 0 auto}
+    .binance-word{font-size:18px;font-weight:1000;letter-spacing:.035em;color:#F0B90B;line-height:1}
+    .binance-hero-mark{width:64px;height:64px;margin-bottom:22px;filter:drop-shadow(0 12px 32px rgba(240,185,11,.18))}
+    .binance-footer-mark{width:34px;height:34px;flex:0 0 auto}
+    @media(max-width:720px){.binance-word{font-size:16px}.binance-symbol{width:25px;height:25px}.binance-hero-mark{width:54px;height:54px}}
+
+    /* Official Binance logo assets supplied for this proposal */
+    .binance-lockup{display:flex;align-items:center;gap:12px;min-width:0}
+    .binance-nav-logo{width:142px;height:auto;display:block;object-fit:contain;flex:0 0 auto}
+    .binance-hero-logo{width:82px;height:82px;display:block;object-fit:contain;margin-bottom:24px;filter:drop-shadow(0 14px 34px rgba(240,185,11,.20))}
+    .binance-footer-logo{width:128px;height:auto;display:block;object-fit:contain;flex:0 0 auto}
+    @media(max-width:980px){.binance-nav-logo{width:126px}}
+    @media(max-width:720px){.binance-nav-logo{width:116px}.binance-hero-logo{width:68px;height:68px}.binance-footer-logo{width:116px}}
+    @media(max-width:390px){.binance-nav-logo{width:106px}}
+    @media print{.binance-nav-logo{width:120px}.binance-hero-logo{width:64px;height:64px}.binance-footer-logo{width:105px}}
+</style>
 </head>
 <body>
   <div class="progress" id="progress"></div>
 
-  <nav class="nav" aria-label="Proposal navigation">
-    <a class="brand brand-wordmark" href="#top" aria-label="Bybit Peru 2026">
-      <span class="brand-bybit">BYB<span class="brand-i">I</span>T</span>
-      <span class="brand-divider"></span>
-      <span class="brand-context">PERU 2026</span>
-    </a>
+  <nav class="nav" aria-label="Navegación de la propuesta">
+    <a class="brand binance-lockup" href="#top" aria-label="Binance Perú 2026">
+      <img class="binance-nav-logo" src="data:image/png;base64,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" alt="Binance">
+      <span class="brand-divider"></span><span class="brand-context">PERÚ 2026</span>
+    
     <div class="nav-links">
-      <a href="#strategy">Strategy</a>
-      <a href="#calendar">90-Day Plan</a>
-      <a href="#activations">Activations</a>
-      <a href="#kpis">KPIs</a>
-      <a href="#budget">Budget</a>
+      <a href="#strategy">Estrategia</a><a href="#calendar">Plan 90 días</a><a href="#activations">Activaciones</a><a href="#kpis">KPIs</a><a href="#budget">Presupuesto</a>
     </div>
-    <a class="nav-cta" href="#next">Next Steps</a>
+    <a class="nav-cta" href="#next">Siguientes pasos</a>
   </nav>
 
   <main id="top">
     <section class="hero section">
-      <div class="hero-orb orb-a"></div>
-      <div class="hero-orb orb-b"></div>
+      <div class="hero-orb orb-a"></div><div class="hero-orb orb-b"></div>
       <div class="wrap hero-grid">
         <div>
-          <div class="hero-kicker reveal">
-            <span class="pill">CONFIDENTIAL DRAFT</span><span class="pill">PERU · 2026</span>
-            <span class="pill">90-DAY PILOT</span>
-            <span class="pill">COMMUNITY + ADOPTION</span>
-          </div>
-          <div class="eyebrow reveal delay-1">Growth Strategy Proposal</div>
-          <h1 class="reveal delay-2">Bybit Peru Community Growth Strategy</h1>
-          <p class="lead reveal delay-3">Building the next generation of Digital Finance communities in Peru through education, activation and measurable product adoption.</p>
-          <div class="hero-path reveal delay-4" aria-label="User adoption path">
-            <span class="step">Education</span><span class="arrow">→</span>
-            <span class="step">Registration</span><span class="arrow">→</span>
-            <span class="step">KYC</span><span class="arrow">→</span>
-            <span class="step">Funding</span><span class="arrow">→</span>
-            <span class="step">Active User</span>
-          </div>
-          <p class="small reveal delay-4">Prepared by Fernando G. — Founder, Feraf Trades</p>
+          <img class="binance-hero-logo" src="data:image/png;base64,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" alt="Binance">
+          <div class="hero-kicker reveal"><span class="pill">BORRADOR CONFIDENCIAL</span><span class="pill">PERÚ · 2026</span><span class="pill">PILOTO 90 DÍAS</span><span class="pill">COMUNIDAD + ADOPCIÓN</span></div>
+          <div class="eyebrow reveal delay-1">Propuesta de estrategia de crecimiento</div>
+          <h1 class="reveal delay-2">Binance Perú: Estrategia de Crecimiento y Comunidad</h1>
+          <p class="lead reveal delay-3">Construir la próxima generación de comunidades de finanzas digitales en Perú mediante educación, activación y adopción medible del ecosistema Binance.</p>
+          <div class="hero-path reveal delay-4" aria-label="Ruta de adopción"><span class="step">Educación</span><span class="arrow">→</span><span class="step">Registro</span><span class="arrow">→</span><span class="step">KYC</span><span class="arrow">→</span><span class="step">Fondeo</span><span class="arrow">→</span><span class="step">Usuario activo</span></div>
+          <p class="small reveal delay-4">Preparado por Fernando G. — Founder, Feraf Trades</p>
         </div>
         <aside class="hero-card reveal delay-3">
-          <div class="eyebrow">Pilot at a glance</div>
-          <h3>Not another one-off event.</h3>
-          <p class="muted">A structured adoption program designed to create measurable commercial, educational and community outcomes.</p>
-          <div class="metric"><b class="counter" data-target="90">0</b><span>days of guided activation</span></div>
-          <div class="metric"><b class="counter" data-target="21">0</b><span>planned touchpoints</span></div>
-          <div class="metric"><b class="counter" data-target="7">0</b><span>target institutions</span></div>
-          <div class="metric"><b class="counter" data-target="1">0</b><span>community night finale</span></div>
+          <div class="eyebrow">El piloto en una mirada</div><h3>No es otro evento aislado.</h3><p class="muted">Un programa estructurado de adopción diseñado para generar resultados comerciales, educativos y de comunidad medibles.</p>
+          <div class="metric"><b class="counter" data-target="90">0</b><span>días de activación guiada</span></div><div class="metric"><b class="counter" data-target="21">0</b><span>puntos de contacto planificados</span></div><div class="metric"><b class="counter" data-target="7">0</b><span>instituciones objetivo</span></div><div class="metric"><b class="counter" data-target="1">0</b><span>evento final de comunidad</span></div>
         </aside>
       </div>
     </section>
 
-    <section class="section compact" id="strategy">
-      <div class="wrap">
-        <div class="eyebrow reveal">Executive Summary</div>
-        <h2 class="reveal delay-1">We are not proposing more events. We are proposing an adoption path.</h2>
-        <p class="lead reveal delay-2">Most growth initiatives stop at awareness or registration. This proposal is designed to move people from first contact with Digital Finance to real, responsible use of the Bybit ecosystem.</p>
-        <div class="quote reveal delay-3">Bybit can differentiate in Peru not only through marketing, but through applied financial education, meaningful product use and a sustainable local community.</div>
+    <section class="section compact" id="strategy"><div class="wrap"><div class="eyebrow reveal">Resumen ejecutivo</div><h2 class="reveal delay-1">No proponemos más eventos. Proponemos una ruta de adopción.</h2><p class="lead reveal delay-2">Muchas iniciativas de crecimiento terminan en awareness o registro. Esta propuesta busca acompañar a las personas desde su primer contacto con las finanzas digitales hasta un uso real, responsable y recurrente del ecosistema Binance.</p><div class="quote reveal delay-3">Binance puede reforzar su liderazgo en Perú combinando alcance de marca con educación aplicada, adopción responsable de productos y una comunidad local sostenible.</div></div></section>
+
+    <section class="section"><div class="wrap"><div class="section-head"><div><div class="eyebrow reveal">Oportunidad de mercado</div><h2 class="reveal delay-1">Una audiencia en crecimiento necesita una ruta confiable hacia las finanzas digitales.</h2></div><p class="copy reveal delay-2">La oportunidad es conectar visibilidad de marca con continuidad, comprensión de producto y adopción responsable.</p></div><div class="grid grid-3">
+      <article class="card reveal"><div class="icon">🎓</div><h3>Universidades</h3><p>Futuros profesionales de finanzas, negocios y tecnología que pueden convertirse en usuarios de largo plazo y líderes de comunidad.</p><div class="tags"><span class="tag">Universidad del Pacífico</span><span class="tag">Universidad de Lima</span><span class="tag">ESAN</span></div></article>
+      <article class="card reveal delay-1"><div class="icon">🏢</div><h3>Comunidades de coworking</h3><p>Emprendedores, freelancers y profesionales que necesitan herramientas financieras globales, stablecoins, liquidez y soluciones transfronterizas.</p><div class="tags"><span class="tag">WeWork</span><span class="tag">Comunal</span><span class="tag">Worx</span></div></article>
+      <article class="card reveal delay-2"><div class="icon">💼</div><h3>Piloto empresarial</h3><p>Introducción controlada a tesorería digital, stablecoins, pagos internacionales, liquidez y soluciones relevantes del ecosistema Binance.</p><div class="tags"><span class="tag">Tesorería digital</span><span class="tag">Stablecoins</span><span class="tag">Liquidez global</span></div></article>
+    </div></div></section>
+
+    <section class="section compact"><div class="wrap"><div class="eyebrow reveal">Marco de crecimiento</div><h2 class="reveal delay-1">Cuatro pilares. Un journey de usuario medible.</h2><div class="grid grid-4">
+      <article class="card reveal"><span class="kpi">01</span><h3>Educación</h3><p>Contenido claro, práctico y responsable adaptado a cada audiencia.</p></article><article class="card reveal delay-1"><span class="kpi">02</span><h3>Activación</h3><p>Registro, KYC, onboarding de la app y primera interacción práctica.</p></article><article class="card reveal delay-2"><span class="kpi">03</span><h3>Adopción de producto</h3><p>Spot, P2P, Earn y otros productos relevantes según el perfil y disponibilidad local.</p></article><article class="card reveal delay-3"><span class="kpi">04</span><h3>Comunidad</h3><p>Retención, educación recurrente, líderes locales y crecimiento orgánico.</p></article>
+    </div><div class="timeline reveal"><div class="timeline-item"><b>Etapa 1</b><strong>Descubrir</strong><p class="small">Awareness y educación</p></div><div class="timeline-item"><b>Etapa 2</b><strong>Registrar</strong><p class="small">Cuenta y KYC</p></div><div class="timeline-item"><b>Etapa 3</b><strong>Activar</strong><p class="small">Primer fondeo y uso</p></div><div class="timeline-item"><b>Etapa 4</b><strong>Retener</strong><p class="small">Uso recurrente</p></div><div class="timeline-item"><b>Etapa 5</b><strong>Multiplicar</strong><p class="small">Comunidad y liderazgo</p></div></div></div></section>
+
+    <section class="section" id="calendar"><div class="wrap"><div class="section-head"><div><div class="eyebrow reveal">Plan operativo</div><h2 class="reveal delay-1">Calendario educativo y de adopción de 90 días</h2></div><p class="copy reveal delay-2">21 puntos de contacto entre tres universidades, tres comunidades de coworking, un piloto empresarial y un Binance Community Night final.</p></div>
+      <div class="calendar-shell reveal"><div class="calendar-scroll"><table class="calendar" aria-label="Calendario operativo Binance Perú 90 días"><colgroup><col style="width:8%"><col style="width:10%"><col span="4" style="width:4.7%"><col span="4" style="width:4.7%"><col span="4" style="width:4.7%"><col style="width:25.6%"></colgroup>
+        <tr><th></th><th></th><th colspan="4" class="month">Mes 1</th><th colspan="4" class="month">Mes 2</th><th colspan="4" class="month">Mes 3</th><th class="month">Final</th></tr>
+        <tr><th></th><th></th><th class="week">S1</th><th class="week">S2</th><th class="week">S3</th><th class="week">S4</th><th class="week">S1</th><th class="week">S2</th><th class="week">S3</th><th class="week">S4</th><th class="week">S1</th><th class="week">S2</th><th class="week">S3</th><th class="week">S4</th><th class="week">S5</th></tr>
+        <tr><td rowspan="3" class="segment">Universidad</td><td class="place">U. Pacífico</td><td><span class="xmark">×</span></td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td></td><td><span class="xmark">×</span></td></tr>
+        <tr><td class="place">U. Lima</td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td><span class="xmark">×</span></td></tr>
+        <tr><td class="place">U. ESAN</td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td><span class="xmark">×</span></td></tr>
+        <tr><td rowspan="3" class="segment">Cowork</td><td class="place">WeWork</td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td><span class="xmark">×</span></td></tr>
+        <tr><td class="place">Comunal</td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td><span class="xmark">×</span></td></tr>
+        <tr><td class="place">Worx</td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td><span class="xmark">×</span></td></tr>
+        <tr><td class="segment">Empresa</td><td class="place">Empresa piloto</td><td></td><td></td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td><span class="xmark">×</span></td></tr>
+        <tr><td class="segment">Aprendizaje</td><td class="place">Fase</td><td colspan="4" class="phase">Fundamentos de finanzas digitales</td><td colspan="4" class="phase">Gestión financiera digital</td><td colspan="4" class="phase">Portafolio y gestión de riesgo</td><td class="phase">Binance Community Night</td></tr>
+        <tr><th colspan="15" class="subhead">Contenido principal</th></tr><tr><td colspan="2"></td><td colspan="4" class="content">Stablecoins · P2P · Seguridad · Ecosistema Binance</td><td colspan="4" class="content">Earn · Liquidez · Pagos · Casos de uso reales</td><td colspan="4" class="content">Portafolio · Diversificación · Trading responsable · Gestión de capital</td><td class="content">Reconocimiento · Comunidad · Líderes locales</td></tr>
+        <tr><th colspan="15" class="subhead">Objetivo principal</th></tr><tr><td colspan="2"></td><td colspan="4" class="objective">Registro + KYC<br><span class="small">Posible primer fondeo</span></td><td colspan="4" class="objective">Primer depósito + uso inicial</td><td colspan="4" class="objective">Usuario activo + adopción responsable</td><td class="objective">Comunidad + continuidad</td></tr>
+      </table></div><div class="calendar-note">Calendario propuesto. Puede ajustarse a prioridades regionales de Binance, disponibilidad de campañas, requerimientos de compliance y agenda de las instituciones.</div></div>
+      <div class="mobile-calendar">
+        <article class="phase-card reveal"><div class="phase-label">Mes 1 · Descubrimiento</div><h3>Fundamentos de finanzas digitales</h3><p class="muted">Registro, KYC y posible primer fondeo.</p><div class="tags"><span class="tag">Stablecoins</span><span class="tag">P2P</span><span class="tag">Seguridad</span><span class="tag">Binance</span></div></article>
+        <article class="phase-card reveal"><div class="phase-label">Mes 2 · Activación</div><h3>Gestión financiera digital</h3><p class="muted">Primer depósito y uso inicial de productos relevantes de Binance.</p><div class="tags"><span class="tag">Earn</span><span class="tag">Liquidez</span><span class="tag">Pagos</span><span class="tag">Casos de uso</span></div></article>
+        <article class="phase-card reveal"><div class="phase-label">Mes 3 · Adopción</div><h3>Portafolio y gestión de riesgo</h3><p class="muted">Adopción responsable, diseño de portafolio y desarrollo de usuarios activos.</p><div class="tags"><span class="tag">Portafolio</span><span class="tag">Diversificación</span><span class="tag">Riesgo</span><span class="tag">Capital</span></div></article>
+        <article class="phase-card reveal"><div class="phase-label">Final · Semana 5</div><h3>Binance Community Night</h3><p class="muted">Cierre, reconocimiento, networking y continuidad de comunidad.</p></article>
       </div>
-    </section>
+    </div></section>
 
-    <section class="section">
-      <div class="wrap">
-        <div class="section-head">
-          <div>
-            <div class="eyebrow reveal">Market Opportunity</div>
-            <h2 class="reveal delay-1">A growing audience needs a trusted route into Digital Finance.</h2>
-          </div>
-          <p class="copy reveal delay-2">The opportunity is to connect brand visibility with continuity, product understanding and responsible adoption.</p>
-        </div>
-        <div class="grid grid-3">
-          <article class="card reveal">
-            <div class="icon">🎓</div>
-            <h3>Universities</h3>
-            <p>Future finance, business and technology professionals who can become long-term users, community leaders and brand ambassadors.</p>
-            <div class="tags"><span class="tag">Universidad del Pacífico</span><span class="tag">Universidad de Lima</span><span class="tag">ESAN</span></div>
-          </article>
-          <article class="card reveal delay-1">
-            <div class="icon">🏢</div>
-            <h3>Coworking Communities</h3>
-            <p>Entrepreneurs, freelancers and professionals who need global financial tools, liquidity, stablecoins and cross-border solutions.</p>
-            <div class="tags"><span class="tag">WeWork</span><span class="tag">Comunal</span><span class="tag">Worx</span></div>
-          </article>
-          <article class="card reveal delay-2">
-            <div class="icon">💼</div>
-            <h3>Business Pilot</h3>
-            <p>A controlled introduction to digital treasury, stablecoins, international payments, liquidity and selected Bybit products.</p>
-            <div class="tags"><span class="tag">Digital Treasury</span><span class="tag">Stablecoins</span><span class="tag">Global Liquidity</span></div>
-          </article>
-        </div>
-      </div>
-    </section>
+    <section class="section compact"><div class="wrap"><div class="eyebrow reveal">Journey del usuario</div><h2 class="reveal delay-1">De asistente a miembro activo de la comunidad.</h2><div class="journey reveal delay-2"><span class="step primary">Workshop 1</span><span class="arrow">→</span><span class="step">Cuenta</span><span class="arrow">→</span><span class="step">KYC</span><span class="arrow">→</span><span class="step primary">Workshop 2</span><span class="arrow">→</span><span class="step">Fondeo</span><span class="arrow">→</span><span class="step">P2P / Earn / Spot</span><span class="arrow">→</span><span class="step primary">Workshop 3</span><span class="arrow">→</span><span class="step">Usuario activo</span><span class="arrow">→</span><span class="step primary">Community Night</span></div></div></section>
 
-    <section class="section compact">
-      <div class="wrap">
-        <div class="eyebrow reveal">Growth Framework</div>
-        <h2 class="reveal delay-1">Four pillars. One measurable user journey.</h2>
-        <div class="grid grid-4">
-          <article class="card reveal"><span class="kpi">01</span><h3>Education</h3><p>Clear, practical and responsible content adapted to each audience.</p></article>
-          <article class="card reveal delay-1"><span class="kpi">02</span><h3>Activation</h3><p>Registration, KYC, app onboarding and first practical interaction.</p></article>
-          <article class="card reveal delay-2"><span class="kpi">03</span><h3>Product Adoption</h3><p>Earn, P2P, Bybit Card, Spot and other relevant products according to user profile.</p></article>
-          <article class="card reveal delay-3"><span class="kpi">04</span><h3>Community</h3><p>Retention, recurring education, local leaders, ambassadors and referrals.</p></article>
-        </div>
-        <div class="timeline reveal">
-          <div class="timeline-item"><b>Stage 1</b><strong>Discover</strong><p class="small">Awareness and education</p></div>
-          <div class="timeline-item"><b>Stage 2</b><strong>Register</strong><p class="small">Account and KYC</p></div>
-          <div class="timeline-item"><b>Stage 3</b><strong>Activate</strong><p class="small">First funding and use</p></div>
-          <div class="timeline-item"><b>Stage 4</b><strong>Retain</strong><p class="small">Recurring product usage</p></div>
-          <div class="timeline-item"><b>Stage 5</b><strong>Advocate</strong><p class="small">Community and referrals</p></div>
-        </div>
-      </div>
-    </section>
+    <section class="section" id="activations"><div class="wrap"><div class="section-head"><div><div class="eyebrow reveal">Nuevas activaciones de mercado</div><h2 class="reveal delay-1">Llevar Binance a comunidades con afinidad, poder adquisitivo y confianza.</h2></div><p class="copy reveal delay-2">En lugar de esperar a que comunidades de alto valor descubran cripto, Binance puede entrar a sus espacios con experiencias relevantes y educación aplicada.</p></div><div class="grid grid-3">
+      <article class="card activation-card reveal"><span class="number">COMUNIDAD 01</span><h3>Motociclismo y motorsport</h3><p>Ducati, KTM, BMW Motorrad, Triumph, Harley-Davidson, clubes de carreras y track days.</p></article><article class="card activation-card reveal delay-1"><span class="number">COMUNIDAD 02</span><h3>Lifestyle premium</h3><p>Golf, vela, ciclismo, pádel, deportes de endurance y clubes profesionales.</p></article><article class="card activation-card reveal delay-2"><span class="number">COMUNIDAD 03</span><h3>Emprendedores y ejecutivos</h3><p>Founder networks, asociaciones empresariales, coworkings y comunidades profesionales.</p></article>
+    </div><div class="concept reveal"><div><div class="eyebrow">Ejemplo de activación</div><h2>Binance x Comunidad Motorsport</h2><p class="copy">Una activación integrada a la cultura de la comunidad, no un stand cripto genérico.</p><div class="quote">El objetivo es posicionar a Binance como infraestructura financiera digital y una marca relevante para nuevas comunidades, no únicamente como plataforma de trading.</div></div><div class="concept-list"><div>Zona de experiencia Binance en carreras y rodadas</div><div>Registro por QR, KYC y onboarding de la app</div><div>Demostraciones de P2P, pagos y productos disponibles</div><div>Beneficios con partners y comercios aliados</div><div>Micro sesiones educativas de finanzas digitales</div><div>Contenido, merchandising y dinámicas de comunidad</div></div></div></div></section>
 
-    <section class="section" id="calendar">
-      <div class="wrap">
-        <div class="section-head">
-          <div>
-            <div class="eyebrow reveal">Operational Plan</div>
-            <h2 class="reveal delay-1">90-Day Educational & Adoption Calendar</h2>
-          </div>
-          <p class="copy reveal delay-2">21 planned touchpoints across three universities, three coworking communities, one business pilot and a final Bybit Community Night.</p>
-        </div>
+    <section class="section" id="kpis"><div class="wrap"><div class="eyebrow reveal">Métricas de éxito</div><h2 class="reveal delay-1">Medir adopción, no solamente asistencia.</h2><div class="grid grid-3">
+      <article class="card kpi-card reveal"><span class="kpi counter" data-target="250" data-suffix="+">0</span><div class="kpi-label">Nuevos usuarios</div><div class="kpi-note">Meta referencial: 200–300 registros.</div></article><article class="card kpi-card reveal delay-1"><span class="kpi counter" data-target="150" data-suffix="+">0</span><div class="kpi-label">KYC completado</div><div class="kpi-note">Usuarios habilitados para uso de plataforma.</div></article><article class="card kpi-card reveal delay-2"><span class="kpi counter" data-target="75" data-suffix="+">0</span><div class="kpi-label">Usuarios activos</div><div class="kpi-note">Uso de productos relevantes de Binance.</div></article><article class="card kpi-card reveal"><span class="kpi counter" data-target="500" data-suffix="+">0</span><div class="kpi-label">Asistencia acumulada</div><div class="kpi-note">Alcance educativo de todas las sesiones.</div></article><article class="card kpi-card reveal delay-1"><span class="kpi counter" data-target="500" data-suffix="+">0</span><div class="kpi-label">Comunidad local</div><div class="kpi-note">Base recurrente de participantes.</div></article><article class="card kpi-card reveal delay-2"><span class="kpi counter" data-target="3" data-suffix="+">0</span><div class="kpi-label">Líderes de comunidad</div><div class="kpi-note">Potenciales líderes universitarios o locales.</div></article>
+    </div><p class="small reveal" style="margin-top:18px">Todas las cifras son objetivos propuestos para el piloto y deberán validarse con Binance según presupuesto, mecánicas de campaña, compliance, condiciones de mercado y soporte disponible.</p></div></section>
 
-        <div class="calendar-shell reveal">
-          <div class="calendar-scroll">
-            <table class="calendar" aria-label="Bybit Peru 90-day operating calendar">
-              <colgroup>
-                <col style="width:8%"><col style="width:10%">
-                <col span="4" style="width:4.7%"><col span="4" style="width:4.7%"><col span="4" style="width:4.7%"><col style="width:25.6%">
-              </colgroup>
-              <tr>
-                <th></th><th></th>
-                <th colspan="4" class="month">Month 1</th>
-                <th colspan="4" class="month">Month 2</th>
-                <th colspan="4" class="month">Month 3</th>
-                <th class="month">Finale</th>
-              </tr>
-              <tr>
-                <th></th><th></th>
-                <th class="week">W1</th><th class="week">W2</th><th class="week">W3</th><th class="week">W4</th>
-                <th class="week">W1</th><th class="week">W2</th><th class="week">W3</th><th class="week">W4</th>
-                <th class="week">W1</th><th class="week">W2</th><th class="week">W3</th><th class="week">W4</th>
-                <th class="week">W5</th>
-              </tr>
-              <tr><td rowspan="3" class="segment">University</td><td class="place">U. Pacífico</td><td><span class="xmark">×</span></td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td></td><td><span class="xmark">×</span></td></tr>
-              <tr><td class="place">U. Lima</td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td><span class="xmark">×</span></td></tr>
-              <tr><td class="place">U. ESAN</td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td><span class="xmark">×</span></td></tr>
-              <tr><td rowspan="3" class="segment">Cowork</td><td class="place">WeWork</td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td><span class="xmark">×</span></td></tr>
-              <tr><td class="place">Comunal</td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td><span class="xmark">×</span></td></tr>
-              <tr><td class="place">Worx</td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td><span class="xmark">×</span></td></tr>
-              <tr><td class="segment">Business</td><td class="place">Pilot Company</td><td></td><td></td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td></td><td><span class="xmark">×</span></td><td></td><td></td><td><span class="xmark">×</span></td></tr>
-              <tr>
-                <td class="segment">Learning</td><td class="place">Program Phase</td>
-                <td colspan="4" class="phase">Digital Finance Fundamentals</td>
-                <td colspan="4" class="phase">Digital Financial Management</td>
-                <td colspan="4" class="phase">Portfolio Building & Risk Management</td>
-                <td class="phase">Bybit Community Night</td>
-              </tr>
-              <tr><th colspan="15" class="subhead">Core Content</th></tr>
-              <tr>
-                <td colspan="2"></td>
-                <td colspan="4" class="content">Stablecoins · P2P · Bybit Card · Security · Bybit ecosystem</td>
-                <td colspan="4" class="content">Earn · Yield · Liquidity · Loans · Real-world payment use cases</td>
-                <td colspan="4" class="content">Portfolio design · Diversification · Responsible trading · Capital management</td>
-                <td class="content">Certificates · Recognition · Community leaders · Referrals</td>
-              </tr>
-              <tr><th colspan="15" class="subhead">Primary Objective</th></tr>
-              <tr>
-                <td colspan="2"></td>
-                <td colspan="4" class="objective">Registration + KYC<br><span class="small">Possible first funding</span></td>
-                <td colspan="4" class="objective">First deposit + initial product use</td>
-                <td colspan="4" class="objective">Active user + responsible product adoption</td>
-                <td class="objective">Community + ambassadors + referrals</td>
-              </tr>
-            </table>
-          </div>
-          <div class="calendar-note">The calendar is a proposed operating model and can be adjusted to Bybit's regional priorities, campaign availability, local compliance requirements and venue schedules.</div>
-        </div>
+    <section class="section compact"><div class="wrap"><div class="eyebrow reveal">Valor para Binance</div><h2 class="reveal delay-1">Impacto comercial, institucional y de comunidad.</h2><div class="grid grid-2"><article class="card reveal"><div class="icon">📈</div><h3>Crecimiento de usuarios</h3><p>Registros, KYC, primer fondeo, activación de producto y retención.</p></article><article class="card reveal delay-1"><div class="icon">🏛️</div><h3>Presencia institucional</h3><p>Relaciones con universidades, coworkings, empresas y organizaciones de comunidad.</p></article><article class="card reveal"><div class="icon">🎥</div><h3>Contenido orgánico</h3><p>Contenido educativo y activaciones documentadas para canales sociales y comunidades locales.</p></article><article class="card reveal delay-1"><div class="icon">🌎</div><h3>Modelo escalable</h3><p>Un framework replicable en otras ciudades del Perú y potencialmente en otros mercados LATAM.</p></article></div></div></section>
 
-        <div class="mobile-calendar">
-          <article class="phase-card reveal">
-            <div class="phase-label">Month 1 · Discovery</div>
-            <h3>Digital Finance Fundamentals</h3>
-            <p class="muted">Registration, KYC and possible first funding.</p>
-            <div class="tags"><span class="tag">Stablecoins</span><span class="tag">P2P</span><span class="tag">Security</span><span class="tag">Bybit Ecosystem</span></div>
-            <div class="schedule">
-              <div class="slot"><b>W1</b><span>U. Pacífico</span></div>
-              <div class="slot"><b>W2</b><span>U. Lima + WeWork</span></div>
-              <div class="slot"><b>W3</b><span>U. ESAN + Comunal</span></div>
-              <div class="slot"><b>W4</b><span>Worx</span></div>
-            </div>
-          </article>
-          <article class="phase-card reveal">
-            <div class="phase-label">Month 2 · Activation</div>
-            <h3>Digital Financial Management</h3>
-            <p class="muted">First deposit and initial use of relevant Bybit products.</p>
-            <div class="tags"><span class="tag">Earn</span><span class="tag">Yield</span><span class="tag">Liquidity</span><span class="tag">Card / Payments</span></div>
-            <div class="schedule">
-              <div class="slot"><b>W1</b><span>U. Pacífico</span></div>
-              <div class="slot"><b>W2</b><span>U. Lima + WeWork + Business Pilot</span></div>
-              <div class="slot"><b>W3</b><span>U. ESAN + Comunal</span></div>
-              <div class="slot"><b>W4</b><span>Worx</span></div>
-            </div>
-          </article>
-          <article class="phase-card reveal">
-            <div class="phase-label">Month 3 · Adoption</div>
-            <h3>Portfolio Building & Risk Management</h3>
-            <p class="muted">Responsible product adoption, portfolio design and active-user development.</p>
-            <div class="tags"><span class="tag">Portfolios</span><span class="tag">Diversification</span><span class="tag">Risk</span><span class="tag">Capital Management</span></div>
-            <div class="schedule">
-              <div class="slot"><b>W1</b><span>U. Pacífico</span></div>
-              <div class="slot"><b>W2</b><span>U. Lima + WeWork + Business Pilot</span></div>
-              <div class="slot"><b>W3</b><span>U. ESAN + Comunal</span></div>
-              <div class="slot"><b>W4</b><span>Worx</span></div>
-            </div>
-          </article>
-          <article class="phase-card reveal">
-            <div class="phase-label">Finale · Week 5</div>
-            <h3>Bybit Community Night</h3>
-            <p class="muted">Certificates, recognition, community leaders, ambassadors and referrals.</p>
-          </article>
-        </div>
-      </div>
-    </section>
+    <section class="section" id="budget"><div class="wrap"><div class="eyebrow reveal">Referencia de presupuesto inicial</div><h2 class="reveal delay-1">Ejecución lean con sede institucional.</h2><div class="budget"><div class="card reveal"><table class="budget-table" aria-label="Presupuesto inicial"><thead><tr><th>Concepto</th><th>Monto estimado</th></tr></thead><tbody><tr><td>Innovation Hub / venue</td><td>0 USDT</td></tr><tr><td>Coffee break</td><td>10 USDT por asistente</td></tr><tr><td>Fotógrafo profesional</td><td>105 USDT</td></tr><tr><td>Soporte operativo — 2 asistentes</td><td>50 USDT</td></tr><tr><td>Merchandising Binance</td><td>Sujeto a disponibilidad</td></tr><tr><td>Materiales de activación Binance</td><td>Sujeto a disponibilidad</td></tr></tbody></table></div><aside class="card reveal delay-1"><div class="eyebrow">Total estimado</div><div class="budget-total">700–800 USDT</div><p class="muted">Presupuesto referencial para una activación de 50+ asistentes. El alcance final dependerá de sede, asistencia, materiales aprobados y campañas disponibles.</p><h3>Materiales sugeridos</h3><ul class="clean"><li>Roll-ups y señalética de marca</li><li>Photo area y elementos para contenido</li><li>Stands QR para registro y descarga de app</li><li>Plantilla oficial de presentación</li><li>Assets de campaña y social media</li></ul></aside></div></div></section>
 
-    <section class="section compact">
-      <div class="wrap">
-        <div class="eyebrow reveal">User Journey</div>
-        <h2 class="reveal delay-1">From attendee to active community member.</h2>
-        <div class="journey reveal delay-2">
-          <span class="step primary">Workshop 1</span><span class="arrow">→</span>
-          <span class="step">Account</span><span class="arrow">→</span>
-          <span class="step">KYC</span><span class="arrow">→</span>
-          <span class="step primary">Workshop 2</span><span class="arrow">→</span>
-          <span class="step">Funding</span><span class="arrow">→</span>
-          <span class="step">Earn / P2P / Card / Spot</span><span class="arrow">→</span>
-          <span class="step primary">Workshop 3</span><span class="arrow">→</span>
-          <span class="step">Active User</span><span class="arrow">→</span>
-          <span class="step primary">Community Night</span><span class="arrow">→</span>
-          <span class="step">Leader / Referral</span>
-        </div>
-      </div>
-    </section>
+    <section class="section compact"><div class="wrap"><div class="eyebrow reveal">Expansión nacional</div><h2 class="reveal delay-1">Validar Lima. Luego escalar el modelo.</h2><div class="grid grid-3"><article class="card reveal"><span class="kpi">01</span><h3>Arequipa</h3><p>Minería, negocios, universidades y comunidades profesionales.</p></article><article class="card reveal delay-1"><span class="kpi">02</span><h3>Trujillo</h3><p>Comercio, emprendimiento, universidades y redes empresariales regionales.</p></article><article class="card reveal delay-2"><span class="kpi">03</span><h3>Piura</h3><p>Exportaciones, agroindustria, pagos internacionales y necesidades financieras transfronterizas.</p></article></div></div></section>
 
-    <section class="section" id="activations">
-      <div class="wrap">
-        <div class="section-head">
-          <div>
-            <div class="eyebrow reveal">New Market Activations</div>
-            <h2 class="reveal delay-1">Bring Bybit into communities with capital, affinity and trust.</h2>
-          </div>
-          <p class="copy reveal delay-2">Rather than waiting for high-value communities to discover crypto, Bybit can enter their world through relevant experiences and partner benefits.</p>
-        </div>
-        <div class="grid grid-3">
-          <article class="card activation-card reveal">
-            <span class="number">COMMUNITY 01</span>
-            <h3>Motorcycle & Motorsport</h3>
-            <p>Ducati, KTM, BMW Motorrad, Triumph, Harley-Davidson, racing clubs and track-day communities.</p>
-          </article>
-          <article class="card activation-card reveal delay-1">
-            <span class="number">COMMUNITY 02</span>
-            <h3>Premium Lifestyle</h3>
-            <p>Golf, sailing, cycling, padel, endurance sports and member-based professional clubs.</p>
-          </article>
-          <article class="card activation-card reveal delay-2">
-            <span class="number">COMMUNITY 03</span>
-            <h3>Entrepreneurs & Executives</h3>
-            <p>Founder networks, business associations, coworking communities and professional leadership groups.</p>
-          </article>
-        </div>
+    <section class="section"><div class="wrap profile"><div class="profile-mark reveal" aria-label="Fernando G. / Feraf Trades"></div><article class="card profile-copy reveal delay-1"><div class="eyebrow">Liderazgo de la propuesta</div><h2>Fernando G.</h2><p class="lead">Trader, educador y builder enfocado en educación financiera, gestión de riesgo y adopción responsable de activos digitales.</p><ul class="clean"><li>Founder de Feraf Trades</li><li>Lead Copy Trader público en Binance</li><li>Facilitador de workshops de finanzas digitales</li><li>Contenido enfocado en gestión de riesgo, educación y adopción responsable</li><li>Experiencia desarrollando iniciativas con exchanges, eventos y comunidades profesionales</li></ul><div class="quote" style="font-size:22px">El objetivo no es generar hype. Es construir una comunidad Binance en Perú activa, educada y sostenible.</div></article></div></section>
 
-        <div class="concept reveal">
-          <div>
-            <div class="eyebrow">Example Activation</div>
-            <h2>Bybit x Motorsport Community Experience</h2>
-            <p class="copy">A branded activation integrated into the culture of the community—not a generic crypto booth.</p>
-            <div class="quote">The objective is to position Bybit as a modern financial and lifestyle platform, not only as a trading exchange.</div>
-          </div>
-          <div class="concept-list">
-            <div>Bybit experience tent at races and community rides</div>
-            <div>QR registration, KYC support and app onboarding</div>
-            <div>Live Bybit Card and payment-use demonstrations</div>
-            <div>Partner benefits on gear, accessories or maintenance</div>
-            <div>Educational micro-sessions on Digital Finance</div>
-            <div>Giveaways, branded content and community challenges</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="kpis">
-      <div class="wrap">
-        <div class="eyebrow reveal">Success Metrics</div>
-        <h2 class="reveal delay-1">Measure adoption—not only attendance.</h2>
-        <div class="grid grid-3">
-          <article class="card kpi-card reveal"><span class="kpi counter" data-target="250" data-suffix="+">0</span><div class="kpi-label">New Users</div><div class="kpi-note">Target range: 200–300 registrations.</div></article>
-          <article class="card kpi-card reveal delay-1"><span class="kpi counter" data-target="150" data-suffix="+">0</span><div class="kpi-label">KYC Completed</div><div class="kpi-note">Users ready for compliant platform use.</div></article>
-          <article class="card kpi-card reveal delay-2"><span class="kpi counter" data-target="75" data-suffix="+">0</span><div class="kpi-label">Active Users</div><div class="kpi-note">Use of relevant Bybit products.</div></article>
-          <article class="card kpi-card reveal"><span class="kpi counter" data-target="500" data-suffix="+">0</span><div class="kpi-label">Accumulated Attendance</div><div class="kpi-note">Educational reach across all sessions.</div></article>
-          <article class="card kpi-card reveal delay-1"><span class="kpi counter" data-target="500" data-suffix="+">0</span><div class="kpi-label">Local Community</div><div class="kpi-note">Telegram and recurring participant base.</div></article>
-          <article class="card kpi-card reveal delay-2"><span class="kpi counter" data-target="3" data-suffix="+">0</span><div class="kpi-label">Community Leaders</div><div class="kpi-note">Potential university or local ambassadors.</div></article>
-        </div>
-        <p class="small reveal" style="margin-top:18px">All figures are proposed pilot targets and should be validated with Bybit based on budget, campaign mechanics, compliance, market conditions and available product support.</p>
-      </div>
-    </section>
-
-    <section class="section compact">
-      <div class="wrap">
-        <div class="eyebrow reveal">Benefits for Bybit</div>
-        <h2 class="reveal delay-1">Commercial, institutional and community value.</h2>
-        <div class="grid grid-2">
-          <article class="card reveal"><div class="icon">📈</div><h3>User Growth</h3><p>Registrations, KYC, first funding, product activation and retention.</p></article>
-          <article class="card reveal delay-1"><div class="icon">🏛️</div><h3>Institutional Presence</h3><p>Relationships with universities, coworking operators, companies and community organizations.</p></article>
-          <article class="card reveal"><div class="icon">🎥</div><h3>Organic Content</h3><p>Educational content and documented activations for social channels, Bybit community platforms and local media.</p></article>
-          <article class="card reveal delay-1"><div class="icon">🌎</div><h3>Scalable Model</h3><p>A repeatable framework for other Peruvian cities and potentially other LATAM markets.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="budget">
-      <div class="wrap">
-        <div class="eyebrow reveal">Initial Event Budget Reference</div>
-        <h2 class="reveal delay-1">Lean execution with an institutional venue.</h2>
-        <div class="budget">
-          <div class="card reveal">
-            <table class="budget-table" aria-label="Initial event budget">
-              <thead><tr><th>Concept</th><th>Estimated Amount</th></tr></thead>
-              <tbody>
-                <tr><td>Innovation Hub / venue</td><td>0 USDT</td></tr>
-                <tr><td>Coffee break</td><td>10 USDT per attendee</td></tr>
-                <tr><td>Professional photographer</td><td>105 USDT</td></tr>
-                <tr><td>Operational support — 2 assistants</td><td>50 USDT</td></tr>
-                <tr><td>Bybit merchandising</td><td>Subject to availability</td></tr>
-                <tr><td>Bybit activation materials</td><td>Subject to availability</td></tr>
-              </tbody>
-            </table>
-          </div>
-          <aside class="card reveal delay-1">
-            <div class="eyebrow">Estimated Total</div>
-            <div class="budget-total">700–800 USDT</div>
-            <p class="muted">Reference budget for a 50+ attendee activation. Final scope depends on venue, attendance, approved materials and available Bybit campaigns.</p>
-            <h3>Suggested Materials</h3>
-            <ul class="clean">
-              <li>Roll-up banners and illuminated logo</li>
-              <li>Photo area and handheld signs</li>
-              <li>QR registration and app-download stands</li>
-              <li>Official presentation template</li>
-              <li>Social media and campaign assets</li>
-            </ul>
-          </aside>
-        </div>
-      </div>
-    </section>
-
-    <section class="section compact">
-      <div class="wrap">
-        <div class="eyebrow reveal">National Expansion</div>
-        <h2 class="reveal delay-1">Validate Lima. Then scale the model.</h2>
-        <div class="grid grid-3">
-          <article class="card reveal"><span class="kpi">01</span><h3>Arequipa</h3><p>Mining, business communities, universities and strong professional potential.</p></article>
-          <article class="card reveal delay-1"><span class="kpi">02</span><h3>Trujillo</h3><p>Commerce, entrepreneurship, universities and regional business networks.</p></article>
-          <article class="card reveal delay-2"><span class="kpi">03</span><h3>Piura</h3><p>Exports, agribusiness, international payments and cross-border financial needs.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="wrap profile">
-        <div class="profile-mark reveal" aria-label="Fernando G. / Feraf Trades"></div>
-        <article class="card profile-copy reveal delay-1">
-          <div class="eyebrow">Proposal Lead</div>
-          <h2>Why Fernando G.</h2>
-          <p class="lead">A trader, educator and community builder focused on responsible Digital Finance adoption.</p>
-          <ul class="clean">
-            <li>Founder of Feraf Trades</li>
-            <li>Multiexchange Lead Copy Trader</li>
-            <li>Public speaker and Digital Finance workshop facilitator</li>
-            <li>Content focused on risk management, education and responsible adoption</li>
-            <li>Experience building relationships across exchanges, events and professional communities</li>
-          </ul>
-          <div class="quote" style="font-size:22px">The goal is not to create hype. The goal is to build an active, educated and sustainable Bybit community in Peru.</div>
-        </article>
-      </div>
-    </section>
-
-    <section class="closing section" id="next">
-      <div class="wrap">
-        <div class="eyebrow reveal">Next Steps</div>
-        <h2 class="reveal delay-1">From monthly events to a measurable country program.</h2>
-        <p class="lead reveal delay-2">Review the pilot, align it with Bybit's regional priorities, approve the first activation and measure the results before scaling.</p>
-        <div class="timeline reveal delay-2" style="max-width:980px;margin-inline:auto;margin-top:34px;text-align:left">
-          <div class="timeline-item"><b>Step 1</b><strong>Review</strong><p class="small">Scope and priorities</p></div>
-          <div class="timeline-item"><b>Step 2</b><strong>Adapt</strong><p class="small">Compliance and campaigns</p></div>
-          <div class="timeline-item"><b>Step 3</b><strong>Launch</strong><p class="small">First pilot activation</p></div>
-          <div class="timeline-item"><b>Step 4</b><strong>Measure</strong><p class="small">Acquisition and adoption</p></div>
-          <div class="timeline-item"><b>Step 5</b><strong>Scale</strong><p class="small">Lima and other cities</p></div>
-        </div>
-        <div class="closing-actions reveal delay-3">
-          <a class="btn btn-primary pulse" href="https://feraftrades.com/lab" target="_blank" rel="noopener noreferrer">View Feraf's Exchange Lab</a>
-          <button class="btn btn-secondary" type="button" onclick="window.print()">Save / Print Proposal</button>
-        </div>
-      </div>
-    </section>
+    <section class="closing section" id="next"><div class="wrap"><div class="eyebrow reveal">Siguientes pasos</div><h2 class="reveal delay-1">De eventos mensuales a un programa país medible.</h2><p class="lead reveal delay-2">Revisar el piloto, alinearlo con las prioridades regionales de Binance, aprobar la primera activación y medir resultados antes de escalar.</p><div class="timeline reveal delay-2" style="max-width:980px;margin-inline:auto;margin-top:34px;text-align:left"><div class="timeline-item"><b>Paso 1</b><strong>Revisar</strong><p class="small">Alcance y prioridades</p></div><div class="timeline-item"><b>Paso 2</b><strong>Adaptar</strong><p class="small">Compliance y campañas</p></div><div class="timeline-item"><b>Paso 3</b><strong>Lanzar</strong><p class="small">Primera activación</p></div><div class="timeline-item"><b>Paso 4</b><strong>Medir</strong><p class="small">Adquisición y adopción</p></div><div class="timeline-item"><b>Paso 5</b><strong>Escalar</strong><p class="small">Lima y otras ciudades</p></div></div></div></section>
   </main>
 
-  <footer>
-    <div class="wrap footer-row">
-      <span class="footer-brand">
-        <span class="footer-prepared">Prepared exclusively for</span>
-        <img class="bybit-logo-footer" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAioAAAIqCAIAAACFUvbkAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAACKqADAAQAAAABAAACKgAAAACcBm+DAAAjnUlEQVR4Ae3dfcxcRbkA8HqlvRe1UCuR+EVRrJCgYnIjiikkgg3F8gdB/qE1WpCkohQLka+CtpiC4EeF1iioUGJsDUa8MSktCKFJeyVFGyJCTD8kApJWCdAU2xTkGu9zqby89/3cd2Z2d3bPrzFx37Nn5jzzm2WfPefMmZk0yT8CBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQINBdgdd19/CO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AQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIBApwT+F1A0BYlj0ZtOAAAAAElFTkSuQmCC" alt="Bybit">
-        <span>Fernando G. — Founder, Feraf Trades</span>
-      </span>
-      <span>Bybit Peru Growth Strategy 2026 · Confidential discussion draft</span>
-    </div>
-  </footer>
+  <footer><div class="wrap footer-row"><span class="footer-brand"><img class="binance-footer-logo" src="data:image/png;base64,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" alt="Binance"><span>Fernando G. — Founder, Feraf Trades</span></span><span>Binance Perú · Estrategia de Crecimiento 2026 · Borrador confidencial</span></div></footer>
 
   <script>
     (() => {
       const progress = document.getElementById('progress');
-      const updateProgress = () => {
-        const max = document.documentElement.scrollHeight - window.innerHeight;
-        progress.style.width = (max > 0 ? (window.scrollY / max) * 100 : 0) + '%';
-      };
-      addEventListener('scroll', updateProgress, {passive:true});
-      updateProgress();
-
-      const revealObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if(entry.isIntersecting){
-            entry.target.classList.add('visible');
-            revealObserver.unobserve(entry.target);
-          }
-        });
-      }, {threshold:.12, rootMargin:'0px 0px -6% 0px'});
+      const updateProgress = () => { const max = document.documentElement.scrollHeight - window.innerHeight; progress.style.width = (max > 0 ? (window.scrollY / max) * 100 : 0) + '%'; };
+      addEventListener('scroll', updateProgress, {passive:true}); updateProgress();
+      const revealObserver = new IntersectionObserver((entries) => { entries.forEach(entry => { if(entry.isIntersecting){ entry.target.classList.add('visible'); revealObserver.unobserve(entry.target); } }); }, {threshold:.12, rootMargin:'0px 0px -6% 0px'});
       document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
-
-      const animateCounter = (el) => {
-        const target = Number(el.dataset.target || 0);
-        const suffix = el.dataset.suffix || '';
-        const duration = 1100;
-        const start = performance.now();
-        const tick = (now) => {
-          const t = Math.min((now - start) / duration, 1);
-          const eased = 1 - Math.pow(1 - t, 3);
-          el.textContent = Math.round(target * eased).toLocaleString('en-US') + suffix;
-          if(t < 1) requestAnimationFrame(tick);
-        };
-        requestAnimationFrame(tick);
-      };
-      const counterObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if(entry.isIntersecting){
-            animateCounter(entry.target);
-            counterObserver.unobserve(entry.target);
-          }
-        });
-      }, {threshold:.6});
-      document.querySelectorAll('.counter').forEach(el => counterObserver.observe(el));
+      const animateCounter = (el) => { const target=Number(el.dataset.target||0), suffix=el.dataset.suffix||'', duration=1100, start=performance.now(); const tick=(now)=>{ const t=Math.min((now-start)/duration,1), eased=1-Math.pow(1-t,3); el.textContent=Math.round(target*eased).toLocaleString('es-PE')+suffix; if(t<1) requestAnimationFrame(tick); }; requestAnimationFrame(tick); };
+      const counterObserver = new IntersectionObserver((entries)=>{ entries.forEach(entry=>{ if(entry.isIntersecting){ animateCounter(entry.target); counterObserver.unobserve(entry.target); } }); },{threshold:.6});
+      document.querySelectorAll('.counter').forEach(el=>counterObserver.observe(el));
     })();
   </script>
 </body>
